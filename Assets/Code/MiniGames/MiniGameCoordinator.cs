@@ -1,3 +1,4 @@
+using Code.Pause;
 using UnityEngine;
 
 namespace Code.MiniGames
@@ -5,22 +6,28 @@ namespace Code.MiniGames
     public class MiniGameCoordinator : MonoBehaviour
     {
         [SerializeField] private GameObject _inputBlocker;
+        [SerializeField] private PauseService _pauseService;
         private MiniGameWindow _currentWindow;
 
         public bool HasOpenWindow => _currentWindow != null;
 
-        private void Awake()
+        public bool CanInteractWithApartment =>
+            !HasOpenWindow && !_pauseService.IsPaused;
+
+        private void OnEnable()
         {
-            _inputBlocker.SetActive(false);
+            _pauseService.PauseChanged += OnPauseChanged;
+            OnPauseChanged(_pauseService.IsPaused);
         }
 
         public void Open(MiniGameWindow window)
         {
-            if (window == null || !window.isActiveAndEnabled || HasOpenWindow)
+            if (_pauseService.IsPaused || window == null ||
+                !window.isActiveAndEnabled || HasOpenWindow)
                 return;
 
             _currentWindow = window;
-            _inputBlocker.SetActive(true);
+            RefreshInputBlocker();
             _currentWindow.Show();
         }
 
@@ -30,13 +37,27 @@ namespace Code.MiniGames
                 _currentWindow.Hide();
 
             _currentWindow = null;
-            if (_inputBlocker != null)
-                _inputBlocker.SetActive(false);
+            RefreshInputBlocker();
         }
 
         private void OnDisable()
         {
+            _pauseService.PauseChanged -= OnPauseChanged;
             CloseCurrent();
+        }
+
+        private void OnPauseChanged(bool isPaused)
+        {
+            if (_currentWindow != null)
+                _currentWindow.SetInputEnabled(!isPaused);
+
+            RefreshInputBlocker();
+        }
+
+        private void RefreshInputBlocker()
+        {
+            if (_inputBlocker != null)
+                _inputBlocker.SetActive(HasOpenWindow || _pauseService.IsPaused);
         }
     }
 }
