@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 1c73df3f11d2dcc418d7fc8f0ae8065d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5499534650549015845
+    second: kitchen_anim_border0005_0
+  - first:
+      213: -1454152376155143447
+    second: kitchen_anim_border0005_1
+  - first:
+      213: 4352451937934678990
+    second: kitchen_anim_border0005_2
+  - first:
+      213: 3004682699295797669
+    second: kitchen_anim_border0005_3
+  - first:
+      213: 3650922022110055166
+    second: kitchen_anim_border0005_4
+  - first:
+      213: -1571924206155998881
+    second: kitchen_anim_border0005_5
+  - first:
+      213: -8453675514661356048
+    second: kitchen_anim_border0005_6
+  - first:
+      213: -4874492277837011234
+    second: kitchen_anim_border0005_7
+  - first:
+      213: 6118231890034534383
+    second: kitchen_anim_border0005_8
+  - first:
+      213: -7137375978431018366
+    second: kitchen_anim_border0005_9
+  - first:
+      213: 6751065723256250248
+    second: kitchen_anim_border0005_10
+  - first:
+      213: 6570213976774768799
+    second: kitchen_anim_border0005_11
+  - first:
+      213: -2490676252024789647
+    second: kitchen_anim_border0005_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_0
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 677
+        width: 225
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdae2148f5abda3b0800000000000000
+      internalID: -5499534650549015845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_1
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 695
+        width: 53
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e28bf94e10d1dbe0800000000000000
+      internalID: -1454152376155143447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_2
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 563
+        width: 53
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb9e8e2af3076c30800000000000000
+      internalID: 4352451937934678990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_3
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 410
+        width: 37
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1b94adef6c2b920800000000000000
+      internalID: 3004682699295797669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_4
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 585
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa45865c3eaaa230800000000000000
+      internalID: 3650922022110055166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_5
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 551
+        width: 178
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59db3e43476f2ae0800000000000000
+      internalID: -1571924206155998881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_6
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 477
+        width: 79
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd313ea8e28eaa80800000000000000
+      internalID: -8453675514661356048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_7
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 538
+        width: 55
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6e32779135a5cb0800000000000000
+      internalID: -4874492277837011234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_8
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 448
+        width: 119
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7a9fafc7358e450800000000000000
+      internalID: 6118231890034534383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_9
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 458
+        width: 44
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a8631fc52f2fc90800000000000000
+      internalID: -7137375978431018366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_10
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 124
+        width: 459
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f1102b18a90bd50800000000000000
+      internalID: 6751065723256250248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_11
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 117
+        width: 171
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9877f72dc61e2b50800000000000000
+      internalID: 6570213976774768799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_anim_border0005_12
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 152
+        width: 13
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175af8b15275f6dd0800000000000000
+      internalID: -2490676252024789647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      kitchen_anim_border0005_0: -5499534650549015845
+      kitchen_anim_border0005_1: -1454152376155143447
+      kitchen_anim_border0005_10: 6751065723256250248
+      kitchen_anim_border0005_11: 6570213976774768799
+      kitchen_anim_border0005_12: -2490676252024789647
+      kitchen_anim_border0005_2: 4352451937934678990
+      kitchen_anim_border0005_3: 3004682699295797669
+      kitchen_anim_border0005_4: 3650922022110055166
+      kitchen_anim_border0005_5: -1571924206155998881
+      kitchen_anim_border0005_6: -8453675514661356048
+      kitchen_anim_border0005_7: -4874492277837011234
+      kitchen_anim_border0005_8: 6118231890034534383
+      kitchen_anim_border0005_9: -7137375978431018366
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
