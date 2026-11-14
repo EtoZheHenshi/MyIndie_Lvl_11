@@ -7,7 +7,7 @@ namespace Code.Infrastructure.Installers
     public class MainSceneInstaller : MonoInstaller, IInitializable
     {
         [SerializeField] private DisplayText _displayText;
-        [SerializeField] private TextWriter _textWriter;
+        [SerializeField] private TypingMiniGameInput _typingMiniGameInput;
         [SerializeField, Min(1)] private int _rowMaxLength = 18;
 
         public override void InstallBindings()
@@ -17,10 +17,10 @@ namespace Code.Infrastructure.Installers
                 .FromInstance(this)
                 .AsSingle();
 
-            BindTypingComponent();
+            BindTypingMiniGame();
         }
 
-        private void BindTypingComponent()
+        private void BindTypingMiniGame()
         {
             Container
                 .Bind<DisplayText>()
@@ -34,8 +34,8 @@ namespace Code.Infrastructure.Installers
                 .WithArguments(_rowMaxLength);
 
             Container
-                .Bind<TextWriter>()
-                .FromInstance(_textWriter)
+                .Bind<TypingMiniGameInput>()
+                .FromInstance(_typingMiniGameInput)
                 .AsSingle();
         }
 
