@@ -2,17 +2,17 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     [SerializeField] Image _image;
     [SerializeField] RectTransform _rectTransform;
     private Vector2 _startPosition;
     
+    public bool isEmpty = false;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        // _rectTransform = GetComponent<RectTransform>();
-        // _image = GetComponent<Image>();
         _startPosition = _rectTransform.position;
     }
 
@@ -31,10 +31,7 @@ public class draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (enabled)
-        {
-            _rectTransform.position = _startPosition;
-            _image.color = new Color(_image.color.r, _image.color.g, _image.color.b, 0);
-        }
+        _image.color = new Color(_image.color.r, _image.color.g, _image.color.b, 0);
+        if(isEmpty) gameObject.SetActive(false);
     }
 }
