@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 3793871595645234626}
   - component: {fileID: 53590192452824961}
   m_Layer: 0
-  m_Name: Tomat (2)
+  m_Name: Becon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,8 +426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8486b46b87938c4a8ea02cefef37af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::draggable
-  _image: {fileID: 5277658273275467929}
-  _rectTransform: {fileID: 3039538135295809674}
+  _image: {fileID: 4523425108087816513}
+  _rectTransform: {fileID: 806443421945968292}
 --- !u!114 &31987323016061651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94974ccc73b0f6d45afa0fb7fdba3025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  Layer: 5
+  Layer: 2
 --- !u!222 &3793871595645234626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -688,7 +688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -968,15 +968,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5781502377329554957}
-  - {fileID: 6821111067000466356}
   - {fileID: 4765735041790335461}
+  - {fileID: 6821111067000466356}
   - {fileID: 5922560579753270657}
   - {fileID: 9197742379770524748}
-  - {fileID: 8746678093870056111}
-  - {fileID: 1710020774895522585}
-  - {fileID: 7197120571429293762}
-  - {fileID: 2533956853053974086}
   - {fileID: 3128847395344698677}
+  - {fileID: 2533956853053974086}
+  - {fileID: 8746678093870056111}
+  - {fileID: 7197120571429293762}
+  - {fileID: 1710020774895522585}
   - {fileID: 2978412518940769727}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1264,7 +1264,7 @@ GameObject:
   - component: {fileID: 6188654728808645547}
   - component: {fileID: 6089550496581963289}
   m_Layer: 0
-  m_Name: Tomat (3)
+  m_Name: MazikSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1301,8 +1301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8486b46b87938c4a8ea02cefef37af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::draggable
-  _image: {fileID: 5277658273275467929}
-  _rectTransform: {fileID: 3039538135295809674}
+  _image: {fileID: 1187717767447204388}
+  _rectTransform: {fileID: 1440149871020963537}
 --- !u!114 &6713356136188730275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94974ccc73b0f6d45afa0fb7fdba3025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  Layer: 5
+  Layer: 1
 --- !u!222 &6188654728808645547
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1667,7 +1667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1801,7 +1801,7 @@ GameObject:
   - component: {fileID: 5754736402008386012}
   - component: {fileID: 2434040946193232185}
   m_Layer: 0
-  m_Name: Tomat (1)
+  m_Name: PickleSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1838,8 +1838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8486b46b87938c4a8ea02cefef37af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::draggable
-  _image: {fileID: 5277658273275467929}
-  _rectTransform: {fileID: 3039538135295809674}
+  _image: {fileID: 4840153445187623097}
+  _rectTransform: {fileID: 5095723539855438143}
 --- !u!114 &2303279152623664141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94974ccc73b0f6d45afa0fb7fdba3025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  Layer: 5
+  Layer: 4
 --- !u!222 &5754736402008386012
 CanvasRenderer:
   m_ObjectHideFlags: 0
