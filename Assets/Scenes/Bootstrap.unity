@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3068ab1a5b2c42a2ae3ffd3a5d6f1935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Code.Infrastructure.Installers.BootstrapInstaller
+  FirstSceneName: Main
 --- !u!114 &978674183
 MonoBehaviour:
   m_ObjectHideFlags: 0

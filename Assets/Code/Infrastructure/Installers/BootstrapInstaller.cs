@@ -5,6 +5,8 @@ namespace Code.Infrastructure.Installers
 {
     public class BootstrapInstaller : MonoInstaller, IInitializable
     {
+        public string FirstSceneName;
+
         public override void InstallBindings()
         {
             Container
@@ -15,7 +17,7 @@ namespace Code.Infrastructure.Installers
 
         public void Initialize()
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene(FirstSceneName);
         }
     }
 }
