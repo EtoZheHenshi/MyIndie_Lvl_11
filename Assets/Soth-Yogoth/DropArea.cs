@@ -16,7 +16,7 @@ public class DropArea : MonoBehaviour, IDropHandler
         GameObject dropedItem = eventData.pointerDrag;
         Ingredient ingredient = dropedItem?.GetComponent<Ingredient>();
         
-        if (ingredient is null || ingredient.Layer != _currentLayer) return;
+        if (ingredient is null || (ingredient.Layer != _currentLayer && _currentLayer < 2)) return;
         
         _sandwichLayers[_currentLayer].SetActive(true);
         _currentLayer++;
