@@ -1,10 +1,11 @@
+using Code.MiniGames;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
 
 namespace Code.TypingLogic
 {
-    public class TextWriter : MonoBehaviour
+    public class TypingMiniGameInput : MiniGameInput
     {
         private TextComparer _textComparer;
         private Keyboard _keyboard;
@@ -15,15 +16,18 @@ namespace Code.TypingLogic
             _textComparer = textComparer;
         }
 
-        private void OnEnable()
+        protected override void Subscribe()
         {
+            if (_keyboard != null)
+                return;
+
             _keyboard = Keyboard.current;
 
             if (_keyboard != null)
                 _keyboard.onTextInput += CheckInputSymbol;
         }
 
-        private void OnDisable()
+        protected override void Unsubscribe()
         {
             if (_keyboard != null)
                 _keyboard.onTextInput -= CheckInputSymbol;
