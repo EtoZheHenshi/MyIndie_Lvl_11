@@ -1,4 +1,5 @@
 using Code.MiniGames;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ namespace Code.MotherCallMiniGame
         private bool _inputEnabled;
 
         public bool IsCallAccepted { get; private set; }
+        public event Action CallAccepted;
 
         protected override void OnEnable()
         {
@@ -61,6 +63,7 @@ namespace Code.MotherCallMiniGame
                 return;
 
             IsCallAccepted = true;
+            CallAccepted?.Invoke();
             _callButtons.SetActive(false);
             _bubbles.StartConversation();
             SetInteractionEnabled(true);

@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,8 +11,6 @@ namespace Code.ActivityTasks
         [SerializeField] private Image _timerTrack;
         [SerializeField] private Image _timerGap;
         [SerializeField, Min(1f)] private float _forcedIconScale = 1.5f;
-        [SerializeField] private TMP_Text _statusText;
-        [SerializeField] private TMP_Text _titleText;
 
         private ActivityTaskState _task;
 
@@ -27,13 +24,10 @@ namespace Code.ActivityTasks
                 _iconAnimator.runtimeAnimatorController = task.Definition.IconAnimation;
                 _iconAnimator.enabled = task.Definition.IconAnimation != null;
             }
-            _titleText.text = task.Definition.Title;
             bool forced = task.Definition.ForceStart;
             _timerFill.enabled = !forced;
             _timerTrack.enabled = !forced;
             _timerGap.enabled = !forced;
-            _statusText.gameObject.SetActive(!forced);
-            _titleText.gameObject.SetActive(!forced);
             _icon.rectTransform.localScale = Vector3.one * (forced ? _forcedIconScale : 1f);
             Refresh();
         }
@@ -52,19 +46,16 @@ namespace Code.ActivityTasks
             {
                 _timerFill.fillAmount = 1f;
                 _timerFill.color = new Color(1f, 0.3f, 0.25f);
-                _statusText.SetText("-{0:1}/с", _task.Definition.MotivationLossPerSecond);
             }
             else if (_task.HasStarted)
             {
                 _timerFill.fillAmount = 1f;
                 _timerFill.color = new Color(0.45f, 0.9f, 0.6f);
-                _statusText.text = "В игре";
             }
             else
             {
                 _timerFill.fillAmount = _task.Remaining / _task.Duration;
                 _timerFill.color = Color.white;
-                _statusText.SetText("{0} с", Mathf.CeilToInt(_task.Remaining));
             }
         }
     }
