@@ -13,6 +13,7 @@ namespace Code.Pause
 
         public bool IsPaused { get; private set; }
         public bool IsSessionEnded { get; private set; }
+        public bool ShowPauseMenu { get; private set; }
         public event Action<bool> PauseChanged;
 
         [Inject]
@@ -22,12 +23,13 @@ namespace Code.Pause
             _audioService.SetPaused(IsPaused);
         }
 
-        public void Pause()
+        public void Pause(bool showMenu = true)
         {
             if (IsPaused || IsSessionEnded)
                 return;
 
             StoreTimeScale();
+            ShowPauseMenu = showMenu;
             IsPaused = true;
             Time.timeScale = 0f;
             _audioService.SetPaused(true);
@@ -40,6 +42,7 @@ namespace Code.Pause
                 return;
 
             IsPaused = false;
+            ShowPauseMenu = false;
             RestoreTimeScale();
             _audioService.SetPaused(false);
             PauseChanged?.Invoke(false);
@@ -52,6 +55,7 @@ namespace Code.Pause
 
             StoreTimeScale();
             IsSessionEnded = true;
+            ShowPauseMenu = false;
             IsPaused = true;
             Time.timeScale = 0f;
             _audioService.SetPaused(true);

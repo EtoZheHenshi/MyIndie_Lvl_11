@@ -8,12 +8,13 @@ namespace Code.Pause
         [SerializeField] private PauseService _pauseService;
         [SerializeField] private GameObject _panel;
         [SerializeField] private Button _pauseButton;
-        [SerializeField] private Button _resumeButton;
+        [SerializeField] private Animator _buttonAnimator;
+        [SerializeField] private RuntimeAnimatorController _pauseAnimation;
+        [SerializeField] private RuntimeAnimatorController _playAnimation;
 
         private void OnEnable()
         {
-            _pauseButton.onClick.AddListener(RequestPause);
-            _resumeButton.onClick.AddListener(RequestResume);
+            _pauseButton.onClick.AddListener(TogglePause);
             _pauseService.PauseChanged += OnPauseChanged;
             OnPauseChanged(_pauseService.IsPaused);
         }
@@ -22,10 +23,7 @@ namespace Code.Pause
         {
             // UI objects can be destroyed before this component during scene teardown.
             if (_pauseButton != null)
-                _pauseButton.onClick.RemoveListener(RequestPause);
-
-            if (_resumeButton != null)
-                _resumeButton.onClick.RemoveListener(RequestResume);
+                _pauseButton.onClick.RemoveListener(TogglePause);
 
             if (_pauseService != null)
                 _pauseService.PauseChanged -= OnPauseChanged;
@@ -34,22 +32,24 @@ namespace Code.Pause
                 _panel.SetActive(false);
         }
 
-        private void RequestPause()
+        private void TogglePause()
         {
-            _pauseService.Pause();
-        }
-
-        private void RequestResume()
-        {
-            _pauseService.Resume();
+            if (_pauseService.IsSessionEnded ||
+                (_pauseService.IsPaused && !_pauseService.ShowPauseMenu))
+                return;
+            if (_pauseService.IsPaused)
+                _pauseService.Resume();
+            else
+                _pauseService.Pause();
         }
 
         private void OnPauseChanged(bool isPaused)
         {
             bool sessionEnded = _pauseService.IsSessionEnded;
-            _panel.SetActive(isPaused && !sessionEnded);
-            _pauseButton.interactable = !sessionEnded;
-            _resumeButton.interactable = !sessionEnded;
+            _panel.SetActive(isPaused && _pauseService.ShowPauseMenu && !sessionEnded);
+            _pauseButton.gameObject.SetActive(!sessionEnded);
+            _pauseButton.interactable = !isPaused || _pauseService.ShowPauseMenu;
+            _buttonAnimator.runtimeAnimatorController = isPaused ? _playAnimation : _pauseAnimation;
         }
     }
 }

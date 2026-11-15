@@ -39,8 +39,12 @@ namespace Code.ActivityTasks
         public int SymbolsSinceBreak { get; private set; }
         public float CurrentChancePercent { get; private set; }
         public int RandomNotificationSafeSymbolsRemaining { get; private set; }
+        public bool HasEnteredFlow { get; private set; }
+        public bool IsFlowActive { get; private set; }
 
         public event Action TasksChanged;
+        public event Action FlowEntered;
+        public event Action<bool> FlowStateChanged;
 
         [Inject]
         public void Construct(TextComparer textComparer)
@@ -128,6 +132,15 @@ namespace Code.ActivityTasks
 
             if (SymbolsSinceBreak < int.MaxValue)
                 SymbolsSinceBreak++;
+            if (SymbolsSinceBreak >= _safeSymbolCount)
+                SetFlowActive(true);
+            if (!HasEnteredFlow && SymbolsSinceBreak >= _safeSymbolCount)
+            {
+                HasEnteredFlow = true;
+                FlowEntered?.Invoke();
+                if (_pauseService.IsPaused)
+                    return;
+            }
             if (RandomNotificationSafeSymbolsRemaining > 0)
             {
                 RandomNotificationSafeSymbolsRemaining--;
@@ -203,6 +216,7 @@ namespace Code.ActivityTasks
                 return;
 
             SymbolsSinceBreak = 0;
+            SetFlowActive(false);
             CurrentChancePercent = 0f;
             RandomNotificationSafeSymbolsRemaining = 0;
             foreach (ActivityTaskState task in _activeTasks)
@@ -228,6 +242,14 @@ namespace Code.ActivityTasks
                 if (task.IsOverdue)
                     totalLoss += task.Definition.MotivationLossPerSecond;
             _motivationService.SetAdditionalLoss(totalLoss);
+        }
+
+        private void SetFlowActive(bool active)
+        {
+            if (IsFlowActive == active)
+                return;
+            IsFlowActive = active;
+            FlowStateChanged?.Invoke(active);
         }
 
         private void ResetNotificationTimer()
