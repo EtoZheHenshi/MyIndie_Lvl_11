@@ -731,4 +731,4 @@ MonoBehaviour:
   leftColumn: {fileID: 4021383125445422596}
   rightColumn: {fileID: 2489397025715902546}
   likesToFinish: 3
-  scrollSpeed: 1
+  scrollSpeed: 20

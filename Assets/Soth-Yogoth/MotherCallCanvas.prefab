@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23137257, g: 0.70980394, b: 0.28627452, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -222,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 2
 --- !u!95 &5504543631767460190
 Animator:
   serializedVersion: 7
@@ -312,6 +311,9 @@ MonoBehaviour:
   - {fileID: 7960307844454185683}
   - {fileID: 7229951617489557632}
   - {fileID: 2517693061096625983}
+  _answerOneColor: {r: 0.8742138, g: 0.15669861, b: 0.15669861, a: 1}
+  _answerTwoColor: {r: 1, g: 0.7026715, b: 0.380503, a: 1}
+  _answerThreeColor: {r: 0.2257228, g: 0.7106918, b: 0.28093544, a: 1}
 --- !u!1 &876196487554689230
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8742138, g: 0.15669861, b: 0.15669861, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -703,7 +705,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 1
 --- !u!95 &1200334321192126198
 Animator:
   serializedVersion: 7
@@ -925,7 +926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9559748, g: 0.6994865, b: 0.387801, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -954,7 +955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 2
 --- !u!95 &3277941832243615
 Animator:
   serializedVersion: 7
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7026715, b: 0.380503, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1066,7 +1066,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 2
 --- !u!95 &1491983288040984407
 Animator:
   serializedVersion: 7
@@ -1149,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2257228, g: 0.7106918, b: 0.28093544, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1178,7 +1177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 3
 --- !u!95 &4783978894887940581
 Animator:
   serializedVersion: 7
@@ -1364,7 +1362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7026715, b: 0.380503, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1393,7 +1391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 2
 --- !u!95 &7382573131883181583
 Animator:
   serializedVersion: 7
@@ -1640,7 +1637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2257228, g: 0.7106918, b: 0.28093544, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1669,7 +1666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 3
 --- !u!95 &6540790432395210908
 Animator:
   serializedVersion: 7
@@ -1752,7 +1748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8742138, g: 0.15669861, b: 0.15669861, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1781,7 +1777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 1
 --- !u!95 &2279376757034962117
 Animator:
   serializedVersion: 7
@@ -1864,7 +1859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.81761, g: 0.13112602, b: 0.15903184, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1893,7 +1888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40da43c81cf05408bf864473bf12f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bubble
-  type: 1
 --- !u!95 &5779467869653832040
 Animator:
   serializedVersion: 7
