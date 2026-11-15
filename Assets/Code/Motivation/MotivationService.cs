@@ -31,6 +31,7 @@ namespace Code.Motivation
 
         public event Action<float> ValueChanged;
         public event Action Depleted;
+        public event Action TypingCompleted;
 
         private void Awake()
         {
@@ -62,7 +63,11 @@ namespace Code.Motivation
 
         public void CompleteTyping()
         {
+            if (IsTypingCompleted || IsDepleted)
+                return;
             IsTypingCompleted = true;
+            _pauseService.EndSession();
+            TypingCompleted?.Invoke();
         }
 
         public void SetAdditionalLoss(float lossPerSecond)
