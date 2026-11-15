@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313cc20409a43d64ab09950fa97f2b2e, type: 3}
   m_Name: StarveLong
   m_EditorClassIdentifier: Assembly-CSharp::Code.Audio.AudioCue
-  _clips: []
+  _clips:
+  - {fileID: 8300000, guid: e01892989b7cb2045b3ee6d527878872, type: 3}
+  - {fileID: 8300000, guid: 03a118bf8028c3d479d6334bcba5ad5f, type: 3}
   _clip: {fileID: 0}
-  _description: 
+  _description: "\u0417\u0432\u0443\u043A \u043F\u0440\u043E\u0438\u0433\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F
+    \u0441 \u043F\u0435\u0440\u0438\u043E\u0434\u0438\u0447\u043D\u043E\u0441\u0442\u044C\u044E
+    10-20 \u0441\u0435\u043A\u0443\u043D\u0434, \u043D\u0430\u0447\u0438\u043D\u0430\u044F
+    \u0441 \u043C\u043E\u043C\u0435\u043D\u0442\u0430 \u043A\u043E\u0433\u0434\u0430
+    \u0438\u0441\u0442\u0451\u043A \u0442\u0430\u0439\u043C\u0435\u0440 \u043D\u0430
+    \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435 \u043C\u0438\u043D\u0438-\u0438\u0433\u0440\u044B
+    SandwichMiniGame"
   _volume: 1
   _loop: 0
   _pitch: 1
