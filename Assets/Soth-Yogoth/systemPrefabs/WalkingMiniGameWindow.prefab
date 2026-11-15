@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3023293556535997316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4783670131984676203}
+  - component: {fileID: 6180720192291397483}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4783670131984676203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3023293556535997316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2129271172741008145}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6180720192291397483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3023293556535997316}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe6b5e2b28b16f49a73049d6ab16121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.WalkingMiniGame.WalkingMiniGameInput
+  _game: {fileID: 7175079414667895382}
+--- !u!1 &9014785397866220088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129271172741008145}
+  - component: {fileID: 223239526340977019}
+  - component: {fileID: 7175079414667895382}
+  m_Layer: 0
+  m_Name: WalkingMiniGameWindow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129271172741008145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014785397866220088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4783670131984676203}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223239526340977019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014785397866220088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2753f5ff9fbbcd244b1bd181af9332dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.WalkingMiniGame.WalkingMiniGameWindow
+  _panel: {fileID: 0}
+  _input: {fileID: 6180720192291397483}
+  _coordinator: {fileID: 0}
+  _openButton: {fileID: 0}
+  _closeButton: {fileID: 0}
+  _activityVisuals: []
+  _game: {fileID: 7175079414667895382}
+--- !u!114 &7175079414667895382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014785397866220088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd77f225ee0d87e429e04afd48746504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.WalkingMiniGame.WalkingGame
+  _player: {fileID: 0}
+  _passerPrefabs:
+  - {fileID: 3703209119177357093, guid: c425b87689dac854b85b06f01ee8f539, type: 3}
+  - {fileID: 8308743029157381641, guid: 4537a4e613b27574eb84e999cb808219, type: 3}
+  - {fileID: 92041110370682920, guid: 4c28702365f3b364999fe257d803c4fc, type: 3}
+  _actorsRoot: {fileID: 0}
+  _backgroundAnimator: {fileID: 0}
+  _timerText: {fileID: 0}
+  _conversationPanel: {fileID: 0}
+  _conversationText: {fileID: 0}
+  _walkDuration: 12
+  _passerSpeed: 500
+  _laneChangeSpeed: 1100
+  _laneY:
+  - 125
+  - -90
+  - -305
+  _playerX: -510
+  _spawnX: 960
+  _despawnX: -1000
+  _firstWaveDelay: 0.5
+  _minimumWaveInterval: 0.5
+  _maximumWaveInterval: 2
+  _doubleWaveChance: 0.75
+  _reactionTime: 0.25
+  _conversationDuration: 3
+  _conversationGap: 36
+  _followingGap: 56
+  _collisionPadding: 4
+  _verticalCollisionInset: 8
