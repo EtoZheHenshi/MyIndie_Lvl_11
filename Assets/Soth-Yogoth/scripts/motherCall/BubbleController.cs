@@ -14,6 +14,7 @@ public class BubbleController : MonoBehaviour
     private Bubble _selectedBubble;
     private Coroutine _appearance;
     private bool _inputEnabled;
+    private bool _conversationStarted;
 
     public int RemainingBubbles { get; private set; }
     public bool IsFinished { get; private set; }
@@ -40,12 +41,20 @@ public class BubbleController : MonoBehaviour
         _inputEnabled = false;
         RemainingBubbles = bubbles.Count;
         IsFinished = false;
+        _conversationStarted = false;
+    }
+
+    public void StartConversation()
+    {
+        if (_conversationStarted || IsFinished)
+            return;
+        _conversationStarted = true;
         _appearance = StartCoroutine(AppearBubbles());
     }
 
     public void SetInputEnabled(bool enabled)
     {
-        _inputEnabled = enabled && !IsFinished;
+        _inputEnabled = enabled && _conversationStarted && !IsFinished;
         if (bubbles == null)
             return;
         foreach (Bubble bubble in bubbles)

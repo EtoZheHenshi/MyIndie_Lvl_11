@@ -28,6 +28,7 @@ namespace Code.TypingLogic
             if (symbol == _textForPlayer.GetCurrentSymbol())
             {
                 _textForPlayer.MoveToNextSymbol();
+                _motivationService.RewardCorrectSymbol();
                 if (_textForPlayer.IsCompleted)
                     _motivationService.CompleteTyping();
                 CorrectSymbolTyped?.Invoke();

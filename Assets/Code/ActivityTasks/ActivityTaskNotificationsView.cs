@@ -8,6 +8,8 @@ namespace Code.ActivityTasks
     {
         [SerializeField] private ActivityTaskView _template;
         [SerializeField] private Transform _container;
+        [SerializeField] private ActivityTaskView _forcedTemplate;
+        [SerializeField] private Transform _forcedContainer;
 
         private readonly Dictionary<ActivityTaskState, ActivityTaskView> _views =
             new Dictionary<ActivityTaskState, ActivityTaskView>();
@@ -50,7 +52,7 @@ namespace Code.ActivityTasks
             {
                 bool exists = false;
                 foreach (ActivityTaskState activeTask in _taskService.ActiveTasks)
-                    if (activeTask == task)
+                    if (activeTask == task && ShouldShow(task))
                         exists = true;
                 if (!exists)
                     removed.Add(task);
@@ -64,14 +66,21 @@ namespace Code.ActivityTasks
 
             foreach (ActivityTaskState task in _taskService.ActiveTasks)
             {
-                if (_views.ContainsKey(task))
+                if (!ShouldShow(task) || _views.ContainsKey(task))
                     continue;
-                ActivityTaskView view = Instantiate(_template, _container);
+                bool forced = task.Definition.ForceStart;
+                ActivityTaskView view = Instantiate(forced ? _forcedTemplate : _template,
+                    forced ? _forcedContainer : _container);
                 view.name = "Task_" + task.Definition.Title;
                 view.Initialize(task);
                 view.gameObject.SetActive(true);
                 _views.Add(task, view);
             }
+        }
+
+        private bool ShouldShow(ActivityTaskState task)
+        {
+            return !task.Definition.ForceStart || !task.HasStarted;
         }
     }
 }

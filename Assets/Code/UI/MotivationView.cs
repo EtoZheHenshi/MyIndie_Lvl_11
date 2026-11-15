@@ -1,14 +1,13 @@
 using Code.Motivation;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using Zenject;
 
 namespace Code.UI
 {
     public class MotivationView : MonoBehaviour
     {
-        [SerializeField] private Image _fill;
+        [SerializeField] private RectTransform _fillMask;
         [SerializeField] private TMP_Text _valueText;
 
         private MotivationService _motivationService;
@@ -56,7 +55,7 @@ namespace Code.UI
 
         private void Refresh(float value)
         {
-            _fill.fillAmount = Mathf.Clamp01(value / 100f);
+            _fillMask.anchorMax = new Vector2(Mathf.Clamp01(value / 100f), 1f);
             _valueText.SetText("Мотивация: {0}%", Mathf.CeilToInt(value));
         }
     }

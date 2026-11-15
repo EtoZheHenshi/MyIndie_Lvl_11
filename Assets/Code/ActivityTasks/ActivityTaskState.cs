@@ -25,7 +25,7 @@ namespace Code.ActivityTasks
         // Returns true only on the transition into an overdue state.
         public bool Advance(float deltaTime)
         {
-            if (HasStarted || IsOverdue)
+            if (Definition.ForceStart || HasStarted || IsOverdue)
                 return false;
 
             Remaining = Mathf.Max(0f, Remaining - Mathf.Max(0f, deltaTime));
