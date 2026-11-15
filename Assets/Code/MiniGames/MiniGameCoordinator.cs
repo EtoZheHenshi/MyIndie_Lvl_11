@@ -1,3 +1,4 @@
+using System;
 using Code.Pause;
 using UnityEngine;
 
@@ -10,6 +11,10 @@ namespace Code.MiniGames
         private MiniGameWindow _currentWindow;
 
         public bool HasOpenWindow => _currentWindow != null;
+        public MiniGameWindow CurrentWindow => _currentWindow;
+
+        public event Action<MiniGameWindow> WindowOpened;
+        public event Action<MiniGameWindow> WindowCompleted;
 
         public bool CanInteractWithApartment =>
             !HasOpenWindow && !_pauseService.IsPaused;
@@ -29,6 +34,8 @@ namespace Code.MiniGames
             _currentWindow = window;
             RefreshInputBlocker();
             _currentWindow.Show();
+            if (_currentWindow == window)
+                WindowOpened?.Invoke(window);
         }
 
         public void CloseCurrent()
@@ -40,9 +47,19 @@ namespace Code.MiniGames
             RefreshInputBlocker();
         }
 
+        public void CompleteCurrent(MiniGameWindow window)
+        {
+            if (_currentWindow == null || _currentWindow != window)
+                return;
+
+            CloseCurrent();
+            WindowCompleted?.Invoke(window);
+        }
+
         private void OnDisable()
         {
-            _pauseService.PauseChanged -= OnPauseChanged;
+            if (_pauseService != null)
+                _pauseService.PauseChanged -= OnPauseChanged;
             CloseCurrent();
         }
 

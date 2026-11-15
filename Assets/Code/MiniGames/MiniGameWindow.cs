@@ -82,5 +82,11 @@ namespace Code.MiniGames
             if (IsOpen && _coordinator != null)
                 _coordinator.CloseCurrent();
         }
+
+        protected void CompleteWindow()
+        {
+            if (IsOpen && _coordinator != null)
+                _coordinator.CompleteCurrent(this);
+        }
     }
 }
