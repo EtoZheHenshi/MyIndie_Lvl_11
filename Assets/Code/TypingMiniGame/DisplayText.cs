@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Code.TypingLogic
 {
@@ -14,7 +16,19 @@ namespace Code.TypingLogic
 
         [Header("Text colors")]
         [SerializeField] private Color _typedColor = Color.black;
-        [SerializeField] private Color _untypedColor = Color.white;
+        [SerializeField] private Color _untypedColor = new Color32(57, 110, 172, 255);
+
+        [Header("Typing cursor")]
+        [SerializeField] private Image _cursor;
+        [SerializeField] private Color _cursorColor = Color.black;
+        [SerializeField, Min(0.05f)] private float _cursorBlinkDuration = 0.45f;
+
+        [Header("Input error")]
+        [SerializeField] private Image _errorHighlight;
+        [SerializeField] private Image _errorUnderline;
+        [SerializeField] private CanvasGroup _errorOpacity;
+        [SerializeField] private Color _errorColor = new Color32(204, 16, 43, 255);
+        [SerializeField, Min(0.05f)] private float _errorDuration = 0.56f / 1.5f;
 
         [Header("Animated placeholder")]
         [SerializeField] private TMP_SpriteAsset _maskSpriteAsset;
@@ -35,6 +49,11 @@ namespace Code.TypingLogic
         private float _lastVisiblePercent;
         private Color _lastTypedColor;
         private Color _lastUntypedColor;
+        private Sequence _errorTween;
+        private Tween _cursorTween;
+        private bool _cursorDirty;
+        private int _errorSymbolIndex = -1;
+        private bool _errorRestartPending;
 
         public int RowCapacity => Rows.Length;
 
@@ -56,6 +75,7 @@ namespace Code.TypingLogic
 
         public void Render(TextReader reader, int firstRow, int currentRow, bool completed)
         {
+            ClearInputError();
             _reader = reader;
             _firstVisibleRow = firstRow;
             _currentRow = currentRow;
@@ -67,16 +87,131 @@ namespace Code.TypingLogic
 
         public void SetTypedCharacterCount(int count)
         {
+            ClearInputError();
             _typedCharacterCount = count;
             if (_reader == null || _completed)
                 return;
             RenderRow(_currentRow - _firstVisibleRow);
+            _cursorDirty = true;
         }
 
         public void SetVisibility(float percent)
         {
             _visiblePercent = Mathf.Clamp(percent, 0f, 100f);
             RefreshRows();
+        }
+
+        public void ShowInputError()
+        {
+            if (!isActiveAndEnabled || _reader == null || _completed ||
+                _errorHighlight == null || _errorUnderline == null || _errorOpacity == null)
+                return;
+            // Do not keep postponing the pulse if key repeat is faster than the short gap.
+            if (_errorRestartPending)
+                return;
+
+            if (!PositionCurrentCell(_errorHighlight.rectTransform, false))
+                return;
+            HideCursor();
+            bool restarting = _errorTween != null && _errorTween.IsActive();
+            _errorTween?.Kill();
+            bool isLetter = char.IsLetter(_reader.GetRow(_currentRow), _typedCharacterCount);
+            _errorHighlight.enabled = !isLetter;
+            _errorHighlight.color = new Color(_errorColor.r, _errorColor.g, _errorColor.b, 0.4f);
+            _errorUnderline.color = _errorColor;
+            _errorTween = DOTween.Sequence();
+            if (restarting)
+            {
+                _errorRestartPending = true;
+                _errorSymbolIndex = -1;
+                _errorHighlight.gameObject.SetActive(false);
+                RenderRow(_currentRow - _firstVisibleRow);
+                _errorTween.AppendInterval(0.04f).AppendCallback(ShowErrorPulse);
+            }
+            else
+                ShowErrorPulse();
+            _errorTween.AppendInterval(_errorDuration).OnComplete(ClearInputError);
+        }
+
+        private void ShowErrorPulse()
+        {
+            _errorRestartPending = false;
+            _errorSymbolIndex = _typedCharacterCount;
+            RenderRow(_currentRow - _firstVisibleRow);
+            _errorHighlight.gameObject.SetActive(true);
+            _errorOpacity.alpha = 1f;
+        }
+
+        private bool PositionCurrentCell(RectTransform marker, bool underline)
+        {
+            if (_reader == null || _completed || _currentRow < _firstVisibleRow ||
+                _currentRow - _firstVisibleRow >= Rows.Length)
+                return false;
+
+            TMP_Text row = Rows[_currentRow - _firstVisibleRow];
+            row.ForceMeshUpdate();
+            // TMP has one character entry per Unicode code point, including sprite placeholders.
+            string original = _reader.GetRow(_currentRow);
+            int characterIndex = 0;
+            for (int i = 0; i < _typedCharacterCount; i++, characterIndex++)
+                if (char.IsHighSurrogate(original[i]) && i + 1 < original.Length &&
+                    char.IsLowSurrogate(original[i + 1]))
+                {
+                    if (i + 1 >= _typedCharacterCount)
+                        break;
+                    i++;
+                }
+            if (characterIndex >= row.textInfo.characterCount)
+                return false;
+
+            TMP_CharacterInfo character = row.textInfo.characterInfo[characterIndex];
+            float width = row.fontSize * _characterWidth;
+            float height = Mathf.Max(row.fontSize * 1.3f, character.ascender - character.descender);
+            marker.SetParent(row.rectTransform, false);
+            marker.anchorMin = marker.anchorMax = row.rectTransform.pivot;
+            marker.pivot = new Vector2(0.5f, 0.5f);
+            marker.anchoredPosition = new Vector2(character.xAdvance - width * 0.5f,
+                (character.ascender + character.descender) * 0.5f -
+                (underline ? height * 0.5f - 2.5f : 0f));
+            marker.sizeDelta = new Vector2(width + 4f, underline ? 5f : height);
+            return true;
+        }
+
+        private void RefreshCursor()
+        {
+            _cursorDirty = false;
+            HideCursor();
+            if (_cursor == null || !isActiveAndEnabled ||
+                _errorSymbolIndex >= 0 || _errorRestartPending ||
+                !PositionCurrentCell(_cursor.rectTransform, true))
+                return;
+
+            _cursor.color = _cursorColor;
+            _cursor.gameObject.SetActive(true);
+            _cursorTween = _cursor.DOFade(0.1f, _cursorBlinkDuration)
+                .SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
+        }
+
+        private void HideCursor()
+        {
+            _cursorTween?.Kill();
+            _cursorTween = null;
+            if (_cursor != null)
+                _cursor.gameObject.SetActive(false);
+        }
+
+        private void ClearInputError()
+        {
+            bool hadError = _errorSymbolIndex >= 0;
+            _errorSymbolIndex = -1;
+            _errorRestartPending = false;
+            _errorTween?.Kill();
+            _errorTween = null;
+            if (_errorHighlight != null)
+                _errorHighlight.gameObject.SetActive(false);
+            if (hadError && _reader != null && !_completed && isActiveAndEnabled)
+                RenderRow(_currentRow - _firstVisibleRow);
+            _cursorDirty = true;
         }
 
         private void OnEnable()
@@ -89,10 +224,14 @@ namespace Code.TypingLogic
             if (_reader != null && (_lastVisiblePercent != _visiblePercent ||
                 _lastTypedColor != _typedColor || _lastUntypedColor != _untypedColor))
                 RefreshRows();
+            if (_cursorDirty)
+                RefreshCursor();
         }
 
         private void OnDisable()
         {
+            ClearInputError();
+            HideCursor();
             if (Rows == null)
                 return;
             foreach (TMP_Text row in Rows)
@@ -109,6 +248,7 @@ namespace Code.TypingLogic
             _lastUntypedColor = _untypedColor;
             for (int i = 0; i < Rows.Length; i++)
                 RenderRow(i);
+            _cursorDirty = true;
         }
 
         private void RenderRow(int slot)
@@ -132,7 +272,8 @@ namespace Code.TypingLogic
                 int typedCount = finishedRow ? original.Length : sourceRow == _currentRow ? _typedCharacterCount : 0;
                 string spriteTag = $"<sprite anim=\"{_firstFrame},{_lastFrame},{_framesPerSecond}\">";
                 label.text = _mask.Build(original, sourceRow, typedCount, _visiblePercent,
-                    spriteTag, _characterWidth, _typedColor, _untypedColor);
+                    spriteTag, _characterWidth, _typedColor, _untypedColor,
+                    sourceRow == _currentRow ? _errorSymbolIndex : -1, _errorColor);
             }
             // Regenerate even if the string is unchanged: animations were stopped above.
             label.havePropertiesChanged = true;

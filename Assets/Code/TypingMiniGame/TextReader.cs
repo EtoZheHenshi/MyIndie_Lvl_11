@@ -11,6 +11,7 @@ namespace Code.TypingLogic
         private readonly List<string> _rows = new List<string>();
 
         public int RowCount => _rows.Count;
+        public int CharacterCount { get; }
 
         public TextReader(int rowMaxLength) : this(LoadText(), rowMaxLength)
         {
@@ -22,6 +23,7 @@ namespace Code.TypingLogic
                 throw new ArgumentOutOfRangeException(nameof(rowMaxLength));
 
             string text = Regex.Replace(originalText ?? string.Empty, @"\s+", " ").Trim();
+            CharacterCount = text.Length > 0 ? text.Length + 1 : 0;
             if (text.Length > 0)
                 SplitTextOnRows(text + " ", rowMaxLength);
         }

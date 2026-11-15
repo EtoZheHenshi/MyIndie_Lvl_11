@@ -13,7 +13,7 @@ namespace Code.TypingLogic
 
         public string Build(string original, int rowIndex, int typedCount,
             float visiblePercent, string spriteTag, float characterWidth,
-            Color typedColor, Color untypedColor)
+            Color typedColor, Color untypedColor, int errorIndex, Color errorColor)
         {
             RowOrder order = GetOrder(original, rowIndex);
             int visibleCount = Mathf.CeilToInt(order.CharacterCount * Mathf.Clamp01(visiblePercent / 100f));
@@ -42,8 +42,12 @@ namespace Code.TypingLogic
                 }
 
                 bool isHidden = !isTyped && order.Ranks[i] >= visibleCount;
+                bool isError = !isTyped && i == errorIndex && char.IsLetter(original, i);
+                if (isError)
+                    result.Append("<color=#").Append(ColorUtility.ToHtmlStringRGBA(errorColor)).Append('>');
                 if (isHidden)
-                    result.Append(spriteTag);
+                    result.Append(isError ? spriteTag.Replace("<sprite ",
+                        "<sprite tint=1 color=#" + ColorUtility.ToHtmlStringRGBA(errorColor) + " ") : spriteTag);
                 else
                 {
                     // Treat original text as literal text, including angle brackets.
@@ -51,6 +55,8 @@ namespace Code.TypingLogic
                     result.Append(original, i, symbolLength);
                     result.Append("</noparse>");
                 }
+                if (isError)
+                    result.Append("</color>");
                 i += symbolLength - 1;
             }
             result.Append("</color></mspace>");
