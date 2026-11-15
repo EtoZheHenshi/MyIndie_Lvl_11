@@ -1,119 +1,145 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class ContentController : MonoBehaviour
 {
-    private Vector2 scrollLimit;
-    
     [SerializeField] private List<GameObject> viralImagePrefabs;
-    private List<GameObject> viralImageInstances = new List<GameObject>();
-    
-    private List<int> targetIndecies = new List<int>();
-    private List<ViralPicture> targetPictures = new List<ViralPicture>();
-    
     [SerializeField] private RectTransform container;
     [SerializeField] private RectTransform leftColumn;
     [SerializeField] private RectTransform rightColumn;
+    [SerializeField, Min(1)] private int likesToFinish = 3;
+    [SerializeField, Min(0f)] private float scrollSpeed = 1f;
 
-    private int likesToFinish = 3;
-    
-    void Start()
+    private readonly List<ViralPicture> _pictures = new List<ViralPicture>();
+    private readonly List<ViralPicture> _targets = new List<ViralPicture>();
+    private Vector2 _initialPosition;
+    private float _maximumScroll;
+    private bool _hasInitialPosition;
+    private bool _layoutPending;
+    private bool _inputEnabled;
+
+    public int RemainingLikes { get; private set; }
+    public bool IsFinished { get; private set; }
+    public event Action GameFinished;
+
+    public void ResetGame()
     {
-        Debug.Log("начадл игры: " + DateTime.Now);
-        
-        SetTargets();
-        Fill();
-        
+        SetInputEnabled(false);
+        ClearPictures();
+        if (viralImagePrefabs == null || viralImagePrefabs.Count == 0)
+            throw new InvalidOperationException("Assign picture prefabs to the lenta content.");
+
+        if (!_hasInitialPosition)
+        {
+            _initialPosition = container.anchoredPosition;
+            _hasInitialPosition = true;
+        }
+        container.anchoredPosition = _initialPosition;
+        IsFinished = false;
+
+        var available = new List<GameObject>(viralImagePrefabs);
+        int leftCount = available.Count / 2;
+        int totalCount = available.Count;
+        for (int i = 0; i < totalCount; i++)
+        {
+            int index = Random.Range(0, available.Count);
+            GameObject prefab = available[index];
+            available.RemoveAt(index);
+            GameObject instance = Instantiate(prefab, i < leftCount ? leftColumn : rightColumn, false);
+            ViralPicture picture = instance.GetComponent<ViralPicture>();
+            if (picture == null)
+                throw new InvalidOperationException($"Picture prefab '{prefab.name}' requires ViralPicture.");
+            picture.SetInputEnabled(false);
+            _pictures.Add(picture);
+        }
+
+        RemainingLikes = Mathf.Min(likesToFinish, _pictures.Count);
+        var candidates = new List<ViralPicture>(_pictures);
+        for (int i = 0; i < RemainingLikes; i++)
+        {
+            int index = Random.Range(0, candidates.Count);
+            ViralPicture target = candidates[index];
+            candidates.RemoveAt(index);
+            target.MakeTarget();
+            target.OnTargetLiked += TargetLiked;
+            _targets.Add(target);
+        }
+        _layoutPending = true;
+    }
+
+    public void SetInputEnabled(bool enabled)
+    {
+        _inputEnabled = enabled && !IsFinished;
+        foreach (ViralPicture picture in _pictures)
+            if (picture != null)
+                picture.SetInputEnabled(_inputEnabled);
+    }
+
+    public void Scroll(float amount)
+    {
+        if (!_inputEnabled || IsFinished || !container.gameObject.activeInHierarchy)
+            return;
+        if (_layoutPending)
+            RefreshLayout();
+        Vector2 position = container.anchoredPosition;
+        position.y = Mathf.Clamp(position.y + amount, _initialPosition.y,
+            _initialPosition.y + _maximumScroll);
+        container.anchoredPosition = position;
+    }
+
+    private void Update()
+    {
+        if (_layoutPending && container.gameObject.activeInHierarchy)
+            RefreshLayout();
+        if (!_inputEnabled || !Application.isFocused || Mouse.current == null)
+            return;
+        Scroll(Mouse.current.scroll.ReadValue().y * scrollSpeed);
+    }
+
+    private void RefreshLayout()
+    {
         Canvas.ForceUpdateCanvases();
-
-        scrollLimit.x = container.localPosition.y - 10;
-        scrollLimit.y = container.localPosition.y + container.rect.height - 10;
-    }
-
-    void Update()
-    {
-        if (Mouse.current ==  null) return;
-
-        float scroll = Mouse.current.scroll.ReadValue().y * 10;
-        
-        if ((scroll > 0 && container.localPosition.y + scroll < scrollLimit.y) ||
-        (scroll < 0 && container.localPosition.y + scroll > scrollLimit.x))
-        {
-            container.localPosition = new Vector2(container.localPosition.x, container.localPosition.y + scroll);
-        }
-    }
-
-    private void Fill()
-    {
-        if (viralImagePrefabs.Count <= 0) return;
-        
-        int leftSize = viralImagePrefabs.Count / 2;
-        int rightSize = viralImagePrefabs.Count - leftSize;
-        
-        for (int i = 0; i < leftSize; i++)
-        {
-            int index = Random.Range(0, viralImagePrefabs.Count);
-            
-            GameObject instance = Instantiate(viralImagePrefabs[index], leftColumn, false);
-            viralImageInstances.Add(instance);
-            
-            viralImagePrefabs.RemoveAt(index);
-        }
-        
-        for (int i = 0; i < rightSize; i++)
-        {
-            int index = Random.Range(0, viralImagePrefabs.Count);
-            
-            GameObject instance = Instantiate(viralImagePrefabs[index], rightColumn, false);
-            viralImageInstances.Add(instance);
-            
-            viralImagePrefabs.RemoveAt(index);
-        }
-        
-        for (int i = 0; i < targetIndecies.Count; i++)
-        {
-            ViralPicture picture = viralImageInstances[i].GetComponent<ViralPicture>();
-            
-            picture.MakeTarget();
-            picture.OnTargetLiked += TargetLiked;
-            
-            targetPictures.Add(picture);
-        }
-    }
-    
-    private void SetTargets()
-    {
-        List<int> numbers = Enumerable.Range(0, viralImagePrefabs.Count).ToList();
-
-        for (int i = 0; i < likesToFinish; i++)
-        {
-            int index = Random.Range(0, numbers.Count);
-            
-            targetIndecies.Add(numbers[index]);
-            
-            numbers.RemoveAt(index);
-        }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(container);
+        var viewport = (RectTransform)container.parent;
+        _maximumScroll = Mathf.Max(0f, container.rect.height - viewport.rect.height);
+        _layoutPending = false;
     }
 
     private void TargetLiked()
     {
-        likesToFinish--;
-        
-        Debug.Log(likesToFinish);
-        
-        if (likesToFinish == 0) Debug.Log("конец игры: " + DateTime.Now);
+        if (!_inputEnabled || IsFinished)
+            return;
+        RemainingLikes--;
+        if (RemainingLikes > 0)
+            return;
+
+        IsFinished = true;
+        SetInputEnabled(false);
+        GameFinished?.Invoke();
     }
 
-    private void OnDisable()
+    private void ClearPictures()
     {
-        foreach (ViralPicture picture in targetPictures)
+        foreach (ViralPicture target in _targets)
+            if (target != null)
+                target.OnTargetLiked -= TargetLiked;
+        _targets.Clear();
+        foreach (ViralPicture picture in _pictures)
         {
-            picture.OnTargetLiked -= TargetLiked;
+            if (picture == null)
+                continue;
+            picture.gameObject.SetActive(false);
+            Destroy(picture.gameObject);
         }
+        _pictures.Clear();
+    }
+
+    private void OnDestroy()
+    {
+        ClearPictures();
     }
 }

@@ -7,27 +7,38 @@ public class ViralPicture : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private GameObject likeView;
     private bool isTarget = false;
+    private bool _inputEnabled;
+    private bool _hasLiked;
     
     public bool IsTarget => isTarget;
 
-    public Action OnTargetLiked;
+    public event Action OnTargetLiked;
 
     public void MakeTarget()
     {
         isTarget = true;
         gameObject.GetComponent<Image>().color = Color.green;
         
-        Debug.Log("hi");
+    }
+
+    public void SetInputEnabled(bool enabled)
+    {
+        _inputEnabled = enabled;
     }
     
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (!_inputEnabled || !isActiveAndEnabled || _hasLiked ||
+            eventData.button != PointerEventData.InputButton.Left)
+            return;
+
+        _hasLiked = true;
         likeView?.SetActive(true);
         
         if (isTarget)
         {
-            OnTargetLiked?.Invoke();
             isTarget = false;
+            OnTargetLiked?.Invoke();
         }
     }
 }
