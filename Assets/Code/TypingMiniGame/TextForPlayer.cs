@@ -11,6 +11,10 @@ namespace Code.TypingLogic
         private int _firstVisibleRowIndex;
 
         public bool IsCompleted => _currentRowIndex >= _textReader.RowCount;
+        public int TypedCharacterCount { get; private set; }
+        public int TotalCharacterCount => _textReader.CharacterCount;
+        public float NormalizedProgress => TotalCharacterCount == 0
+            ? 1f : (float)TypedCharacterCount / TotalCharacterCount;
 
         public TextForPlayer(DisplayText displayText, int rowMaxLength)
             : this(displayText, new TextReader(rowMaxLength))
@@ -39,6 +43,7 @@ namespace Code.TypingLogic
                 return;
 
             _currentSymbolIndex++;
+            TypedCharacterCount++;
             _displayText.SetTypedCharacterCount(_currentSymbolIndex);
             if (_currentSymbolIndex < _textReader.GetRow(_currentRowIndex).Length)
                 return;

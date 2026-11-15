@@ -1,6 +1,5 @@
 using System;
 using Code.Motivation;
-using UnityEngine;
 
 namespace Code.TypingLogic
 {
@@ -8,13 +7,19 @@ namespace Code.TypingLogic
     {
         private readonly TextForPlayer _textForPlayer;
         private readonly MotivationService _motivationService;
+        private readonly DisplayText _displayText;
 
         public event Action CorrectSymbolTyped;
+
+        public int TypedCharacterCount => _textForPlayer.TypedCharacterCount;
+        public int TotalCharacterCount => _textForPlayer.TotalCharacterCount;
+        public float NormalizedProgress => _textForPlayer.NormalizedProgress;
 
         public TextComparer(DisplayText displayText, int rowMaxLength,
             MotivationService motivationService)
         {
             _motivationService = motivationService;
+            _displayText = displayText;
             _textForPlayer = new TextForPlayer(displayText, rowMaxLength);
             if (_textForPlayer.IsCompleted)
                 _motivationService.CompleteTyping();
@@ -35,7 +40,7 @@ namespace Code.TypingLogic
             }
             else
             {
-                Debug.Log("Not comparing symbol");
+                _displayText.ShowInputError();
             }
         }
     }
