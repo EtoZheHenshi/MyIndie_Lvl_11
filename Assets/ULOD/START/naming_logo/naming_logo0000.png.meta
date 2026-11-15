@@ -1,0 +1,2301 @@
+fileFormatVersion: 2
+guid: bf9271aed3390a24b88acc138da62e41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9042100233012613973
+    second: naming_logo0000_0
+  - first:
+      213: 3560127526383753784
+    second: naming_logo0000_1
+  - first:
+      213: 4554820828808385822
+    second: naming_logo0000_2
+  - first:
+      213: -4488054671546848106
+    second: naming_logo0000_3
+  - first:
+      213: 1558744640391431845
+    second: naming_logo0000_4
+  - first:
+      213: -9060041000411424908
+    second: naming_logo0000_5
+  - first:
+      213: 4888460774442172162
+    second: naming_logo0000_6
+  - first:
+      213: -5763364601439389685
+    second: naming_logo0000_7
+  - first:
+      213: 1931318329820185250
+    second: naming_logo0000_8
+  - first:
+      213: -2791909414425082841
+    second: naming_logo0000_9
+  - first:
+      213: 3527710857354269822
+    second: naming_logo0000_10
+  - first:
+      213: -6176236434708112076
+    second: naming_logo0000_11
+  - first:
+      213: 1280352457218818164
+    second: naming_logo0000_12
+  - first:
+      213: 2606949604664280102
+    second: naming_logo0000_13
+  - first:
+      213: 6107871821544127943
+    second: naming_logo0000_14
+  - first:
+      213: -6200784567568727643
+    second: naming_logo0000_15
+  - first:
+      213: -5264012692902151626
+    second: naming_logo0000_16
+  - first:
+      213: -1964952598454945780
+    second: naming_logo0000_17
+  - first:
+      213: -3440184374439669862
+    second: naming_logo0000_18
+  - first:
+      213: -4830977185142943579
+    second: naming_logo0000_19
+  - first:
+      213: 8139508432059543597
+    second: naming_logo0000_20
+  - first:
+      213: 2337488392367270408
+    second: naming_logo0000_21
+  - first:
+      213: -1039354552929075101
+    second: naming_logo0000_22
+  - first:
+      213: -8916731392758613000
+    second: naming_logo0000_23
+  - first:
+      213: -2514664476975490254
+    second: naming_logo0000_24
+  - first:
+      213: -6641657705128598884
+    second: naming_logo0000_25
+  - first:
+      213: 6058669567066781841
+    second: naming_logo0000_26
+  - first:
+      213: 2154927875951586011
+    second: naming_logo0000_27
+  - first:
+      213: -4203968977502227177
+    second: naming_logo0000_28
+  - first:
+      213: -397751231718731815
+    second: naming_logo0000_29
+  - first:
+      213: 2957416857887398495
+    second: naming_logo0000_30
+  - first:
+      213: -465516078578038607
+    second: naming_logo0000_31
+  - first:
+      213: 5913587316098081991
+    second: naming_logo0000_32
+  - first:
+      213: -7772999901846512254
+    second: naming_logo0000_33
+  - first:
+      213: 722983096453609607
+    second: naming_logo0000_34
+  - first:
+      213: -7652018370221851031
+    second: naming_logo0000_35
+  - first:
+      213: -7356472050826672370
+    second: naming_logo0000_36
+  - first:
+      213: -244504893103107131
+    second: naming_logo0000_37
+  - first:
+      213: 3283863441652912516
+    second: naming_logo0000_38
+  - first:
+      213: 2100533184839918961
+    second: naming_logo0000_39
+  - first:
+      213: -754299923401171435
+    second: naming_logo0000_40
+  - first:
+      213: 1789282547009727964
+    second: naming_logo0000_41
+  - first:
+      213: -69042387855835571
+    second: naming_logo0000_42
+  - first:
+      213: 2209913945525172917
+    second: naming_logo0000_43
+  - first:
+      213: -7988003684979875502
+    second: naming_logo0000_44
+  - first:
+      213: -1451958299962016566
+    second: naming_logo0000_45
+  - first:
+      213: 3421575752668034420
+    second: naming_logo0000_46
+  - first:
+      213: -6867054955012776905
+    second: naming_logo0000_47
+  - first:
+      213: -4521992122082042546
+    second: naming_logo0000_48
+  - first:
+      213: 4464506978765036773
+    second: naming_logo0000_49
+  - first:
+      213: 4309751971396460179
+    second: naming_logo0000_50
+  - first:
+      213: -6551344820097356741
+    second: naming_logo0000_51
+  - first:
+      213: -5970058052556253289
+    second: naming_logo0000_52
+  - first:
+      213: 2559600122246877257
+    second: naming_logo0000_53
+  - first:
+      213: -9100223540277415137
+    second: naming_logo0000_54
+  - first:
+      213: -7577124405266870027
+    second: naming_logo0000_55
+  - first:
+      213: 5367936935709611126
+    second: naming_logo0000_56
+  - first:
+      213: -3175434669150298643
+    second: naming_logo0000_57
+  - first:
+      213: 8311119777579573635
+    second: naming_logo0000_58
+  - first:
+      213: -3186677603301406710
+    second: naming_logo0000_59
+  - first:
+      213: 6233645043776393198
+    second: naming_logo0000_60
+  - first:
+      213: 6523249960728494627
+    second: naming_logo0000_61
+  - first:
+      213: 5256465497941691292
+    second: naming_logo0000_62
+  - first:
+      213: -9221981648556001846
+    second: naming_logo0000_63
+  - first:
+      213: 1014924860973075179
+    second: naming_logo0000_64
+  - first:
+      213: -1852658638475668777
+    second: naming_logo0000_65
+  - first:
+      213: -8221966441346722380
+    second: naming_logo0000_66
+  - first:
+      213: -5787574550168059677
+    second: naming_logo0000_67
+  - first:
+      213: -815640064448119485
+    second: naming_logo0000_68
+  - first:
+      213: -5636277751870766986
+    second: naming_logo0000_69
+  - first:
+      213: -1118504749194579197
+    second: naming_logo0000_70
+  - first:
+      213: 8993181455001590237
+    second: naming_logo0000_71
+  - first:
+      213: 2203033904418986107
+    second: naming_logo0000_72
+  - first:
+      213: -6583607371416810695
+    second: naming_logo0000_73
+  - first:
+      213: 3122602348379164410
+    second: naming_logo0000_74
+  - first:
+      213: 8463002349753510796
+    second: naming_logo0000_75
+  - first:
+      213: 5651714167441809721
+    second: naming_logo0000_76
+  - first:
+      213: 5808929197927671738
+    second: naming_logo0000_77
+  - first:
+      213: -2202335770320066508
+    second: naming_logo0000_78
+  - first:
+      213: 5710352640214125187
+    second: naming_logo0000_79
+  - first:
+      213: -3495306455648497095
+    second: naming_logo0000_80
+  - first:
+      213: -8209171474357191719
+    second: naming_logo0000_81
+  - first:
+      213: 1129725864472536494
+    second: naming_logo0000_82
+  - first:
+      213: 18118265231936846
+    second: naming_logo0000_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: naming_logo0000_0
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 818
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553913c314efb7d70800000000000000
+      internalID: 9042100233012613973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 825
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a91357f1d186130800000000000000
+      internalID: 3560127526383753784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 830
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e159cac4969f53f30800000000000000
+      internalID: 4554820828808385822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 838
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ceae11e0a37b1c0800000000000000
+      internalID: -4488054671546848106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 813
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6431aedf5c1a510800000000000000
+      internalID: 1558744640391431845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 820
+        width: 184
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477900856b4444280800000000000000
+      internalID: -9060041000411424908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_6
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 799
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f7e079c2d47d340800000000000000
+      internalID: 4888460774442172162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 817
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08f42c3e6a6400b0800000000000000
+      internalID: -5763364601439389685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_8
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 827
+        width: 78
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a20225d9cb6dca10800000000000000
+      internalID: 1931318329820185250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_9
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 845
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724cf140e252149d0800000000000000
+      internalID: -2791909414425082841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_10
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 846
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74d3ea8552f4f030800000000000000
+      internalID: 3527710857354269822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 763
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dd56c8fa9994aa0800000000000000
+      internalID: -6176236434708112076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 781
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47083d7b6c9b4c110800000000000000
+      internalID: 1280352457218818164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 789
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6240c5d6adebd2420800000000000000
+      internalID: 2606949604664280102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_14
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 793
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd71c09f0583c450800000000000000
+      internalID: 6107871821544127943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 786
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a18759f94362f9a0800000000000000
+      internalID: -6200784567568727643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 810
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a7b62885872f6b0800000000000000
+      internalID: -5264012692902151626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 769
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08bc90c5061bb4e0800000000000000
+      internalID: -1964952598454945780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_18
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 780
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f8cafc9820240d0800000000000000
+      internalID: -3440184374439669862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_19
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 781
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0d98188dbe4fcb0800000000000000
+      internalID: -4830977185142943579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_20
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 797
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20b4334bc755f070800000000000000
+      internalID: 8139508432059543597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_21
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 762
+        width: 125
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a66adee4d607020800000000000000
+      internalID: 2337488392367270408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_22
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 792
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3604af47a887391f0800000000000000
+      internalID: -1039354552929075101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 719
+        width: 138
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb7c098a08614480800000000000000
+      internalID: -8916731392758613000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_24
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 752
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b15904bfd1a1dd0800000000000000
+      internalID: -2514664476975490254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_25
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 761
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92e216918714d3a0800000000000000
+      internalID: -6641657705128598884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_26
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 728
+        width: 75
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1983c7cfed7b41450800000000000000
+      internalID: 6058669567066781841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_27
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 740
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda6ea26c77d7ed10800000000000000
+      internalID: 2154927875951586011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_28
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 714
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715b7311d7088a5c0800000000000000
+      internalID: -4203968977502227177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_29
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 726
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df4e64bc57ea7af0800000000000000
+      internalID: -397751231718731815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_30
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 711
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a512396fada0920800000000000000
+      internalID: 2957416857887398495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_31
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 730
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b88f1bc7972a89f0800000000000000
+      internalID: -465516078578038607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_32
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 678
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4284c1558411250800000000000000
+      internalID: 5913587316098081991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_33
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 677
+        width: 155
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28dda4bb5c1c02490800000000000000
+      internalID: -7772999901846512254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 726
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788bab2bb4d880a00800000000000000
+      internalID: 722983096453609607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_35
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 705
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96eb92c95d19ec590800000000000000
+      internalID: -7652018370221851031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_36
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 722
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07036265af88e990800000000000000
+      internalID: -7356472050826672370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_37
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 675
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c39ebc58185b9cf0800000000000000
+      internalID: -244504893103107131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_38
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 684
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4811d9ac660a29d20800000000000000
+      internalID: 3283863441652912516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_39
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 689
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175ad417dc7962d10800000000000000
+      internalID: 2100533184839918961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_40
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 678
+        width: 80
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e919357303885f0800000000000000
+      internalID: -754299923401171435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_41
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 626
+        width: 93
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd22591ffec4d810800000000000000
+      internalID: 1789282547009727964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_42
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 583
+        width: 74
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e78656056ba0ff0800000000000000
+      internalID: -69042387855835571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_43
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 636
+        width: 101
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bab53b56013bae10800000000000000
+      internalID: 2209913945525172917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_44
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 661
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251634488f8e42190800000000000000
+      internalID: -7988003684979875502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_45
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 650
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc75167e9b99dbe0800000000000000
+      internalID: -1451958299962016566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_46
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 642
+        width: 82
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4753eddc401eb7f20800000000000000
+      internalID: 3421575752668034420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_47
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 661
+        width: 82
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c9061d6e153b0a0800000000000000
+      internalID: -6867054955012776905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_48
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 681
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d5f2e9f18ae31c0800000000000000
+      internalID: -4521992122082042546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_49
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 638
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecda86717d15fd30800000000000000
+      internalID: 4464506978765036773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_50
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 656
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e102d75905fcb30800000000000000
+      internalID: 4309751971396460179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_51
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 668
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c600db892f415a0800000000000000
+      internalID: -6551344820097356741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_52
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 519
+        width: 169
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7979ce8f4d7162da0800000000000000
+      internalID: -5970058052556253289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_53
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 576
+        width: 72
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9405295ffb6858320800000000000000
+      internalID: 2559600122246877257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_54
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13fd19b7e285b180800000000000000
+      internalID: -9100223540277415137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_55
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 620
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0102daf75a8d690800000000000000
+      internalID: -7577124405266870027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_56
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 578
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6749ba5d33ebe7a40800000000000000
+      internalID: 5367936935709611126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_57
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 529
+        width: 107
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded16d91ef69ee3d0800000000000000
+      internalID: -3175434669150298643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_58
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 587
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381aa5c4767075370800000000000000
+      internalID: 8311119777579573635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_59
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 600
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08c6818a95a6c3d0800000000000000
+      internalID: -3186677603301406710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_60
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 605
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef8a2ad32b528650800000000000000
+      internalID: 6233645043776393198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_61
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 608
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3228d42174d378a50800000000000000
+      internalID: 6523249960728494627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_62
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 559
+        width: 111
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b49ea3587b2f840800000000000000
+      internalID: 5256465497941691292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_63
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 586
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5f5a00d80f40080800000000000000
+      internalID: -9221981648556001846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_64
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 584
+        width: 78
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea4304a8ccb51e00800000000000000
+      internalID: 1014924860973075179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_65
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 611
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2599bb8c80a46e0800000000000000
+      internalID: -1852658638475668777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_66
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 548
+        width: 270
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5985c5515b5ed80800000000000000
+      internalID: -8221966441346722380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_67
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 565
+        width: 73
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0442a4c976eafa0800000000000000
+      internalID: -5787574550168059677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_68
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 515
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d3efdcea34ea4f0800000000000000
+      internalID: -815640064448119485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_69
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 533
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6704e483f3be7c1b0800000000000000
+      internalID: -5636277751870766986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_70
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 544
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3037ba05bd54a70f0800000000000000
+      internalID: -1118504749194579197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_71
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 541
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9100aa2e23ecc70800000000000000
+      internalID: 8993181455001590237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_72
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 520
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b781905f9afb29e10800000000000000
+      internalID: 2203033904418986107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_73
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 531
+        width: 89
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bce062af352a4a0800000000000000
+      internalID: -6583607371416810695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_74
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 553
+        width: 157
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afec0f5aa46b55b20800000000000000
+      internalID: 3122602348379164410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_75
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 487
+        width: 107
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8baa565ccf927570800000000000000
+      internalID: 8463002349753510796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_76
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 508
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931696a571cee6e40800000000000000
+      internalID: 5651714167441809721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_77
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 471
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7afd714567d9050800000000000000
+      internalID: 5808929197927671738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_78
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 485
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438afed094bbf61e0800000000000000
+      internalID: -2202335770320066508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_79
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 485
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a4d26b87f3f3f40800000000000000
+      internalID: 5710352640214125187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_80
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 488
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93211f92c4d2e7fc0800000000000000
+      internalID: -3495306455648497095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_81
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 510
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db7ba2c90a231e80800000000000000
+      internalID: -8209171474357191719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_82
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 451
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5e47d20b79daf00800000000000000
+      internalID: 1129725864472536494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naming_logo0000_83
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 462
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d881b577e504000800000000000000
+      internalID: 18118265231936846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      naming_logo0000_0: 9042100233012613973
+      naming_logo0000_1: 3560127526383753784
+      naming_logo0000_10: 3527710857354269822
+      naming_logo0000_11: -6176236434708112076
+      naming_logo0000_12: 1280352457218818164
+      naming_logo0000_13: 2606949604664280102
+      naming_logo0000_14: 6107871821544127943
+      naming_logo0000_15: -6200784567568727643
+      naming_logo0000_16: -5264012692902151626
+      naming_logo0000_17: -1964952598454945780
+      naming_logo0000_18: -3440184374439669862
+      naming_logo0000_19: -4830977185142943579
+      naming_logo0000_2: 4554820828808385822
+      naming_logo0000_20: 8139508432059543597
+      naming_logo0000_21: 2337488392367270408
+      naming_logo0000_22: -1039354552929075101
+      naming_logo0000_23: -8916731392758613000
+      naming_logo0000_24: -2514664476975490254
+      naming_logo0000_25: -6641657705128598884
+      naming_logo0000_26: 6058669567066781841
+      naming_logo0000_27: 2154927875951586011
+      naming_logo0000_28: -4203968977502227177
+      naming_logo0000_29: -397751231718731815
+      naming_logo0000_3: -4488054671546848106
+      naming_logo0000_30: 2957416857887398495
+      naming_logo0000_31: -465516078578038607
+      naming_logo0000_32: 5913587316098081991
+      naming_logo0000_33: -7772999901846512254
+      naming_logo0000_34: 722983096453609607
+      naming_logo0000_35: -7652018370221851031
+      naming_logo0000_36: -7356472050826672370
+      naming_logo0000_37: -244504893103107131
+      naming_logo0000_38: 3283863441652912516
+      naming_logo0000_39: 2100533184839918961
+      naming_logo0000_4: 1558744640391431845
+      naming_logo0000_40: -754299923401171435
+      naming_logo0000_41: 1789282547009727964
+      naming_logo0000_42: -69042387855835571
+      naming_logo0000_43: 2209913945525172917
+      naming_logo0000_44: -7988003684979875502
+      naming_logo0000_45: -1451958299962016566
+      naming_logo0000_46: 3421575752668034420
+      naming_logo0000_47: -6867054955012776905
+      naming_logo0000_48: -4521992122082042546
+      naming_logo0000_49: 4464506978765036773
+      naming_logo0000_5: -9060041000411424908
+      naming_logo0000_50: 4309751971396460179
+      naming_logo0000_51: -6551344820097356741
+      naming_logo0000_52: -5970058052556253289
+      naming_logo0000_53: 2559600122246877257
+      naming_logo0000_54: -9100223540277415137
+      naming_logo0000_55: -7577124405266870027
+      naming_logo0000_56: 5367936935709611126
+      naming_logo0000_57: -3175434669150298643
+      naming_logo0000_58: 8311119777579573635
+      naming_logo0000_59: -3186677603301406710
+      naming_logo0000_6: 4888460774442172162
+      naming_logo0000_60: 6233645043776393198
+      naming_logo0000_61: 6523249960728494627
+      naming_logo0000_62: 5256465497941691292
+      naming_logo0000_63: -9221981648556001846
+      naming_logo0000_64: 1014924860973075179
+      naming_logo0000_65: -1852658638475668777
+      naming_logo0000_66: -8221966441346722380
+      naming_logo0000_67: -5787574550168059677
+      naming_logo0000_68: -815640064448119485
+      naming_logo0000_69: -5636277751870766986
+      naming_logo0000_7: -5763364601439389685
+      naming_logo0000_70: -1118504749194579197
+      naming_logo0000_71: 8993181455001590237
+      naming_logo0000_72: 2203033904418986107
+      naming_logo0000_73: -6583607371416810695
+      naming_logo0000_74: 3122602348379164410
+      naming_logo0000_75: 8463002349753510796
+      naming_logo0000_76: 5651714167441809721
+      naming_logo0000_77: 5808929197927671738
+      naming_logo0000_78: -2202335770320066508
+      naming_logo0000_79: 5710352640214125187
+      naming_logo0000_8: 1931318329820185250
+      naming_logo0000_80: -3495306455648497095
+      naming_logo0000_81: -8209171474357191719
+      naming_logo0000_82: 1129725864472536494
+      naming_logo0000_83: 18118265231936846
+      naming_logo0000_9: -2791909414425082841
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
