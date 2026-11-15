@@ -11,14 +11,20 @@ public class ViralPicture : MonoBehaviour, IPointerDownHandler
     private bool _hasLiked;
     
     public bool IsTarget => isTarget;
+    public Sprite Sprite => GetComponent<Image>().sprite;
 
     public event Action OnTargetLiked;
+
+    private void Awake()
+    {
+        GetComponent<Image>().color = Color.white;
+        if (likeView != null)
+            likeView.SetActive(false);
+    }
 
     public void MakeTarget()
     {
         isTarget = true;
-        gameObject.GetComponent<Image>().color = Color.green;
-        
     }
 
     public void SetInputEnabled(bool enabled)

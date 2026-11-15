@@ -8,6 +8,12 @@ namespace Code.Infrastructure.Installers
         public override void InstallBindings()
         {
             BindAudioService();
+            BindSceneNavigationService();
+        }
+
+        private void BindSceneNavigationService()
+        {
+            Container.Bind<SceneNavigationService>().AsSingle();
         }
 
         private void BindAudioService()

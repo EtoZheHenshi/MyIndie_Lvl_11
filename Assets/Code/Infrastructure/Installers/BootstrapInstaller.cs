@@ -1,11 +1,16 @@
-using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace Code.Infrastructure.Installers
 {
     public class BootstrapInstaller : MonoInstaller, IInitializable
     {
-        public string FirstSceneName;
+        private SceneNavigationService _navigation;
+
+        [Inject]
+        public void Construct(SceneNavigationService navigation)
+        {
+            _navigation = navigation;
+        }
 
         public override void InstallBindings()
         {
@@ -17,7 +22,7 @@ namespace Code.Infrastructure.Installers
 
         public void Initialize()
         {
-            SceneManager.LoadScene(FirstSceneName);
+            _navigation.OpenMenu();
         }
     }
 }
