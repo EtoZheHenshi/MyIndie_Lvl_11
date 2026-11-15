@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8804050539958709422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7819038516076700106}
+  - component: {fileID: 8887192154447827893}
+  m_Layer: 0
+  m_Name: ActivityTaskSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7819038516076700106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804050539958709422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8887192154447827893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804050539958709422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac4719b001123a4382dd64cc31e5c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.ActivityTasks.ActivityTaskService
+  _coordinator: {fileID: 0}
+  _typingWindow: {fileID: 0}
+  _pauseService: {fileID: 0}
+  _motivationService: {fileID: 0}
+  _minimumInterval: 20
+  _maximumInterval: 40
+  _activities:
+  - _title: "\u0421\u044D\u043D\u0434\u0432\u0438\u0447"
+    _window: {fileID: 0}
+    _color: {r: 1, g: 0.67, b: 0.24, a: 1}
+    _icon: {fileID: 21300000, guid: 796bcf69efed11040ab3f94b826fb110, type: 3}
+    _iconAnimation: {fileID: 9100000, guid: d680eec0a686d5a45b3f5dbd6a78603f, type: 2}
+    _startDeadline: 20
+    _motivationLossPerSecond: 2
+    _forceStart: 0
+    _forcedStartDelay: 1.5
+  - _title: "\u041B\u0435\u043D\u0442\u0430"
+    _window: {fileID: 0}
+    _color: {r: 0.35, g: 0.75, b: 1, a: 1}
+    _icon: {fileID: 21300000, guid: f4f82698fb709dd4d8c445dab1c351eb, type: 3}
+    _iconAnimation: {fileID: 9100000, guid: 834dd9c61c3d79d419f9cd1a07977263, type: 2}
+    _startDeadline: 20
+    _motivationLossPerSecond: 2
+    _forceStart: 0
+    _forcedStartDelay: 1.5
+  - _title: "\u041C\u0430\u043C\u0430"
+    _window: {fileID: 0}
+    _color: {r: 1, g: 0.45, b: 0.72, a: 1}
+    _icon: {fileID: 21300000, guid: b4c28cfb2dd8e654eb882bf381a791a1, type: 3}
+    _iconAnimation: {fileID: 9100000, guid: 5797831cec2b6f041872da141dae89bc, type: 2}
+    _startDeadline: 20
+    _motivationLossPerSecond: 0
+    _forceStart: 1
+    _forcedStartDelay: 1.5
+  - _title: "\u041F\u0440\u043E\u0433\u0443\u043B\u043A\u0430"
+    _window: {fileID: 0}
+    _color: {r: 0.55, g: 0.9, b: 0.43, a: 1}
+    _icon: {fileID: 21300000, guid: 5f42fb112732fff498e6b030b5a679a2, type: 3}
+    _iconAnimation: {fileID: 9100000, guid: f5648e88a33269a4bac300ee04362041, type: 2}
+    _startDeadline: 20
+    _motivationLossPerSecond: 2
+    _forceStart: 0
+    _forcedStartDelay: 1.5
+  _safeSymbolCount: 120
+  _chanceIncreasePercent: 2
+  _safeSymbolsAfterRandomNotification: 20
