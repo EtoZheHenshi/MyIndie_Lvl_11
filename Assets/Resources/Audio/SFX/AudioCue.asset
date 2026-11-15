@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313cc20409a43d64ab09950fa97f2b2e, type: 3}
   m_Name: AudioCue
   m_EditorClassIdentifier: Assembly-CSharp::Code.Audio.AudioCue
+  _clips: []
   _clip: {fileID: 0}
   _description: 
   _volume: 1

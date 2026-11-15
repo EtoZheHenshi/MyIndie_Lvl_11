@@ -10,6 +10,7 @@ namespace Code.MiniGames
         [SerializeField] private MiniGameCoordinator _coordinator;
         [SerializeField] private Button _openButton;
         [SerializeField] private Button _closeButton;
+        [SerializeField] private GameObject[] _activityVisuals = new GameObject[0];
 
         public bool IsOpen { get; private set; }
 
@@ -17,6 +18,7 @@ namespace Code.MiniGames
         {
             SetInputEnabled(false);
             _panel.SetActive(false);
+            SetActivityVisuals(false);
         }
 
         protected virtual void OnEnable()
@@ -45,6 +47,7 @@ namespace Code.MiniGames
             OnBeforeShow();
 
             _panel.SetActive(true);
+            SetActivityVisuals(true);
             IsOpen = true;
             SetInputEnabled(true);
         }
@@ -53,6 +56,7 @@ namespace Code.MiniGames
         {
             SetInputEnabled(false);
             IsOpen = false;
+            SetActivityVisuals(false);
             if (_panel != null)
                 _panel.SetActive(false);
         }
@@ -61,6 +65,13 @@ namespace Code.MiniGames
         {
             if (_input != null)
                 _input.enabled = IsOpen && enabled;
+        }
+
+        private void SetActivityVisuals(bool visible)
+        {
+            foreach (GameObject visual in _activityVisuals)
+                if (visual != null)
+                    visual.SetActive(visible);
         }
 
         private void RequestOpen()

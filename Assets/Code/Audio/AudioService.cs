@@ -51,7 +51,7 @@ namespace Code.Audio
 
         public AudioHandle Play(AudioCue cue)
         {
-            return Validate(cue) ? CreateVoice(cue, false) : null;
+            return Validate(cue, out AudioClip clip) ? CreateVoice(cue, clip, false) : null;
         }
 
         public AudioHandle PlayMusic(string path)
@@ -62,10 +62,10 @@ namespace Code.Audio
 
         public AudioHandle PlayMusic(AudioCue cue)
         {
-            if (!Validate(cue))
+            if (!Validate(cue, out AudioClip clip))
                 return null;
             StopMusic();
-            _currentMusic = CreateVoice(cue, true);
+            _currentMusic = CreateVoice(cue, clip, true);
             return _currentMusic;
         }
 
@@ -77,7 +77,7 @@ namespace Code.Audio
 
         public AudioHandle PushMusic(AudioCue cue)
         {
-            if (!Validate(cue))
+            if (!Validate(cue, out AudioClip clip))
                 return null;
             if (TryGetVoice(_currentMusic, out Voice current))
             {
@@ -85,7 +85,7 @@ namespace Code.Audio
                 RefreshPause(current);
             }
             _musicStack.Push(_currentMusic);
-            _currentMusic = CreateVoice(cue, true);
+            _currentMusic = CreateVoice(cue, clip, true);
             return _currentMusic;
         }
 
@@ -212,7 +212,7 @@ namespace Code.Audio
             _finished.Clear();
         }
 
-        private AudioHandle CreateVoice(AudioCue cue, bool music)
+        private AudioHandle CreateVoice(AudioCue cue, AudioClip clip, bool music)
         {
             AudioSource source;
             if (_sourcePool.Count > 0)
@@ -228,13 +228,13 @@ namespace Code.Audio
             }
             source.gameObject.name = cue.name;
             source.gameObject.SetActive(true);
-            source.clip = cue.Clip;
+            source.clip = clip;
             source.loop = cue.Loop;
             source.pitch = cue.GetPitch();
             source.outputAudioMixerGroup = cue.OutputGroup;
             source.ignoreListenerPause = cue.IgnoreGamePause;
-            if (cue.Clip.loadState == AudioDataLoadState.Unloaded)
-                cue.Clip.LoadAudioData();
+            if (clip.loadState == AudioDataLoadState.Unloaded)
+                clip.LoadAudioData();
 
             var handle = new AudioHandle(this);
             var voice = new Voice
@@ -251,16 +251,18 @@ namespace Code.Audio
             return handle;
         }
 
-        private bool Validate(AudioCue cue)
+        private bool Validate(AudioCue cue, out AudioClip clip)
         {
+            clip = null;
             if (cue == null)
             {
                 Debug.LogError("Audio cue is not assigned.", this);
                 return false;
             }
-            if (cue.Clip != null)
+            clip = cue.GetClip();
+            if (clip != null)
                 return true;
-            Debug.LogError($"Audio cue '{cue.name}' has no AudioClip assigned.", cue);
+            Debug.LogError($"Audio cue '{cue.name}' has no AudioClips assigned.", cue);
             return false;
         }
 
@@ -325,13 +327,13 @@ namespace Code.Audio
                 }
                 if (voice.Paused)
                     continue;
-                if (voice.Cue.Clip.loadState == AudioDataLoadState.Failed)
+                if (voice.Source.clip.loadState == AudioDataLoadState.Failed)
                 {
                     Debug.LogError($"Failed to load audio clip for '{voice.Cue.name}'.", voice.Cue);
                     _finished.Add(pair.Key);
                 }
                 else if (Time.unscaledTime >= voice.CleanupAfter &&
-                    voice.Cue.Clip.loadState == AudioDataLoadState.Loaded && !voice.Source.isPlaying)
+                    voice.Source.clip.loadState == AudioDataLoadState.Loaded && !voice.Source.isPlaying)
                     _finished.Add(pair.Key);
             }
             foreach (AudioHandle handle in _finished)

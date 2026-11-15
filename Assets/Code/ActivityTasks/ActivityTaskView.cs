@@ -7,6 +7,7 @@ namespace Code.ActivityTasks
     public class ActivityTaskView : MonoBehaviour
     {
         [SerializeField] private Image _icon;
+        [SerializeField] private Animator _iconAnimator;
         [SerializeField] private Image _timerFill;
         [SerializeField] private TMP_Text _statusText;
         [SerializeField] private TMP_Text _titleText;
@@ -16,7 +17,13 @@ namespace Code.ActivityTasks
         public void Initialize(ActivityTaskState task)
         {
             _task = task;
-            _icon.color = task.Definition.Color;
+            _icon.sprite = task.Definition.Icon;
+            _icon.color = task.Definition.Icon != null ? Color.white : task.Definition.Color;
+            if (_iconAnimator != null)
+            {
+                _iconAnimator.runtimeAnimatorController = task.Definition.IconAnimation;
+                _iconAnimator.enabled = task.Definition.IconAnimation != null;
+            }
             _titleText.text = task.Definition.Title;
             Refresh();
         }
