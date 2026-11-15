@@ -15,6 +15,7 @@ namespace Code.Motivation
         [Header("Motivation")]
         [SerializeField, Range(1f, 100f)] private float _startValue = 100f;
         [SerializeField, Min(0f)] private float _gainPerSecond = 2f;
+        [SerializeField, Min(0f)] private float _gainPerCorrectSymbol = 0.1f;
         [SerializeField, Min(0f)] private float _lossPerSecond = 1f;
 
         [Header("Text visibility")]
@@ -49,6 +50,14 @@ namespace Code.Motivation
             SetValue(Value + (changePerSecond - AdditionalLossPerSecond) * Time.deltaTime);
             // Also apply Inspector changes to the visibility limit in Play Mode.
             RefreshVisibility();
+        }
+
+        public void RewardCorrectSymbol()
+        {
+            if (IsDepleted || IsTypingCompleted || _pauseService.IsPaused || !_typingWindow.IsOpen)
+                return;
+
+            SetValue(Value + Mathf.Max(0f, _gainPerCorrectSymbol));
         }
 
         public void CompleteTyping()

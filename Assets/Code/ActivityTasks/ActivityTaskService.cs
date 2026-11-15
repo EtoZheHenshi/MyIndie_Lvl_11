@@ -54,6 +54,9 @@ namespace Code.ActivityTasks
         {
             Subscribe();
             RefreshDebuffs();
+            foreach (ActivityTaskState task in _activeTasks)
+                if (task.Definition.ForceStart && !task.HasStarted)
+                    _coordinator.OpenForced(task.Definition.Window, task.Definition.ForcedStartDelay);
         }
 
         private void Start()
@@ -99,7 +102,8 @@ namespace Code.ActivityTasks
 
             // Deadlines keep running in other activities; only the next-notification
             // timer stops there. Typing never stops either timer.
-            if (!_coordinator.HasOpenWindow || _coordinator.CurrentWindow == _typingWindow)
+            if (!_coordinator.IsOpeningForcedWindow &&
+                (!_coordinator.HasOpenWindow || _coordinator.CurrentWindow == _typingWindow))
             {
                 NextNotificationRemaining = Mathf.Max(0f, NextNotificationRemaining - deltaTime);
                 if (NextNotificationRemaining <= 0f)
@@ -118,6 +122,7 @@ namespace Code.ActivityTasks
         {
             if (!_initialized || _pauseService.IsPaused ||
                 _motivationService.IsTypingCompleted || _motivationService.IsDepleted ||
+                _coordinator.IsOpeningForcedWindow ||
                 _coordinator.CurrentWindow != _typingWindow)
                 return;
 
@@ -146,6 +151,9 @@ namespace Code.ActivityTasks
 
         private bool TryCreateTask()
         {
+            if (_coordinator.IsOpeningForcedWindow)
+                return false;
+
             _candidates.Clear();
             if (_firstCycle.Count > 0)
             {
@@ -171,6 +179,8 @@ namespace Code.ActivityTasks
                 return false;
 
             ActivityTaskDefinition selected = _candidates[UnityEngine.Random.Range(0, _candidates.Count)];
+            if (selected.ForceStart && !_coordinator.OpenForced(selected.Window, selected.ForcedStartDelay))
+                return false;
             _firstCycle.Remove(selected);
             _activeTasks.Add(new ActivityTaskState(selected));
             TasksChanged?.Invoke();
@@ -239,6 +249,8 @@ namespace Code.ActivityTasks
 
         private void OnDisable()
         {
+            if (_coordinator != null)
+                _coordinator.CancelForcedOpen();
             if (_isSubscribed)
             {
                 if (_coordinator != null)
