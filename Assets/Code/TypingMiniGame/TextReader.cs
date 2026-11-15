@@ -7,7 +7,7 @@ namespace Code.TypingLogic
 {
     public class TextReader
     {
-        private const string TextPath = "TypingMiniGame/Textes/text1200";
+        private const string TextPath = "TypingMiniGame/Textes/text900";
         private readonly List<string> _rows = new List<string>();
 
         public int RowCount => _rows.Count;

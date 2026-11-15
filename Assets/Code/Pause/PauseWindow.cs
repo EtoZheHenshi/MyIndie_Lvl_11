@@ -11,6 +11,13 @@ namespace Code.Pause
         [SerializeField] private Animator _buttonAnimator;
         [SerializeField] private RuntimeAnimatorController _pauseAnimation;
         [SerializeField] private RuntimeAnimatorController _playAnimation;
+        private bool _settingsOpen;
+
+        public void SetSettingsOpen(bool open)
+        {
+            _settingsOpen = open;
+            OnPauseChanged(_pauseService.IsPaused);
+        }
 
         private void OnEnable()
         {
@@ -34,7 +41,7 @@ namespace Code.Pause
 
         private void TogglePause()
         {
-            if (_pauseService.IsSessionEnded ||
+            if (_settingsOpen || _pauseService.IsSessionEnded ||
                 (_pauseService.IsPaused && !_pauseService.ShowPauseMenu))
                 return;
             if (_pauseService.IsPaused)
@@ -46,9 +53,9 @@ namespace Code.Pause
         private void OnPauseChanged(bool isPaused)
         {
             bool sessionEnded = _pauseService.IsSessionEnded;
-            _panel.SetActive(isPaused && _pauseService.ShowPauseMenu && !sessionEnded);
+            _panel.SetActive(isPaused && _pauseService.ShowPauseMenu && !sessionEnded && !_settingsOpen);
             _pauseButton.gameObject.SetActive(!sessionEnded);
-            _pauseButton.interactable = !isPaused || _pauseService.ShowPauseMenu;
+            _pauseButton.interactable = !_settingsOpen && (!isPaused || _pauseService.ShowPauseMenu);
             _buttonAnimator.runtimeAnimatorController = isPaused ? _playAnimation : _pauseAnimation;
         }
     }

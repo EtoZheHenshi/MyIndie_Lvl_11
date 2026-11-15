@@ -20,6 +20,8 @@ namespace Code.Audio
         public bool IsGloballyPaused { get; private set; }
         public bool IsMuted { get; private set; }
         public int ActiveVoiceCount => _voices.Count;
+        public float SoundVolume => _soundVolume;
+        public float MusicVolume => _musicVolume;
         public AudioHandle CurrentMusic => IsValid(_currentMusic) ? _currentMusic : null;
 
         public AudioCue GetCue(string path)
@@ -51,7 +53,7 @@ namespace Code.Audio
 
         public AudioHandle Play(AudioCue cue)
         {
-            return Validate(cue, out AudioClip clip) ? CreateVoice(cue, clip, false) : null;
+            return Validate(cue, out AudioClip clip) ? CreateVoice(cue, clip) : null;
         }
 
         public AudioHandle PlayMusic(string path)
@@ -65,7 +67,7 @@ namespace Code.Audio
             if (!Validate(cue, out AudioClip clip))
                 return null;
             StopMusic();
-            _currentMusic = CreateVoice(cue, clip, true);
+            _currentMusic = CreateVoice(cue, clip);
             return _currentMusic;
         }
 
@@ -85,7 +87,7 @@ namespace Code.Audio
                 RefreshPause(current);
             }
             _musicStack.Push(_currentMusic);
-            _currentMusic = CreateVoice(cue, clip, true);
+            _currentMusic = CreateVoice(cue, clip);
             return _currentMusic;
         }
 
@@ -212,7 +214,7 @@ namespace Code.Audio
             _finished.Clear();
         }
 
-        private AudioHandle CreateVoice(AudioCue cue, AudioClip clip, bool music)
+        private AudioHandle CreateVoice(AudioCue cue, AudioClip clip)
         {
             AudioSource source;
             if (_sourcePool.Count > 0)
@@ -241,7 +243,6 @@ namespace Code.Audio
             {
                 Source = source,
                 Cue = cue,
-                Music = music,
                 CleanupAfter = Time.unscaledTime + 0.1f
             };
             _voices.Add(handle, voice);
@@ -294,7 +295,7 @@ namespace Code.Audio
         private void RefreshVolume(Voice voice)
         {
             voice.Source.volume = voice.Cue.Volume * _masterVolume *
-                (voice.Music ? _musicVolume : _soundVolume);
+                (voice.Source.loop ? _musicVolume : _soundVolume);
             voice.Source.mute = IsMuted;
         }
 
@@ -353,7 +354,6 @@ namespace Code.Audio
         {
             public AudioSource Source;
             public AudioCue Cue;
-            public bool Music;
             public bool ManuallyPaused;
             public bool Suspended;
             public bool Paused;
