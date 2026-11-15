@@ -22,7 +22,8 @@ namespace Code.MiniGames
         protected virtual void OnEnable()
         {
             _openButton.onClick.AddListener(RequestOpen);
-            _closeButton.onClick.AddListener(RequestClose);
+            if (_closeButton != null)
+                _closeButton.onClick.AddListener(RequestClose);
         }
 
         protected virtual void OnDisable()
@@ -33,14 +34,15 @@ namespace Code.MiniGames
             if (_closeButton != null)
                 _closeButton.onClick.RemoveListener(RequestClose);
 
-            if (IsOpen && _coordinator != null)
-                _coordinator.CloseCurrent();
+            CloseWindow();
         }
 
         public void Show()
         {
             if (IsOpen)
                 return;
+
+            OnBeforeShow();
 
             _panel.SetActive(true);
             IsOpen = true;
@@ -68,7 +70,17 @@ namespace Code.MiniGames
 
         private void RequestClose()
         {
-            _coordinator.CloseCurrent();
+            CloseWindow();
+        }
+
+        protected virtual void OnBeforeShow()
+        {
+        }
+
+        protected void CloseWindow()
+        {
+            if (IsOpen && _coordinator != null)
+                _coordinator.CloseCurrent();
         }
     }
 }
