@@ -13,6 +13,8 @@ public class ContentController : MonoBehaviour
     [SerializeField] private RectTransform rightColumn;
     [SerializeField, Min(1)] private int likesToFinish = 3;
     [SerializeField, Min(0f)] private float scrollSpeed = 1f;
+    [SerializeField] private Image[] targetPreviews;
+    [SerializeField] private GameObject[] foundMarkers;
 
     private readonly List<ViralPicture> _pictures = new List<ViralPicture>();
     private readonly List<ViralPicture> _targets = new List<ViralPicture>();
@@ -58,6 +60,13 @@ public class ContentController : MonoBehaviour
         }
 
         RemainingLikes = Mathf.Min(likesToFinish, _pictures.Count);
+        if (targetPreviews == null || targetPreviews.Length < RemainingLikes ||
+            foundMarkers == null || foundMarkers.Length < RemainingLikes)
+            throw new InvalidOperationException("Assign a preview and found marker for each lenta target.");
+        for (int i = 0; i < targetPreviews.Length; i++)
+            targetPreviews[i].gameObject.SetActive(i < RemainingLikes);
+        foreach (GameObject marker in foundMarkers)
+            marker.SetActive(false);
         var candidates = new List<ViralPicture>(_pictures);
         for (int i = 0; i < RemainingLikes; i++)
         {
@@ -67,6 +76,8 @@ public class ContentController : MonoBehaviour
             target.MakeTarget();
             target.OnTargetLiked += TargetLiked;
             _targets.Add(target);
+            targetPreviews[i].sprite = target.Sprite;
+            targetPreviews[i].color = Color.white;
         }
         _layoutPending = true;
     }
@@ -114,6 +125,8 @@ public class ContentController : MonoBehaviour
         if (!_inputEnabled || IsFinished)
             return;
         RemainingLikes--;
+        for (int i = 0; i < _targets.Count; i++)
+            foundMarkers[i].SetActive(!_targets[i].IsTarget);
         if (RemainingLikes > 0)
             return;
 

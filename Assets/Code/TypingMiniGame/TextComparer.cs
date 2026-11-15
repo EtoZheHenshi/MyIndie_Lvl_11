@@ -1,5 +1,6 @@
 using System;
 using Code.Motivation;
+using Code.Audio;
 
 namespace Code.TypingLogic
 {
@@ -8,6 +9,7 @@ namespace Code.TypingLogic
         private readonly TextForPlayer _textForPlayer;
         private readonly MotivationService _motivationService;
         private readonly DisplayText _displayText;
+        private readonly AudioService _audio;
 
         public event Action CorrectSymbolTyped;
 
@@ -16,10 +18,11 @@ namespace Code.TypingLogic
         public float NormalizedProgress => _textForPlayer.NormalizedProgress;
 
         public TextComparer(DisplayText displayText, int rowMaxLength,
-            MotivationService motivationService)
+            MotivationService motivationService, AudioService audio)
         {
             _motivationService = motivationService;
             _displayText = displayText;
+            _audio = audio;
             _textForPlayer = new TextForPlayer(displayText, rowMaxLength);
             if (_textForPlayer.IsCompleted)
                 _motivationService.CompleteTyping();
@@ -30,6 +33,7 @@ namespace Code.TypingLogic
             if (_textForPlayer.IsCompleted || _motivationService.IsDepleted)
                 return;
 
+            _audio.Play("SFX/TypingAudioCue");
             if (symbol == _textForPlayer.GetCurrentSymbol())
             {
                 _textForPlayer.MoveToNextSymbol();
@@ -40,6 +44,7 @@ namespace Code.TypingLogic
             }
             else
             {
+                _audio.Play("SFX/OnTypeError");
                 _displayText.ShowInputError();
             }
         }

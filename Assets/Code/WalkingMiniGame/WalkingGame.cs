@@ -13,8 +13,6 @@ namespace Code.WalkingMiniGame
         [SerializeField] private RectTransform _actorsRoot;
         [SerializeField] private Animator _backgroundAnimator;
         [SerializeField] private TMP_Text _timerText;
-        [SerializeField] private GameObject _conversationPanel;
-        [SerializeField] private TMP_Text _conversationText;
 
         [Header("Duration and movement")]
         [SerializeField, Min(1f)] private float _walkDuration = 45f;
@@ -97,7 +95,6 @@ namespace Code.WalkingMiniGame
             _player.Place(1, _playerX, _laneY[1]);
             _player.SetAnimationRunning(true);
             _backgroundAnimator.speed = 1f;
-            _conversationPanel.SetActive(false);
             _distanceSinceWave = 0f;
             _nextWaveDistance = Mathf.Max(0f, _firstWaveDelay) * _passerSpeed;
             RefreshUI();
@@ -235,7 +232,6 @@ namespace Code.WalkingMiniGame
                 _laneY[passer.Lane]);
             _player.SetAnimationRunning(false);
             _backgroundAnimator.speed = 0f;
-            _conversationPanel.SetActive(true);
         }
 
         private void EndConversation()
@@ -246,7 +242,6 @@ namespace Code.WalkingMiniGame
             RemovePasser(partner);
             _player.SetAnimationRunning(true);
             _backgroundAnimator.speed = 1f;
-            _conversationPanel.SetActive(false);
             if (WalkingRemaining <= 0f)
                 Finish();
         }
@@ -281,8 +276,6 @@ namespace Code.WalkingMiniGame
         private void RefreshUI()
         {
             _timerText.SetText("Прогулка: {0} с", Mathf.CeilToInt(WalkingRemaining + ConversationRemaining));
-            if (IsTalking)
-                _conversationText.SetText("Разговор: {0:1} с", ConversationRemaining);
         }
 
         private void ClearPassers()
