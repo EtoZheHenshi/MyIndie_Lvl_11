@@ -12,7 +12,8 @@ namespace Code.TypingLogic
         private readonly Dictionary<int, RowOrder> _orders = new Dictionary<int, RowOrder>();
 
         public string Build(string original, int rowIndex, int typedCount,
-            float visiblePercent, string spriteTag, float characterWidth)
+            float visiblePercent, string spriteTag, float characterWidth,
+            Color typedColor, Color untypedColor)
         {
             RowOrder order = GetOrder(original, rowIndex);
             int visibleCount = Mathf.CeilToInt(order.CharacterCount * Mathf.Clamp01(visiblePercent / 100f));
@@ -20,8 +21,10 @@ namespace Code.TypingLogic
             var result = new StringBuilder();
             result.Append("<mspace=");
             result.Append(characterWidth.ToString(CultureInfo.InvariantCulture));
-            result.Append("em><color=#000000>");
-            bool whitePartStarted = false;
+            result.Append("em><color=#");
+            result.Append(ColorUtility.ToHtmlStringRGBA(typedColor));
+            result.Append('>');
+            bool untypedPartStarted = false;
 
             for (int i = 0; i < original.Length; i++)
             {
@@ -30,10 +33,12 @@ namespace Code.TypingLogic
                     symbolLength = 2;
 
                 bool isTyped = i + symbolLength <= typedCount;
-                if (!isTyped && !whitePartStarted)
+                if (!isTyped && !untypedPartStarted)
                 {
-                    result.Append("</color><color=#FFFFFF>");
-                    whitePartStarted = true;
+                    result.Append("</color><color=#");
+                    result.Append(ColorUtility.ToHtmlStringRGBA(untypedColor));
+                    result.Append('>');
+                    untypedPartStarted = true;
                 }
 
                 bool isHidden = !isTyped && order.Ranks[i] >= visibleCount;

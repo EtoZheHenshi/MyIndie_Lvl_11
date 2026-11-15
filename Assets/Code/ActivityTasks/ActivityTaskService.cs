@@ -25,6 +25,7 @@ namespace Code.ActivityTasks
         [Header("Continuous typing")]
         [SerializeField, Min(0)] private int _safeSymbolCount = 40;
         [SerializeField, Range(0f, 100f)] private float _chanceIncreasePercent = 2f;
+        [SerializeField, Min(0)] private int _safeSymbolsAfterRandomNotification = 5;
 
         private readonly List<ActivityTaskState> _activeTasks = new List<ActivityTaskState>();
         private readonly List<ActivityTaskDefinition> _firstCycle = new List<ActivityTaskDefinition>();
@@ -37,6 +38,7 @@ namespace Code.ActivityTasks
         public float NextNotificationRemaining { get; private set; }
         public int SymbolsSinceBreak { get; private set; }
         public float CurrentChancePercent { get; private set; }
+        public int RandomNotificationSafeSymbolsRemaining { get; private set; }
 
         public event Action TasksChanged;
 
@@ -121,6 +123,11 @@ namespace Code.ActivityTasks
 
             if (SymbolsSinceBreak < int.MaxValue)
                 SymbolsSinceBreak++;
+            if (RandomNotificationSafeSymbolsRemaining > 0)
+            {
+                RandomNotificationSafeSymbolsRemaining--;
+                return;
+            }
             if (SymbolsSinceBreak <= _safeSymbolCount)
                 return;
 
@@ -132,6 +139,7 @@ namespace Code.ActivityTasks
             if (TryCreateTask())
             {
                 CurrentChancePercent = 0f;
+                RandomNotificationSafeSymbolsRemaining = Mathf.Max(0, _safeSymbolsAfterRandomNotification);
                 ResetNotificationTimer();
             }
         }
@@ -186,6 +194,7 @@ namespace Code.ActivityTasks
 
             SymbolsSinceBreak = 0;
             CurrentChancePercent = 0f;
+            RandomNotificationSafeSymbolsRemaining = 0;
             foreach (ActivityTaskState task in _activeTasks)
                 if (task.Definition.Window == window)
                     task.MarkStarted();

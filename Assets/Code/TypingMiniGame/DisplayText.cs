@@ -12,6 +12,10 @@ namespace Code.TypingLogic
         [Header("Text visibility")]
         [SerializeField, Range(0f, 100f)] private float _visiblePercent = 100f;
 
+        [Header("Text colors")]
+        [SerializeField] private Color _typedColor = Color.black;
+        [SerializeField] private Color _untypedColor = Color.white;
+
         [Header("Animated placeholder")]
         [SerializeField] private TMP_SpriteAsset _maskSpriteAsset;
         [SerializeField, Min(0)] private int _firstFrame;
@@ -29,6 +33,8 @@ namespace Code.TypingLogic
         private int _visibleRowCount;
         private bool _completed;
         private float _lastVisiblePercent;
+        private Color _lastTypedColor;
+        private Color _lastUntypedColor;
 
         public int RowCapacity => Rows.Length;
 
@@ -80,7 +86,8 @@ namespace Code.TypingLogic
 
         private void LateUpdate()
         {
-            if (_reader != null && _lastVisiblePercent != _visiblePercent)
+            if (_reader != null && (_lastVisiblePercent != _visiblePercent ||
+                _lastTypedColor != _typedColor || _lastUntypedColor != _untypedColor))
                 RefreshRows();
         }
 
@@ -98,6 +105,8 @@ namespace Code.TypingLogic
             if (_reader == null)
                 return;
             _lastVisiblePercent = _visiblePercent;
+            _lastTypedColor = _typedColor;
+            _lastUntypedColor = _untypedColor;
             for (int i = 0; i < Rows.Length; i++)
                 RenderRow(i);
         }
@@ -122,7 +131,8 @@ namespace Code.TypingLogic
                 bool finishedRow = _completed || sourceRow < _currentRow;
                 int typedCount = finishedRow ? original.Length : sourceRow == _currentRow ? _typedCharacterCount : 0;
                 string spriteTag = $"<sprite anim=\"{_firstFrame},{_lastFrame},{_framesPerSecond}\">";
-                label.text = _mask.Build(original, sourceRow, typedCount, _visiblePercent, spriteTag, _characterWidth);
+                label.text = _mask.Build(original, sourceRow, typedCount, _visiblePercent,
+                    spriteTag, _characterWidth, _typedColor, _untypedColor);
             }
             // Regenerate even if the string is unchanged: animations were stopped above.
             label.havePropertiesChanged = true;

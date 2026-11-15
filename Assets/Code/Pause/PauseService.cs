@@ -1,5 +1,7 @@
 using System;
+using Code.Audio;
 using UnityEngine;
+using Zenject;
 
 namespace Code.Pause
 {
@@ -7,10 +9,18 @@ namespace Code.Pause
     {
         private float _previousTimeScale;
         private bool _hasStoredTimeScale;
+        private AudioService _audioService;
 
         public bool IsPaused { get; private set; }
         public bool IsSessionEnded { get; private set; }
         public event Action<bool> PauseChanged;
+
+        [Inject]
+        public void Construct(AudioService audioService)
+        {
+            _audioService = audioService;
+            _audioService.SetPaused(IsPaused);
+        }
 
         public void Pause()
         {
@@ -20,6 +30,7 @@ namespace Code.Pause
             StoreTimeScale();
             IsPaused = true;
             Time.timeScale = 0f;
+            _audioService.SetPaused(true);
             PauseChanged?.Invoke(true);
         }
 
@@ -30,6 +41,7 @@ namespace Code.Pause
 
             IsPaused = false;
             RestoreTimeScale();
+            _audioService.SetPaused(false);
             PauseChanged?.Invoke(false);
         }
 
@@ -42,6 +54,7 @@ namespace Code.Pause
             IsSessionEnded = true;
             IsPaused = true;
             Time.timeScale = 0f;
+            _audioService.SetPaused(true);
             PauseChanged?.Invoke(true);
         }
 
@@ -63,6 +76,8 @@ namespace Code.Pause
 
         private void OnDestroy()
         {
+            if (IsPaused && _audioService != null)
+                _audioService.SetPaused(false);
             RestoreTimeScale();
         }
     }
