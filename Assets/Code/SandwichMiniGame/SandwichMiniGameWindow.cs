@@ -32,7 +32,7 @@ namespace Code.SandwichMiniGame
 
         private void OnGameFinished()
         {
-            CloseWindow();
+            CompleteWindow();
         }
     }
 }

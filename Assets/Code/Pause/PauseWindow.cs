@@ -27,7 +27,8 @@ namespace Code.Pause
             if (_resumeButton != null)
                 _resumeButton.onClick.RemoveListener(RequestResume);
 
-            _pauseService.PauseChanged -= OnPauseChanged;
+            if (_pauseService != null)
+                _pauseService.PauseChanged -= OnPauseChanged;
 
             if (_panel != null)
                 _panel.SetActive(false);
@@ -45,7 +46,10 @@ namespace Code.Pause
 
         private void OnPauseChanged(bool isPaused)
         {
-            _panel.SetActive(isPaused);
+            bool sessionEnded = _pauseService.IsSessionEnded;
+            _panel.SetActive(isPaused && !sessionEnded);
+            _pauseButton.interactable = !sessionEnded;
+            _resumeButton.interactable = !sessionEnded;
         }
     }
 }
