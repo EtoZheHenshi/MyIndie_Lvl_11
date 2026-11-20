@@ -3163,7 +3163,7 @@ MonoBehaviour:
   _actorsRoot: {fileID: 1872084697}
   _backgroundAnimator: {fileID: 1294674909}
   _timerText: {fileID: 1774975655}
-  _walkDuration: 15
+  _walkDuration: 12
   _passerSpeed: 500
   _laneChangeSpeed: 1100
   _laneY:
@@ -3173,11 +3173,11 @@ MonoBehaviour:
   _playerX: -510
   _spawnX: 960
   _despawnX: -1000
-  _firstWaveDelay: 1
-  _minimumWaveInterval: 4.1
-  _maximumWaveInterval: 5.1
-  _doubleWaveChance: 0.5
-  _reactionTime: 0.7
+  _firstWaveDelay: 0.5
+  _minimumWaveInterval: 0.5
+  _maximumWaveInterval: 2
+  _doubleWaveChance: 0.75
+  _reactionTime: 0.25
   _conversationDuration: 3
   _conversationGap: 36
   _followingGap: 56
@@ -7308,11 +7308,11 @@ MonoBehaviour:
   _typingWindow: {fileID: 152285149}
   _displayText: {fileID: 2837156836797035565}
   _pauseService: {fileID: 869765453}
-  _startValue: 100
-  _gainPerSecond: 2
-  _gainPerCorrectSymbol: 0.1
+  _startValue: 80
+  _gainPerSecond: 1
+  _gainPerCorrectSymbol: 0.5
   _lossPerSecond: 2
-  _minimumVisibility: 20
+  _minimumVisibility: 40
 --- !u!4 &1185654333
 Transform:
   m_ObjectHideFlags: 0
@@ -11052,7 +11052,7 @@ MonoBehaviour:
     _color: {r: 1, g: 0.67, b: 0.24, a: 1}
     _icon: {fileID: 21300000, guid: 796bcf69efed11040ab3f94b826fb110, type: 3}
     _iconAnimation: {fileID: 9100000, guid: d680eec0a686d5a45b3f5dbd6a78603f, type: 2}
-    _startDeadline: 20
+    _startDeadline: 15
     _motivationLossPerSecond: 2
     _notificationSound: {fileID: 11400000, guid: 9b0c6027acfb49d4285c47a65f79d755, type: 2}
     _overdueReminderSound: {fileID: 0}
@@ -11064,7 +11064,7 @@ MonoBehaviour:
     _color: {r: 0.35, g: 0.75, b: 1, a: 1}
     _icon: {fileID: 21300000, guid: f4f82698fb709dd4d8c445dab1c351eb, type: 3}
     _iconAnimation: {fileID: 9100000, guid: 834dd9c61c3d79d419f9cd1a07977263, type: 2}
-    _startDeadline: 20
+    _startDeadline: 15
     _motivationLossPerSecond: 2
     _notificationSound: {fileID: 11400000, guid: 80b66eba7cd28914c851aeaac081b742, type: 2}
     _overdueReminderSound: {fileID: 11400000, guid: 714a3483a67d2954a91de1e77b8c0c9c, type: 2}
@@ -11076,7 +11076,7 @@ MonoBehaviour:
     _color: {r: 1, g: 0.45, b: 0.72, a: 1}
     _icon: {fileID: 21300000, guid: b4c28cfb2dd8e654eb882bf381a791a1, type: 3}
     _iconAnimation: {fileID: 9100000, guid: 5797831cec2b6f041872da141dae89bc, type: 2}
-    _startDeadline: 20
+    _startDeadline: 15
     _motivationLossPerSecond: 0
     _notificationSound: {fileID: 11400000, guid: d52e516d989bf9542b709cd9f574003c, type: 2}
     _overdueReminderSound: {fileID: 0}
@@ -11088,16 +11088,16 @@ MonoBehaviour:
     _color: {r: 0.55, g: 0.9, b: 0.43, a: 1}
     _icon: {fileID: 21300000, guid: 5f42fb112732fff498e6b030b5a679a2, type: 3}
     _iconAnimation: {fileID: 9100000, guid: f5648e88a33269a4bac300ee04362041, type: 2}
-    _startDeadline: 20
+    _startDeadline: 15
     _motivationLossPerSecond: 2
     _notificationSound: {fileID: 11400000, guid: d624489bb18b5164ab634770931e7c7e, type: 2}
     _overdueReminderSound: {fileID: 11400000, guid: df9fe9b7212f2d245ab4630f7ccfc7af, type: 2}
     _reminderInterval: {x: 10, y: 20}
     _forceStart: 0
     _forcedStartDelay: 1.5
-  _safeSymbolCount: 40
+  _safeSymbolCount: 120
   _chanceIncreasePercent: 2
-  _safeSymbolsAfterRandomNotification: 5
+  _safeSymbolsAfterRandomNotification: 20
 --- !u!4 &1858427146
 Transform:
   m_ObjectHideFlags: 0
@@ -13491,7 +13491,7 @@ MonoBehaviour:
   leftColumn: {fileID: 577509894765156040}
   rightColumn: {fileID: 2108095783711105182}
   likesToFinish: 3
-  scrollSpeed: 20
+  scrollSpeed: 100
   targetPreviews:
   - {fileID: 1410297928}
   - {fileID: 269676515}

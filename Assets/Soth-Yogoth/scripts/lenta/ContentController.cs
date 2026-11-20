@@ -97,7 +97,7 @@ public class ContentController : MonoBehaviour
         if (_layoutPending)
             RefreshLayout();
         Vector2 position = container.anchoredPosition;
-        position.y = Mathf.Clamp(position.y + amount, _initialPosition.y,
+        position.y = Mathf.Clamp(position.y - amount, _initialPosition.y,
             _initialPosition.y + _maximumScroll);
         container.anchoredPosition = position;
     }
