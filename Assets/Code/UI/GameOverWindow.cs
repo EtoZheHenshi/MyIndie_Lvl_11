@@ -4,6 +4,7 @@ using Code.MiniGames;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
+using TMPro;
 
 namespace Code.UI
 {
@@ -16,6 +17,13 @@ namespace Code.UI
         [SerializeField] private GameObject _gameplayHud;
         [SerializeField] private Button _loseRestartButton;
         [SerializeField] private Button _winRestartButton;
+
+        [Header("Completed fanfic")]
+        [SerializeField] private Button _readFanficButton;
+        [SerializeField] private GameObject _fanficPanel;
+        [SerializeField] private Button _closeFanficButton;
+        [SerializeField] private ScrollRect _fanficScroll;
+        [SerializeField] private TMP_Text _fanficText;
         private SceneNavigationService _navigation;
 
         [Inject]
@@ -30,6 +38,9 @@ namespace Code.UI
             _motivationService.TypingCompleted += ShowVictory;
             _loseRestartButton.onClick.AddListener(OpenMenu);
             _winRestartButton.onClick.AddListener(OpenMenu);
+            _readFanficButton.onClick.AddListener(ShowFanfic);
+            _closeFanficButton.onClick.AddListener(CloseFanfic);
+            _fanficPanel.SetActive(false);
             _panel.SetActive(false);
             _victoryPanel.SetActive(false);
             if (_motivationService.IsDepleted)
@@ -49,6 +60,12 @@ namespace Code.UI
                 _loseRestartButton.onClick.RemoveListener(OpenMenu);
             if (_winRestartButton != null)
                 _winRestartButton.onClick.RemoveListener(OpenMenu);
+            if (_readFanficButton != null)
+                _readFanficButton.onClick.RemoveListener(ShowFanfic);
+            if (_closeFanficButton != null)
+                _closeFanficButton.onClick.RemoveListener(CloseFanfic);
+            if (_fanficPanel != null)
+                _fanficPanel.SetActive(false);
             if (_panel != null)
                 _panel.SetActive(false);
             if (_victoryPanel != null)
@@ -58,6 +75,7 @@ namespace Code.UI
         private void ShowDefeat()
         {
             CloseActivity();
+            _fanficPanel.SetActive(false);
             _victoryPanel.SetActive(false);
             _panel.SetActive(true);
         }
@@ -65,8 +83,31 @@ namespace Code.UI
         private void ShowVictory()
         {
             CloseActivity();
+            _fanficPanel.SetActive(false);
             _panel.SetActive(false);
             _victoryPanel.SetActive(true);
+        }
+
+        private void ShowFanfic()
+        {
+            if (!_motivationService.IsTypingCompleted || !_victoryPanel.activeSelf)
+                return;
+
+            // Read the same source as the typing game, preserving its paragraphs.
+            _fanficText.text = Code.TypingLogic.TextReader.LoadText();
+            _victoryPanel.SetActive(false);
+            _fanficPanel.SetActive(true);
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(_fanficScroll.content);
+            _fanficScroll.StopMovement();
+            _fanficScroll.verticalNormalizedPosition = 1f;
+        }
+
+        private void CloseFanfic()
+        {
+            _fanficPanel.SetActive(false);
+            if (_motivationService.IsTypingCompleted)
+                _victoryPanel.SetActive(true);
         }
 
         private void CloseActivity()

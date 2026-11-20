@@ -33,7 +33,7 @@ namespace Code.TypingLogic
             return rowIndex >= 0 && rowIndex < _rows.Count ? _rows[rowIndex] : string.Empty;
         }
 
-        private static string LoadText()
+        public static string LoadText()
         {
             TextAsset asset = Resources.Load<TextAsset>(TextPath);
             if (asset == null)

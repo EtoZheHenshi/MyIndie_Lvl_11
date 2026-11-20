@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Code.Audio;
+using Zenject;
 
 public class BubbleController : MonoBehaviour
 {
@@ -11,6 +14,14 @@ public class BubbleController : MonoBehaviour
     [SerializeField] private Color _answerOneColor = Color.red;
     [SerializeField] private Color _answerTwoColor = new Color(1f, 0.7f, 0.38f);
     [SerializeField] private Color _answerThreeColor = Color.green;
+
+    [Header("Wrong answer penalty")]
+    [SerializeField] private Image _errorIndicator;
+    [SerializeField, Min(0f)] private float _errorIndicatorDuration = 1f;
+    [SerializeField, Min(0f)] private float _wrongAnswerInputLockDuration = 1f;
+    private float _errorIndicatorRemaining;
+    private float _inputLockRemaining;
+    private AudioService _audio;
     private Bubble _selectedBubble;
     private Coroutine _appearance;
     private bool _inputEnabled;
@@ -18,11 +29,19 @@ public class BubbleController : MonoBehaviour
 
     public int RemainingBubbles { get; private set; }
     public bool IsFinished { get; private set; }
+    public bool IsInputLocked => _inputLockRemaining > 0f;
     public event Action OnGameFinished;
+
+    [Inject]
+    public void Construct(AudioService audio)
+    {
+        _audio = audio;
+    }
 
     public void ResetGame()
     {
         StopAppearance();
+        ClearWrongAnswerPenalty();
         Unsubscribe();
         if (bubbles == null || bubbles.Count == 0)
             throw new InvalidOperationException("Assign bubbles to the mother call game.");
@@ -59,16 +78,26 @@ public class BubbleController : MonoBehaviour
             return;
         foreach (Bubble bubble in bubbles)
             if (bubble != null)
-                bubble.SetInputEnabled(_inputEnabled);
+                bubble.SetInputEnabled(_inputEnabled && !IsInputLocked);
     }
 
     public bool Answer(int answerType)
     {
-        if (!_inputEnabled || IsFinished || _selectedBubble == null ||
+        if (!_inputEnabled || IsInputLocked || IsFinished || _selectedBubble == null ||
             !_selectedBubble.isActiveAndEnabled || _selectedBubble.IsAnswered)
             return false;
         if (_selectedBubble.Type != answerType)
+        {
+            _audio.Play("SFX/OnMomError");
+            _inputLockRemaining = _wrongAnswerInputLockDuration;
+            _errorIndicatorRemaining = _errorIndicatorDuration;
+            if (_errorIndicator != null)
+            {
+                _errorIndicator.enabled = _errorIndicatorRemaining > 0f;
+            }
+            SetInputEnabled(_inputEnabled);
             return false;
+        }
 
         Bubble answered = _selectedBubble;
         _selectedBubble = null;
@@ -78,10 +107,44 @@ public class BubbleController : MonoBehaviour
         {
             IsFinished = true;
             StopAppearance();
+            ClearWrongAnswerPenalty();
             SetInputEnabled(false);
             OnGameFinished?.Invoke();
         }
         return true;
+    }
+
+    private void Update()
+    {
+        // Input is disabled by the mini-game window during pause, so penalty
+        // timers pause together with the conversation and resume afterwards.
+        if (!_inputEnabled)
+            return;
+
+        if (_inputLockRemaining > 0f)
+        {
+            _inputLockRemaining = Mathf.Max(0f, _inputLockRemaining - Time.deltaTime);
+            if (!IsInputLocked)
+                SetInputEnabled(_inputEnabled);
+        }
+        if (_errorIndicatorRemaining > 0f)
+        {
+            _errorIndicatorRemaining = Mathf.Max(0f, _errorIndicatorRemaining - Time.deltaTime);
+            if (_errorIndicator != null)
+            {
+                float elapsed = _errorIndicatorDuration - _errorIndicatorRemaining;
+                _errorIndicator.enabled = _errorIndicatorRemaining > 0f &&
+                    Mathf.FloorToInt(elapsed / 0.12f) % 2 == 0;
+            }
+        }
+    }
+
+    private void ClearWrongAnswerPenalty()
+    {
+        _inputLockRemaining = 0f;
+        _errorIndicatorRemaining = 0f;
+        if (_errorIndicator != null)
+            _errorIndicator.enabled = false;
     }
 
     private IEnumerator AppearBubbles()
@@ -107,7 +170,7 @@ public class BubbleController : MonoBehaviour
 
     private void SelectBubble(Bubble bubble)
     {
-        if (!_inputEnabled || IsFinished || _selectedBubble != null ||
+        if (!_inputEnabled || IsInputLocked || IsFinished || _selectedBubble != null ||
             bubble.IsAnswered || !bubble.isActiveAndEnabled)
             return;
 
@@ -135,6 +198,7 @@ public class BubbleController : MonoBehaviour
     private void OnDisable()
     {
         StopAppearance();
+        ClearWrongAnswerPenalty();
         SetInputEnabled(false);
         Unsubscribe();
     }
