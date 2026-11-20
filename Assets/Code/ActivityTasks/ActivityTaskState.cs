@@ -7,6 +7,7 @@ namespace Code.ActivityTasks
         public ActivityTaskDefinition Definition { get; }
         public float Duration { get; }
         public float Remaining { get; private set; }
+        // Historical flag for notification audio; it does not cancel the deadline.
         public bool HasStarted { get; private set; }
         public bool IsOverdue { get; private set; }
 
@@ -25,7 +26,7 @@ namespace Code.ActivityTasks
         // Returns true only on the transition into an overdue state.
         public bool Advance(float deltaTime)
         {
-            if (Definition.ForceStart || HasStarted || IsOverdue)
+            if (Definition.ForceStart || Definition.Window.IsOpen || IsOverdue)
                 return false;
 
             Remaining = Mathf.Max(0f, Remaining - Mathf.Max(0f, deltaTime));

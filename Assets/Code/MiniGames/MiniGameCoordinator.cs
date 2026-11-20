@@ -18,6 +18,7 @@ namespace Code.MiniGames
         public bool IsOpeningForcedWindow => _forcedWindow != null;
 
         public event Action<MiniGameWindow> WindowOpened;
+        public event Action<MiniGameWindow> WindowClosed;
         public event Action<MiniGameWindow> WindowCompleted;
 
         public bool CanInteractWithApartment =>
@@ -89,11 +90,14 @@ namespace Code.MiniGames
 
         public void CloseCurrent()
         {
-            if (_currentWindow != null)
-                _currentWindow.Hide();
+            MiniGameWindow closed = _currentWindow;
+            if (closed != null)
+                closed.Hide();
 
             _currentWindow = null;
             RefreshInputBlocker();
+            if (closed != null)
+                WindowClosed?.Invoke(closed);
         }
 
         public void CompleteCurrent(MiniGameWindow window)

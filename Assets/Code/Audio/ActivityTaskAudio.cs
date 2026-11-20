@@ -81,7 +81,7 @@ namespace Code.Audio
                         sounds.Notification = _audio.Play(task.Definition.NotificationSound);
                 }
 
-                if (task.HasStarted)
+                if (task.Definition.Window.IsOpen)
                 {
                     if (task.Definition.Window != _motherCallWindow || _motherCallWindow.IsCallAccepted)
                         sounds.Notification?.Stop();
@@ -109,7 +109,7 @@ namespace Code.Audio
             {
                 ActivityTaskState task = pair.Key;
                 TaskSounds sounds = pair.Value;
-                if (!sounds.Overdue || task.HasStarted || task.Definition.OverdueReminderSound == null)
+                if (!sounds.Overdue || task.Definition.Window.IsOpen || task.Definition.OverdueReminderSound == null)
                     continue;
                 sounds.Remaining -= Time.deltaTime;
                 if (sounds.Remaining <= 0f && (sounds.Reminder == null || !sounds.Reminder.IsValid))

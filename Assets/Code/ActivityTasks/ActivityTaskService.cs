@@ -104,8 +104,8 @@ namespace Code.ActivityTasks
             foreach (ActivityTaskState task in _activeTasks)
                 changed |= task.Advance(deltaTime);
 
-            // Deadlines keep running in other activities; only the next-notification
-            // timer stops there. Typing never stops either timer.
+            // Each deadline pauses only while its own activity is open.
+            // Typing never stops deadlines or the next-notification timer.
             if (!_coordinator.IsOpeningForcedWindow &&
                 (!_coordinator.HasOpenWindow || _coordinator.CurrentWindow == _typingWindow))
             {
@@ -233,6 +233,12 @@ namespace Code.ActivityTasks
             TasksChanged?.Invoke();
         }
 
+        private void OnWindowClosed(MiniGameWindow window)
+        {
+            // Closing is not completion: keep the task and any existing debuff.
+            TasksChanged?.Invoke();
+        }
+
         private void RefreshDebuffs()
         {
             if (_motivationService == null)
@@ -264,6 +270,7 @@ namespace Code.ActivityTasks
             if (_isSubscribed || _textComparer == null)
                 return;
             _coordinator.WindowOpened += OnWindowOpened;
+            _coordinator.WindowClosed += OnWindowClosed;
             _coordinator.WindowCompleted += OnWindowCompleted;
             _textComparer.CorrectSymbolTyped += OnCorrectSymbolTyped;
             _isSubscribed = true;
@@ -278,6 +285,7 @@ namespace Code.ActivityTasks
                 if (_coordinator != null)
                 {
                     _coordinator.WindowOpened -= OnWindowOpened;
+                    _coordinator.WindowClosed -= OnWindowClosed;
                     _coordinator.WindowCompleted -= OnWindowCompleted;
                 }
                 _textComparer.CorrectSymbolTyped -= OnCorrectSymbolTyped;

@@ -80,7 +80,7 @@ namespace Code.ActivityTasks
 
         private bool ShouldShow(ActivityTaskState task)
         {
-            return !task.Definition.ForceStart || !task.HasStarted;
+            return !task.Definition.ForceStart || !task.Definition.Window.IsOpen;
         }
     }
 }

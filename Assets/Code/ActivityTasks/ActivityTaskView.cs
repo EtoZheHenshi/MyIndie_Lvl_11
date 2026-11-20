@@ -47,11 +47,6 @@ namespace Code.ActivityTasks
                 _timerFill.fillAmount = 1f;
                 _timerFill.color = new Color(1f, 0.3f, 0.25f);
             }
-            else if (_task.HasStarted)
-            {
-                _timerFill.fillAmount = 1f;
-                _timerFill.color = new Color(0.45f, 0.9f, 0.6f);
-            }
             else
             {
                 _timerFill.fillAmount = _task.Remaining / _task.Duration;

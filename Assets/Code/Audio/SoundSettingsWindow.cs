@@ -12,12 +12,12 @@ namespace Code.Audio
         [SerializeField] private PauseWindow _pauseWindow;
         [SerializeField] private GameObject _panel;
         [SerializeField] private Button _settingsButton;
+        [SerializeField] private Button _backButton;
         [SerializeField] private Slider _soundSlider;
         [SerializeField] private Slider _musicSlider;
 
         private AudioService _audio;
         private bool _subscribed;
-        private bool _ownsPause;
         public bool IsOpen { get; private set; }
 
         private void Awake()
@@ -43,7 +43,8 @@ namespace Code.Audio
             if (_audio == null || _subscribed)
                 return;
             _subscribed = true;
-            _settingsButton.onClick.AddListener(Toggle);
+            _settingsButton.onClick.AddListener(Open);
+            _backButton.onClick.AddListener(Close);
             _soundSlider.onValueChanged.AddListener(SetSoundVolume);
             _musicSlider.onValueChanged.AddListener(SetMusicVolume);
             _pauseService.PauseChanged += OnPauseChanged;
@@ -51,41 +52,29 @@ namespace Code.Audio
             OnPauseChanged(_pauseService.IsPaused);
         }
 
-        private void Toggle()
+        private void Open()
         {
-            if (IsOpen)
-            {
-                Close(true);
-                return;
-            }
-            if (_pauseService.IsSessionEnded ||
-                (_pauseService.IsPaused && !_pauseService.ShowPauseMenu))
+            if (IsOpen || _pauseService.IsSessionEnded ||
+                !_pauseService.IsPaused || !_pauseService.ShowPauseMenu)
                 return;
 
             IsOpen = true;
-            _ownsPause = !_pauseService.IsPaused;
             RefreshSliders();
             _pauseWindow.SetSettingsOpen(true);
-            if (_ownsPause)
-                _pauseService.Pause(false);
             _panel.SetActive(true);
             if (EventSystem.current != null)
                 EventSystem.current.SetSelectedGameObject(null);
         }
 
-        private void Close(bool resume)
+        private void Close()
         {
             if (!IsOpen)
                 return;
-            bool shouldResume = resume && _ownsPause && !_pauseService.IsSessionEnded;
             IsOpen = false;
-            _ownsPause = false;
             if (_panel != null)
                 _panel.SetActive(false);
             if (_pauseWindow != null)
                 _pauseWindow.SetSettingsOpen(false);
-            if (shouldResume)
-                _pauseService.Resume();
         }
 
         private void RefreshSliders()
@@ -107,9 +96,7 @@ namespace Code.Audio
         private void OnPauseChanged(bool paused)
         {
             if (_pauseService.IsSessionEnded || (!paused && IsOpen))
-                Close(false);
-            _settingsButton.gameObject.SetActive(!_pauseService.IsSessionEnded);
-            _settingsButton.interactable = IsOpen || !paused || _pauseService.ShowPauseMenu;
+                Close();
         }
 
         private void OnDisable()
@@ -117,7 +104,9 @@ namespace Code.Audio
             if (_subscribed)
             {
                 if (_settingsButton != null)
-                    _settingsButton.onClick.RemoveListener(Toggle);
+                    _settingsButton.onClick.RemoveListener(Open);
+                if (_backButton != null)
+                    _backButton.onClick.RemoveListener(Close);
                 if (_soundSlider != null)
                     _soundSlider.onValueChanged.RemoveListener(SetSoundVolume);
                 if (_musicSlider != null)
@@ -126,7 +115,7 @@ namespace Code.Audio
                     _pauseService.PauseChanged -= OnPauseChanged;
                 _subscribed = false;
             }
-            Close(false);
+            Close();
         }
     }
 }

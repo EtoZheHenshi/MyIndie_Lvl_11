@@ -28,8 +28,8 @@ namespace Code.UI
         {
             _motivationService.Depleted += ShowDefeat;
             _motivationService.TypingCompleted += ShowVictory;
-            _loseRestartButton.onClick.AddListener(Restart);
-            _winRestartButton.onClick.AddListener(Restart);
+            _loseRestartButton.onClick.AddListener(OpenMenu);
+            _winRestartButton.onClick.AddListener(OpenMenu);
             _panel.SetActive(false);
             _victoryPanel.SetActive(false);
             if (_motivationService.IsDepleted)
@@ -46,9 +46,9 @@ namespace Code.UI
                 _motivationService.TypingCompleted -= ShowVictory;
             }
             if (_loseRestartButton != null)
-                _loseRestartButton.onClick.RemoveListener(Restart);
+                _loseRestartButton.onClick.RemoveListener(OpenMenu);
             if (_winRestartButton != null)
-                _winRestartButton.onClick.RemoveListener(Restart);
+                _winRestartButton.onClick.RemoveListener(OpenMenu);
             if (_panel != null)
                 _panel.SetActive(false);
             if (_victoryPanel != null)
@@ -76,9 +76,9 @@ namespace Code.UI
             _gameplayHud.SetActive(false);
         }
 
-        private void Restart()
+        private void OpenMenu()
         {
-            _navigation.StartGame();
+            _navigation.OpenMenu();
         }
 
     }
