@@ -73,29 +73,22 @@ public class BubbleController : MonoBehaviour
 
     public void SetInputEnabled(bool enabled)
     {
-        _inputEnabled = enabled && _conversationStarted && !IsFinished;
+        _inputEnabled = enabled && !IsFinished;
         if (bubbles == null)
             return;
         foreach (Bubble bubble in bubbles)
             if (bubble != null)
-                bubble.SetInputEnabled(_inputEnabled && !IsInputLocked);
+                bubble.SetInputEnabled(_inputEnabled && _conversationStarted && !IsInputLocked);
     }
 
     public bool Answer(int answerType)
     {
-        if (!_inputEnabled || IsInputLocked || IsFinished || _selectedBubble == null ||
+        if (!_inputEnabled || !_conversationStarted || IsInputLocked || IsFinished || _selectedBubble == null ||
             !_selectedBubble.isActiveAndEnabled || _selectedBubble.IsAnswered)
             return false;
         if (_selectedBubble.Type != answerType)
         {
-            _audio.Play("SFX/OnMomError");
-            _inputLockRemaining = _wrongAnswerInputLockDuration;
-            _errorIndicatorRemaining = _errorIndicatorDuration;
-            if (_errorIndicator != null)
-            {
-                _errorIndicator.enabled = _errorIndicatorRemaining > 0f;
-            }
-            SetInputEnabled(_inputEnabled);
+            ShowInputError();
             return false;
         }
 
@@ -112,6 +105,19 @@ public class BubbleController : MonoBehaviour
             OnGameFinished?.Invoke();
         }
         return true;
+    }
+
+    public void ShowInputError()
+    {
+        if (!_inputEnabled || IsInputLocked || IsFinished)
+            return;
+
+        _audio.Play("SFX/OnMomError");
+        _inputLockRemaining = _wrongAnswerInputLockDuration;
+        _errorIndicatorRemaining = _errorIndicatorDuration;
+        if (_errorIndicator != null)
+            _errorIndicator.enabled = _errorIndicatorRemaining > 0f;
+        SetInputEnabled(_inputEnabled);
     }
 
     private void Update()
@@ -170,7 +176,7 @@ public class BubbleController : MonoBehaviour
 
     private void SelectBubble(Bubble bubble)
     {
-        if (!_inputEnabled || IsInputLocked || IsFinished || _selectedBubble != null ||
+        if (!_inputEnabled || !_conversationStarted || IsInputLocked || IsFinished || _selectedBubble != null ||
             bubble.IsAnswered || !bubble.isActiveAndEnabled)
             return;
 

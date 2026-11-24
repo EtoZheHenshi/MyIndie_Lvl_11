@@ -1,4 +1,6 @@
 using UnityEngine;
+using Code.ActivityTasks;
+using Zenject;
 
 namespace Code.UI
 {
@@ -11,6 +13,13 @@ namespace Code.UI
         private Quaternion _initialHourRotation;
         private Quaternion _initialMinuteRotation;
         private double _minuteTurns;
+        private ActivityTaskService _tasks;
+
+        [Inject]
+        public void Construct(ActivityTaskService tasks)
+        {
+            _tasks = tasks;
+        }
 
         private void Awake()
         {
@@ -21,7 +30,8 @@ namespace Code.UI
         private void Update()
         {
             // Scaled time stops the clock during pause and after the game ends.
-            _minuteTurns = (_minuteTurns + Time.deltaTime /
+            float speedMultiplier = _tasks != null && _tasks.IsFlowActive ? 2f : 1f;
+            _minuteTurns = (_minuteTurns + Time.deltaTime * speedMultiplier /
                 Mathf.Max(0.01f, _minuteRevolutionSeconds)) % 12d;
             _minuteHand.localRotation = _initialMinuteRotation *
                 Quaternion.AngleAxis((float)(-360d * _minuteTurns), Vector3.forward);

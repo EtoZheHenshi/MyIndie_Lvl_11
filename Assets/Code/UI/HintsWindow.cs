@@ -12,8 +12,7 @@ namespace Code.UI
         [SerializeField] private Button _nextButton;
         [SerializeField] private Button _closeButton;
         [SerializeField] private GameObject _panel;
-        [SerializeField] private Animator _pageAnimator;
-        [SerializeField] private RuntimeAnimatorController[] _pages;
+        [SerializeField] private GameObject[] _pageObjects;
         private int _pageIndex;
 
         private bool CanUseHints => _pauseService.IsHintsOpen &&
@@ -26,6 +25,7 @@ namespace Code.UI
             _nextButton.onClick.AddListener(NextPage);
             _closeButton.onClick.AddListener(Close);
             _pauseService.PauseChanged += OnPauseChanged;
+            ShowPage();
             OnPauseChanged(_pauseService.IsPaused);
         }
 
@@ -55,7 +55,7 @@ namespace Code.UI
 
         private void NextPage()
         {
-            if (CanUseHints && _pageIndex < _pages.Length - 1)
+            if (CanUseHints && _pageIndex < _pageObjects.Length - 1)
             {
                 _pageIndex++;
                 ShowPage();
@@ -64,15 +64,20 @@ namespace Code.UI
 
         private void ShowPage()
         {
-            _pageAnimator.runtimeAnimatorController = _pages[_pageIndex];
-            // Restart each page's sprite animation on selection.
-            if (_pageAnimator.isActiveAndEnabled)
+            for (int i = 0; i < _pageObjects.Length; i++)
+                _pageObjects[i].SetActive(i == _pageIndex);
+
+            // Each page owns its artwork and any text added in the scene.
+            foreach (Animator animator in _pageObjects[_pageIndex].GetComponentsInChildren<Animator>())
             {
-                _pageAnimator.Play(0, 0, 0f);
-                _pageAnimator.Update(0f);
+                if (animator.isActiveAndEnabled)
+                {
+                    animator.Play(0, 0, 0f);
+                    animator.Update(0f);
+                }
             }
             _previousButton.interactable = _pageIndex > 0;
-            _nextButton.interactable = _pageIndex < _pages.Length - 1;
+            _nextButton.interactable = _pageIndex < _pageObjects.Length - 1;
         }
 
         private void OnPauseChanged(bool paused)

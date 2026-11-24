@@ -23,6 +23,7 @@ namespace Code.MotherCallMiniGame
             base.OnEnable();
             _bubbles.OnGameFinished += OnGameFinished;
             _acceptButton.onClick.AddListener(AcceptCall);
+            _declineButton.onClick.AddListener(DeclineCall);
         }
 
         protected override void OnDisable()
@@ -31,6 +32,8 @@ namespace Code.MotherCallMiniGame
                 _bubbles.OnGameFinished -= OnGameFinished;
             if (_acceptButton != null)
                 _acceptButton.onClick.RemoveListener(AcceptCall);
+            if (_declineButton != null)
+                _declineButton.onClick.RemoveListener(DeclineCall);
             base.OnDisable();
         }
 
@@ -46,7 +49,7 @@ namespace Code.MotherCallMiniGame
         {
             _inputEnabled = enabled;
             if (_bubbles != null)
-                _bubbles.SetInputEnabled(enabled && IsCallAccepted);
+                _bubbles.SetInputEnabled(enabled);
             if (_acceptButton != null)
                 _acceptButton.interactable = enabled && !IsCallAccepted;
             if (_declineButton != null)
@@ -67,6 +70,13 @@ namespace Code.MotherCallMiniGame
             _callButtons.SetActive(false);
             _bubbles.StartConversation();
             SetInteractionEnabled(true);
+        }
+
+        private void DeclineCall()
+        {
+            if (!IsOpen || !_inputEnabled || IsCallAccepted)
+                return;
+            _bubbles.ShowInputError();
         }
 
         private void OnGameFinished()

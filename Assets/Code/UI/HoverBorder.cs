@@ -17,6 +17,7 @@ namespace Code.UI
         [SerializeField] private MiniGameCoordinator _coordinator;
         [SerializeField] private Color _notificationColor = Color.red;
         [SerializeField, Min(0.1f)] private float _overdueBlinkPeriod = 0.7f;
+        [SerializeField] private bool _highlightUntilFirstOpen;
 
         private ActivityTaskService _tasks;
         private Color _originalColor;
@@ -24,6 +25,8 @@ namespace Code.UI
         private bool _subscribed;
         private bool _overdue;
         private float _blinkElapsed;
+        private bool _hasOpened;
+        private bool _hasOriginalColor;
 
         [Inject]
         public void Construct(ActivityTaskService tasks)
@@ -36,7 +39,6 @@ namespace Code.UI
         private void Awake()
         {
             _border.raycastTarget = false;
-            _originalColor = _border.color;
             Refresh();
         }
 
@@ -89,6 +91,8 @@ namespace Code.UI
 
         private void OnWindowChanged(MiniGameWindow window)
         {
+            if (window == _window && window.IsOpen)
+                _hasOpened = true;
             // Opening a window invalidates any previous apartment hover.
             _hovered = false;
             Refresh();
@@ -109,14 +113,23 @@ namespace Code.UI
 
         private void Refresh()
         {
-            bool hasTask = false;
-            bool overdue = false;
+            // Injection can refresh the view before Awake. Capture the original
+            // tint before applying the initial red prompt in either lifecycle order.
+            if (!_hasOriginalColor)
+            {
+                _originalColor = _border.color;
+                _hasOriginalColor = true;
+            }
+
+            bool initialPrompt = _highlightUntilFirstOpen && !_hasOpened;
+            bool hasTask = initialPrompt;
+            bool overdue = initialPrompt;
             if (_tasks != null && _window != null)
                 foreach (ActivityTaskState task in _tasks.ActiveTasks)
                     if (task.Definition.Window == _window)
                     {
                         hasTask = true;
-                        overdue = task.IsOverdue;
+                        overdue |= task.IsOverdue;
                         break;
                     }
 

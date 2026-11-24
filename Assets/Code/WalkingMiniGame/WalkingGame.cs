@@ -13,6 +13,7 @@ namespace Code.WalkingMiniGame
         [SerializeField] private RectTransform _actorsRoot;
         [SerializeField] private Animator _backgroundAnimator;
         [SerializeField] private TMP_Text _timerText;
+        [SerializeField] private WalkingConversationBubbles _conversationBubbles;
 
         [Header("Duration and movement")]
         [SerializeField, Min(1f)] private float _walkDuration = 45f;
@@ -232,10 +233,12 @@ namespace Code.WalkingMiniGame
                 _laneY[passer.Lane]);
             _player.SetAnimationRunning(false);
             _backgroundAnimator.speed = 0f;
+            _conversationBubbles.Show(_player, passer);
         }
 
         private void EndConversation()
         {
+            _conversationBubbles.Hide();
             WalkingActor partner = _conversationPartner;
             _conversationPartner = null;
             ConversationRemaining = 0f;
@@ -280,6 +283,8 @@ namespace Code.WalkingMiniGame
 
         private void ClearPassers()
         {
+            if (_conversationBubbles != null)
+                _conversationBubbles.Hide();
             _conversationPartner = null;
             foreach (WalkingActor passer in _passers)
             {
