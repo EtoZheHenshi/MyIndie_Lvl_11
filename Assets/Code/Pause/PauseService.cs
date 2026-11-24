@@ -14,6 +14,7 @@ namespace Code.Pause
         public bool IsPaused { get; private set; }
         public bool IsSessionEnded { get; private set; }
         public bool ShowPauseMenu { get; private set; }
+        public bool IsHintsOpen { get; private set; }
         public event Action<bool> PauseChanged;
 
         [Inject]
@@ -25,8 +26,17 @@ namespace Code.Pause
 
         public void Pause(bool showMenu = true)
         {
-            if (IsPaused || IsSessionEnded)
+            if (IsSessionEnded)
                 return;
+            if (IsPaused)
+            {
+                if (IsHintsOpen && showMenu && !ShowPauseMenu)
+                {
+                    ShowPauseMenu = true;
+                    PauseChanged?.Invoke(true);
+                }
+                return;
+            }
 
             StoreTimeScale();
             ShowPauseMenu = showMenu;
@@ -41,11 +51,33 @@ namespace Code.Pause
             if (!IsPaused || IsSessionEnded)
                 return;
 
+            if (IsHintsOpen)
+            {
+                // Closing the pause menu returns to hints without resuming play.
+                ShowPauseMenu = false;
+                PauseChanged?.Invoke(true);
+                return;
+            }
+
             IsPaused = false;
             ShowPauseMenu = false;
             RestoreTimeScale();
             _audioService.SetPaused(false);
             PauseChanged?.Invoke(false);
+        }
+
+        public void SetHintsOpen(bool open)
+        {
+            if (IsSessionEnded || IsHintsOpen == open || (open && IsPaused))
+                return;
+
+            IsHintsOpen = open;
+            if (open)
+                Pause(false);
+            else if (!ShowPauseMenu)
+                Resume();
+            else
+                PauseChanged?.Invoke(true);
         }
 
         public void EndSession()
@@ -55,6 +87,7 @@ namespace Code.Pause
 
             StoreTimeScale();
             IsSessionEnded = true;
+            IsHintsOpen = false;
             ShowPauseMenu = false;
             IsPaused = true;
             Time.timeScale = 0f;

@@ -73,9 +73,9 @@ namespace Code.Pause
         {
             if (_settingsOpen || _pauseService.IsSessionEnded ||
                 (_navigation != null && _navigation.IsLoading) ||
-                (_pauseService.IsPaused && !_pauseService.ShowPauseMenu))
+                (_pauseService.IsPaused && !_pauseService.ShowPauseMenu && !_pauseService.IsHintsOpen))
                 return;
-            if (_pauseService.IsPaused)
+            if (_pauseService.IsPaused && _pauseService.ShowPauseMenu)
                 _pauseService.Resume();
             else
                 _pauseService.Pause();
@@ -107,7 +107,8 @@ namespace Code.Pause
             if (_panel != null)
                 _panel.SetActive(isPaused && _pauseService.ShowPauseMenu && !sessionEnded && !_settingsOpen);
             if (_pauseButton != null)
-                _pauseButton.gameObject.SetActive(!sessionEnded && !isPaused && !_settingsOpen);
+                _pauseButton.gameObject.SetActive(!sessionEnded && !_settingsOpen &&
+                    (!isPaused || (_pauseService.IsHintsOpen && !_pauseService.ShowPauseMenu)));
         }
     }
 }
