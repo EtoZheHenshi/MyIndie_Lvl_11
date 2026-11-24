@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 03c9cee64ebd48643a40df4acce9cb94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7058663101532097556
+    second: hint_walk_text_0
+  - first:
+      213: -4845061448957832022
+    second: hint_walk_text_1
+  - first:
+      213: -1002441894147729189
+    second: hint_walk_text_2
+  - first:
+      213: -8605798844316517081
+    second: hint_walk_text_3
+  - first:
+      213: -3600312671497051098
+    second: hint_walk_text_4
+  - first:
+      213: 3310473251640236416
+    second: hint_walk_text_5
+  - first:
+      213: -2906138744388283465
+    second: hint_walk_text_6
+  - first:
+      213: 8677386449728502429
+    second: hint_walk_text_7
+  - first:
+      213: 764478102712460917
+    second: hint_walk_text_8
+  - first:
+      213: -669313708043808346
+    second: hint_walk_text_9
+  - first:
+      213: 7621271401229112040
+    second: hint_walk_text_10
+  - first:
+      213: 3660181089273694519
+    second: hint_walk_text_11
+  - first:
+      213: -801913244605710743
+    second: hint_walk_text_12
+  - first:
+      213: 1125342250493793717
+    second: hint_walk_text_13
+  - first:
+      213: 2557263527776403583
+    second: hint_walk_text_14
+  - first:
+      213: 3811571207565578891
+    second: hint_walk_text_15
+  - first:
+      213: 7157137582868417586
+    second: hint_walk_text_16
+  - first:
+      213: 4816456206304178106
+    second: hint_walk_text_17
+  - first:
+      213: -3456872074394193656
+    second: hint_walk_text_18
+  - first:
+      213: -902142549467627078
+    second: hint_walk_text_19
+  - first:
+      213: 7129104556797387854
+    second: hint_walk_text_20
+  - first:
+      213: 4382188259754153806
+    second: hint_walk_text_21
+  - first:
+      213: -2029233588957297447
+    second: hint_walk_text_22
+  - first:
+      213: -6417515038289405423
+    second: hint_walk_text_23
+  - first:
+      213: -9178369694538583415
+    second: hint_walk_text_24
+  - first:
+      213: 522703142276492262
+    second: hint_walk_text_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hint_walk_text_0
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 707
+        width: 75
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c4af341b865f160800000000000000
+      internalID: 7058663101532097556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_1
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 562
+        width: 137
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4ddeb4842e2ccb0800000000000000
+      internalID: -4845061448957832022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_2
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 589
+        width: 150
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8da5f886c9612f0800000000000000
+      internalID: -1002441894147729189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 582
+        width: 84
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dfb0ceb8f029880800000000000000
+      internalID: -8605798844316517081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_4
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 572
+        width: 124
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624a41753be190ec0800000000000000
+      internalID: -3600312671497051098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_5
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 581
+        width: 97
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089d27af1e921fd20800000000000000
+      internalID: 3310473251640236416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 530
+        width: 105
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b39cb895325ba7d0800000000000000
+      internalID: -2906138744388283465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_7
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 532
+        width: 107
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9afad250054c6870800000000000000
+      internalID: 8677386449728502429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_8
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 529
+        width: 118
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576adb6b8c8fb9a00800000000000000
+      internalID: 764478102712460917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_9
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 543
+        width: 118
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1dfbc8abe16b6f0800000000000000
+      internalID: -669313708043808346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_10
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 563
+        width: 94
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2da1fc5f134c960800000000000000
+      internalID: 7621271401229112040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_11
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 552
+        width: 110
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739c2c7ee439bc230800000000000000
+      internalID: 3660181089273694519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 551
+        width: 114
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e789a17280fd4f0800000000000000
+      internalID: -801913244605710743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_13
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 574
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5db6380d40e9f00800000000000000
+      internalID: 1125342250493793717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_14
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 317
+        width: 103
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70cc2a21a93d7320800000000000000
+      internalID: 2557263527776403583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_15
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 334
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b829d0791db65e430800000000000000
+      internalID: 3811571207565578891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_16
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 317
+        width: 101
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c487326b2435360800000000000000
+      internalID: 7157137582868417586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_17
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 341
+        width: 113
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf6cf4a66d77d240800000000000000
+      internalID: 4816456206304178106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_18
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 348
+        width: 116
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80134c3e929b600d0800000000000000
+      internalID: -3456872074394193656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_19
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 342
+        width: 116
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1873a8122fa73f0800000000000000
+      internalID: -902142549467627078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_20
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 344
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44e682a2daafe260800000000000000
+      internalID: 7129104556797387854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_21
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 348
+        width: 97
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4798812109a0dc30800000000000000
+      internalID: 4382188259754153806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_22
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 347
+        width: 172
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4c8eb5dc6b6d3e0800000000000000
+      internalID: -2029233588957297447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_23
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 352
+        width: 127
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a580af21860f6a0800000000000000
+      internalID: -6417515038289405423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_24
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 419
+        width: 39
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98231d35461ef9080800000000000000
+      internalID: -9178369694538583415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_walk_text_25
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 357
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebee5e0db3014700800000000000000
+      internalID: 522703142276492262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hint_walk_text_0: 7058663101532097556
+      hint_walk_text_1: -4845061448957832022
+      hint_walk_text_10: 7621271401229112040
+      hint_walk_text_11: 3660181089273694519
+      hint_walk_text_12: -801913244605710743
+      hint_walk_text_13: 1125342250493793717
+      hint_walk_text_14: 2557263527776403583
+      hint_walk_text_15: 3811571207565578891
+      hint_walk_text_16: 7157137582868417586
+      hint_walk_text_17: 4816456206304178106
+      hint_walk_text_18: -3456872074394193656
+      hint_walk_text_19: -902142549467627078
+      hint_walk_text_2: -1002441894147729189
+      hint_walk_text_20: 7129104556797387854
+      hint_walk_text_21: 4382188259754153806
+      hint_walk_text_22: -2029233588957297447
+      hint_walk_text_23: -6417515038289405423
+      hint_walk_text_24: -9178369694538583415
+      hint_walk_text_25: 522703142276492262
+      hint_walk_text_3: -8605798844316517081
+      hint_walk_text_4: -3600312671497051098
+      hint_walk_text_5: 3310473251640236416
+      hint_walk_text_6: -2906138744388283465
+      hint_walk_text_7: 8677386449728502429
+      hint_walk_text_8: 764478102712460917
+      hint_walk_text_9: -669313708043808346
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

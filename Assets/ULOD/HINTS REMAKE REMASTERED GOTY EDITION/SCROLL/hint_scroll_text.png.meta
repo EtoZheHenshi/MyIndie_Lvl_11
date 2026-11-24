@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: f7e4291b3209d73438ce37ddae0c8b61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3287731375447482215
+    second: hint_scroll_text_0
+  - first:
+      213: -4967634175741092398
+    second: hint_scroll_text_1
+  - first:
+      213: -4187219325032917052
+    second: hint_scroll_text_2
+  - first:
+      213: -5209805153492487716
+    second: hint_scroll_text_3
+  - first:
+      213: -5070984397545269936
+    second: hint_scroll_text_4
+  - first:
+      213: 8752683141119420100
+    second: hint_scroll_text_5
+  - first:
+      213: -7945799343763658774
+    second: hint_scroll_text_6
+  - first:
+      213: 3984102671859139760
+    second: hint_scroll_text_7
+  - first:
+      213: 3200787469478252478
+    second: hint_scroll_text_8
+  - first:
+      213: 4371703188174668708
+    second: hint_scroll_text_9
+  - first:
+      213: 6234757652769160716
+    second: hint_scroll_text_10
+  - first:
+      213: 2494824827444278902
+    second: hint_scroll_text_11
+  - first:
+      213: 1421182657480033122
+    second: hint_scroll_text_12
+  - first:
+      213: 4389384880276997800
+    second: hint_scroll_text_13
+  - first:
+      213: 7276148508969736633
+    second: hint_scroll_text_14
+  - first:
+      213: -358118367162965285
+    second: hint_scroll_text_15
+  - first:
+      213: -6420370352445340878
+    second: hint_scroll_text_16
+  - first:
+      213: 3666292685750915440
+    second: hint_scroll_text_17
+  - first:
+      213: -8217305498092956957
+    second: hint_scroll_text_18
+  - first:
+      213: -3526691548427397902
+    second: hint_scroll_text_19
+  - first:
+      213: 6598300144338900544
+    second: hint_scroll_text_20
+  - first:
+      213: -1425727809831153989
+    second: hint_scroll_text_21
+  - first:
+      213: -4995198023556233034
+    second: hint_scroll_text_22
+  - first:
+      213: 7220898278461698729
+    second: hint_scroll_text_23
+  - first:
+      213: 3528849198982499050
+    second: hint_scroll_text_24
+  - first:
+      213: 5181904414859637086
+    second: hint_scroll_text_25
+  - first:
+      213: -8872627667561771633
+    second: hint_scroll_text_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hint_scroll_text_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 516
+        width: 103
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f147e444e50ad20800000000000000
+      internalID: 3287731375447482215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 519
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd9cdc690b6f0bb0800000000000000
+      internalID: -4967634175741092398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 529
+        width: 124
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c713ce653204e5c0800000000000000
+      internalID: -4187219325032917052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 106
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1b41dc0dd03b7b0800000000000000
+      internalID: -5209805153492487716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 535
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05514c2ce8e30a9b0800000000000000
+      internalID: -5070984397545269936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 535
+        width: 79
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c629f171f6c77970800000000000000
+      internalID: 8752683141119420100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_6
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 539
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae76f627899dab190800000000000000
+      internalID: -7945799343763658774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_7
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 535
+        width: 111
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b449d875406a4730800000000000000
+      internalID: 3984102671859139760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_8
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 540
+        width: 104
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfc5c7be3b7b6c20800000000000000
+      internalID: 3200787469478252478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_9
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 545
+        width: 100
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3089a23e86bac30800000000000000
+      internalID: 4371703188174668708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_10
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 566
+        width: 143
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e34f15d0f468650800000000000000
+      internalID: 6234757652769160716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_11
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 554
+        width: 84
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67634a066f56f9220800000000000000
+      internalID: 2494824827444278902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_12
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 322
+        width: 99
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2630b04e81e09b310800000000000000
+      internalID: 1421182657480033122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 335
+        width: 78
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6816bea4a3aec30800000000000000
+      internalID: 4389384880276997800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_14
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 321
+        width: 182
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9112aa4821af460800000000000000
+      internalID: 7276148508969736633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_15
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 332
+        width: 74
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd265b11e35b70bf0800000000000000
+      internalID: -358118367162965285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_16
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 303
+        width: 97
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233cb085e2346e6a0800000000000000
+      internalID: -6420370352445340878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_17
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 335
+        width: 83
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071dbc8d5c941e230800000000000000
+      internalID: 3666292685750915440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_18
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 315
+        width: 90
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e21e47cf2446fd80800000000000000
+      internalID: -8217305498092956957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_19
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 310
+        width: 112
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4dc9fc8bcae0fc0800000000000000
+      internalID: -3526691548427397902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_20
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 367
+        width: 91
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0469ab0a50fd19b50800000000000000
+      internalID: 6598300144338900544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_21
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 346
+        width: 125
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe4e9c5c1cc63ce0800000000000000
+      internalID: -1425727809831153989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_22
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 343
+        width: 110
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8823ffcdd7daab0800000000000000
+      internalID: -4995198023556233034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_23
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 332
+        width: 115
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a270fee9b8c53460800000000000000
+      internalID: 7220898278461698729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_24
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 341
+        width: 127
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea064b56adf8f030800000000000000
+      internalID: 3528849198982499050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_25
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 348
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51bcb34c92d9e740800000000000000
+      internalID: 5181904414859637086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_scroll_text_26
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 238
+        width: 1196
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d8da245281ed480800000000000000
+      internalID: -8872627667561771633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hint_scroll_text_0: 3287731375447482215
+      hint_scroll_text_1: -4967634175741092398
+      hint_scroll_text_10: 6234757652769160716
+      hint_scroll_text_11: 2494824827444278902
+      hint_scroll_text_12: 1421182657480033122
+      hint_scroll_text_13: 4389384880276997800
+      hint_scroll_text_14: 7276148508969736633
+      hint_scroll_text_15: -358118367162965285
+      hint_scroll_text_16: -6420370352445340878
+      hint_scroll_text_17: 3666292685750915440
+      hint_scroll_text_18: -8217305498092956957
+      hint_scroll_text_19: -3526691548427397902
+      hint_scroll_text_2: -4187219325032917052
+      hint_scroll_text_20: 6598300144338900544
+      hint_scroll_text_21: -1425727809831153989
+      hint_scroll_text_22: -4995198023556233034
+      hint_scroll_text_23: 7220898278461698729
+      hint_scroll_text_24: 3528849198982499050
+      hint_scroll_text_25: 5181904414859637086
+      hint_scroll_text_26: -8872627667561771633
+      hint_scroll_text_3: -5209805153492487716
+      hint_scroll_text_4: -5070984397545269936
+      hint_scroll_text_5: 8752683141119420100
+      hint_scroll_text_6: -7945799343763658774
+      hint_scroll_text_7: 3984102671859139760
+      hint_scroll_text_8: 3200787469478252478
+      hint_scroll_text_9: 4371703188174668708
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 9ec946fe2df52684a80776866c670cdf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 235031517241357769
+    second: walk_hint_howtoplay0001_0
+  - first:
+      213: -1263900662998492564
+    second: walk_hint_howtoplay0001_1
+  - first:
+      213: -6411344622419481256
+    second: walk_hint_howtoplay0001_2
+  - first:
+      213: 7900544157751483280
+    second: walk_hint_howtoplay0001_3
+  - first:
+      213: 946116231397227092
+    second: walk_hint_howtoplay0001_4
+  - first:
+      213: -4389220786326911152
+    second: walk_hint_howtoplay0001_5
+  - first:
+      213: -3763642473277556343
+    second: walk_hint_howtoplay0001_6
+  - first:
+      213: -9073021440133642261
+    second: walk_hint_howtoplay0001_7
+  - first:
+      213: 1785740289850105125
+    second: walk_hint_howtoplay0001_8
+  - first:
+      213: -5612468380084993957
+    second: walk_hint_howtoplay0001_9
+  - first:
+      213: -8835554151911513470
+    second: walk_hint_howtoplay0001_10
+  - first:
+      213: -6117282227872672848
+    second: walk_hint_howtoplay0001_11
+  - first:
+      213: -8211700432184562847
+    second: walk_hint_howtoplay0001_12
+  - first:
+      213: 2810076987360373896
+    second: walk_hint_howtoplay0001_13
+  - first:
+      213: -4404196412949398927
+    second: walk_hint_howtoplay0001_14
+  - first:
+      213: -7229185141570218257
+    second: walk_hint_howtoplay0001_15
+  - first:
+      213: -3600554275588895359
+    second: walk_hint_howtoplay0001_16
+  - first:
+      213: 6660110377678581195
+    second: walk_hint_howtoplay0001_17
+  - first:
+      213: -4582505467217610847
+    second: walk_hint_howtoplay0001_18
+  - first:
+      213: -3019968147953361248
+    second: walk_hint_howtoplay0001_19
+  - first:
+      213: 7994341207498038268
+    second: walk_hint_howtoplay0001_20
+  - first:
+      213: 47991197237414718
+    second: walk_hint_howtoplay0001_21
+  - first:
+      213: -8621853216289965665
+    second: walk_hint_howtoplay0001_22
+  - first:
+      213: 1097642566766264217
+    second: walk_hint_howtoplay0001_23
+  - first:
+      213: -773386632502562735
+    second: walk_hint_howtoplay0001_24
+  - first:
+      213: 1196402895781403929
+    second: walk_hint_howtoplay0001_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_0
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 809
+        width: 70
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c531307beff24300800000000000000
+      internalID: 235031517241357769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_1
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 703
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a189e1b09b57ee0800000000000000
+      internalID: -1263900662998492564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_2
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 698
+        width: 90
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d6310e8045607a0800000000000000
+      internalID: -6411344622419481256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 645
+        width: 82
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b90177d0f54ad60800000000000000
+      internalID: 7900544157751483280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 655
+        width: 78
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ab9a023b7412d00800000000000000
+      internalID: 946116231397227092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 666
+        width: 89
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057493e23fa5613c0800000000000000
+      internalID: -4389220786326911152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 668
+        width: 88
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989f7b67c1bd4cbc0800000000000000
+      internalID: -3763642473277556343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_7
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 658
+        width: 90
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7c4553217261280800000000000000
+      internalID: -9073021440133642261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 679
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d5e95155938c810800000000000000
+      internalID: 1785740289850105125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_9
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 676
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b500ce39eb18c12b0800000000000000
+      internalID: -5612468380084993957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_10
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 669
+        width: 80
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2822695cf4ec16580800000000000000
+      internalID: -8835554151911513470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_11
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 671
+        width: 84
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3d6d8793c0b1ba0800000000000000
+      internalID: -6117282227872672848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_12
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 688
+        width: 109
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ba7b1e6fd2a0e80800000000000000
+      internalID: -8211700432184562847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_13
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 679
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c6d1fa1266ff620800000000000000
+      internalID: 2810076987360373896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_14
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 679
+        width: 94
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17af91562b621e2c0800000000000000
+      internalID: -4404196412949398927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_15
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 699
+        width: 123
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6dc256a66ccab90800000000000000
+      internalID: -7229185141570218257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 655
+        width: 100
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d820186f2480ec0800000000000000
+      internalID: -3600554275588895359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_17
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 387
+        width: 223
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdac6a0a177d6c50800000000000000
+      internalID: 6660110377678581195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_18
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 153
+        width: 308
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a775358e8ba760c0800000000000000
+      internalID: -4582505467217610847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_19
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 381
+        width: 228
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aede3c48fae616d0800000000000000
+      internalID: -3019968147953361248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 154
+        width: 133
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb103ee8fa91fe60800000000000000
+      internalID: 7994341207498038268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_21
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 153
+        width: 229
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b8ea75dbf7aa000800000000000000
+      internalID: 47991197237414718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_22
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 155
+        width: 133
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f993a792e26095880800000000000000
+      internalID: -8621853216289965665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_23
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 141
+        width: 169
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f7372591c9b3f00800000000000000
+      internalID: 1097642566766264217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_24
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 136
+        width: 234
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15036af84f06445f0800000000000000
+      internalID: -773386632502562735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_hint_howtoplay0001_25
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 140
+        width: 187
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d9c4b481a7a9010800000000000000
+      internalID: 1196402895781403929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      walk_hint_howtoplay0001_0: 235031517241357769
+      walk_hint_howtoplay0001_1: -1263900662998492564
+      walk_hint_howtoplay0001_10: -8835554151911513470
+      walk_hint_howtoplay0001_11: -6117282227872672848
+      walk_hint_howtoplay0001_12: -8211700432184562847
+      walk_hint_howtoplay0001_13: 2810076987360373896
+      walk_hint_howtoplay0001_14: -4404196412949398927
+      walk_hint_howtoplay0001_15: -7229185141570218257
+      walk_hint_howtoplay0001_16: -3600554275588895359
+      walk_hint_howtoplay0001_17: 6660110377678581195
+      walk_hint_howtoplay0001_18: -4582505467217610847
+      walk_hint_howtoplay0001_19: -3019968147953361248
+      walk_hint_howtoplay0001_2: -6411344622419481256
+      walk_hint_howtoplay0001_20: 7994341207498038268
+      walk_hint_howtoplay0001_21: 47991197237414718
+      walk_hint_howtoplay0001_22: -8621853216289965665
+      walk_hint_howtoplay0001_23: 1097642566766264217
+      walk_hint_howtoplay0001_24: -773386632502562735
+      walk_hint_howtoplay0001_25: 1196402895781403929
+      walk_hint_howtoplay0001_3: 7900544157751483280
+      walk_hint_howtoplay0001_4: 946116231397227092
+      walk_hint_howtoplay0001_5: -4389220786326911152
+      walk_hint_howtoplay0001_6: -3763642473277556343
+      walk_hint_howtoplay0001_7: -9073021440133642261
+      walk_hint_howtoplay0001_8: 1785740289850105125
+      walk_hint_howtoplay0001_9: -5612468380084993957
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
