@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: cc06be31557928f40ad1f36f317e7d8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3999019801329811150
+    second: hint_mom_text_123_0
+  - first:
+      213: 6361641247680755032
+    second: hint_mom_text_123_1
+  - first:
+      213: 8650594385735301336
+    second: hint_mom_text_123_2
+  - first:
+      213: 3628154569556964036
+    second: hint_mom_text_123_3
+  - first:
+      213: -1593699084051120220
+    second: hint_mom_text_123_4
+  - first:
+      213: 7765085593497328864
+    second: hint_mom_text_123_5
+  - first:
+      213: -7375076813744525836
+    second: hint_mom_text_123_6
+  - first:
+      213: 3050380122293093938
+    second: hint_mom_text_123_7
+  - first:
+      213: 4653802632940029037
+    second: hint_mom_text_123_8
+  - first:
+      213: -1158687761598563583
+    second: hint_mom_text_123_9
+  - first:
+      213: 6558521318302373213
+    second: hint_mom_text_123_10
+  - first:
+      213: -5810032532456149529
+    second: hint_mom_text_123_11
+  - first:
+      213: -5936005041579264347
+    second: hint_mom_text_123_12
+  - first:
+      213: -3684082012599761111
+    second: hint_mom_text_123_13
+  - first:
+      213: -7867165947368333161
+    second: hint_mom_text_123_14
+  - first:
+      213: 7982575122679936026
+    second: hint_mom_text_123_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hint_mom_text_123_0
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 549
+        width: 86
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece3404525f5f7730800000000000000
+      internalID: 3999019801329811150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_1
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 440
+        width: 104
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855fb746207194850800000000000000
+      internalID: 6361641247680755032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_2
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 447
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8bdb1d2c51d0870800000000000000
+      internalID: 8650594385735301336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_3
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 444
+        width: 96
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c237a4bb5bc95230800000000000000
+      internalID: 3628154569556964036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 382
+        width: 87
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af7448702b02e9e0800000000000000
+      internalID: -1593699084051120220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 405
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec59e2c43023cb60800000000000000
+      internalID: 7765085593497328864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 412
+        width: 101
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fda98576b676a990800000000000000
+      internalID: -7375076813744525836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_7
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 399
+        width: 89
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23641334f80255a20800000000000000
+      internalID: 3050380122293093938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_8
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 416
+        width: 69
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d640b2776d0a59040800000000000000
+      internalID: 4653802632940029037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 422
+        width: 73
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b335cae938befe0800000000000000
+      internalID: -1158687761598563583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_10
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 426
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d555d35f36c840b50800000000000000
+      internalID: 6558521318302373213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_11
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 409
+        width: 87
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edec71d13e9e5fa0800000000000000
+      internalID: -5810032532456149529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_12
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 419
+        width: 100
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a67dbf6dd21f9da0800000000000000
+      internalID: -5936005041579264347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_13
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 423
+        width: 131
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927c59bbde28fdcc0800000000000000
+      internalID: -3684082012599761111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_14
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 444
+        width: 87
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790af0eb04632d290800000000000000
+      internalID: -7867165947368333161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_mom_text_123_15
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 443
+        width: 93
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a143534d7cdc7ce60800000000000000
+      internalID: 7982575122679936026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hint_mom_text_123_0: 3999019801329811150
+      hint_mom_text_123_1: 6361641247680755032
+      hint_mom_text_123_10: 6558521318302373213
+      hint_mom_text_123_11: -5810032532456149529
+      hint_mom_text_123_12: -5936005041579264347
+      hint_mom_text_123_13: -3684082012599761111
+      hint_mom_text_123_14: -7867165947368333161
+      hint_mom_text_123_15: 7982575122679936026
+      hint_mom_text_123_2: 8650594385735301336
+      hint_mom_text_123_3: 3628154569556964036
+      hint_mom_text_123_4: -1593699084051120220
+      hint_mom_text_123_5: 7765085593497328864
+      hint_mom_text_123_6: -7375076813744525836
+      hint_mom_text_123_7: 3050380122293093938
+      hint_mom_text_123_8: 4653802632940029037
+      hint_mom_text_123_9: -1158687761598563583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

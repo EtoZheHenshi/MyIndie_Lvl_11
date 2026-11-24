@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 3504e9a139529a84ba24f3803d0d9a1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7772756679466664452
+    second: hint_likes_text_0
+  - first:
+      213: 8156652946950616689
+    second: hint_likes_text_1
+  - first:
+      213: -8481944832580901765
+    second: hint_likes_text_2
+  - first:
+      213: 4062173662871164377
+    second: hint_likes_text_3
+  - first:
+      213: 4978227051704513039
+    second: hint_likes_text_4
+  - first:
+      213: 1363285331896548507
+    second: hint_likes_text_5
+  - first:
+      213: 6507034267764955661
+    second: hint_likes_text_6
+  - first:
+      213: -975568276678796021
+    second: hint_likes_text_7
+  - first:
+      213: -588143499340845848
+    second: hint_likes_text_8
+  - first:
+      213: 4914264860541980078
+    second: hint_likes_text_9
+  - first:
+      213: -4408342757272012735
+    second: hint_likes_text_10
+  - first:
+      213: -5800322019949956551
+    second: hint_likes_text_11
+  - first:
+      213: 7666147001636890369
+    second: hint_likes_text_12
+  - first:
+      213: 2832176887910038148
+    second: hint_likes_text_13
+  - first:
+      213: -8913898546556784176
+    second: hint_likes_text_14
+  - first:
+      213: -2124529633810422363
+    second: hint_likes_text_15
+  - first:
+      213: -2775375967729655410
+    second: hint_likes_text_16
+  - first:
+      213: 4756651676169080976
+    second: hint_likes_text_17
+  - first:
+      213: 845348889807462584
+    second: hint_likes_text_18
+  - first:
+      213: 7008146706340042753
+    second: hint_likes_text_19
+  - first:
+      213: 3402962104562656919
+    second: hint_likes_text_20
+  - first:
+      213: -7133843981332606820
+    second: hint_likes_text_21
+  - first:
+      213: -4476342424183715908
+    second: hint_likes_text_22
+  - first:
+      213: -6222035768979848525
+    second: hint_likes_text_23
+  - first:
+      213: -6451735653617262302
+    second: hint_likes_text_24
+  - first:
+      213: 4067737588589793021
+    second: hint_likes_text_25
+  - first:
+      213: 7377403693677510235
+    second: hint_likes_text_26
+  - first:
+      213: -1156055651882035142
+    second: hint_likes_text_27
+  - first:
+      213: 3113554103158023527
+    second: hint_likes_text_28
+  - first:
+      213: 5848432663137751135
+    second: hint_likes_text_29
+  - first:
+      213: 2350285736386044948
+    second: hint_likes_text_30
+  - first:
+      213: 559746380045819507
+    second: hint_likes_text_31
+  - first:
+      213: -6973243209441658495
+    second: hint_likes_text_32
+  - first:
+      213: -6801395445098317050
+    second: hint_likes_text_33
+  - first:
+      213: 3908364469542156702
+    second: hint_likes_text_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hint_likes_text_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 657
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402c725a4016edb60800000000000000
+      internalID: 7772756679466664452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_1
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 528
+        width: 83
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1767223b3a0423170800000000000000
+      internalID: 8156652946950616689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_2
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 658
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b742e813d141a4a80800000000000000
+      internalID: -8481944832580901765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_3
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 546
+        width: 93
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5126f8c6dbf5830800000000000000
+      internalID: 4062173662871164377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_4
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 549
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f027614b027361540800000000000000
+      internalID: 4978227051704513039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 548
+        width: 62
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9cb13f49cc5be210800000000000000
+      internalID: 1363285331896548507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 551
+        width: 67
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a9c67d031ad4a50800000000000000
+      internalID: 6507034267764955661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 558
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d9b6632d51672f0800000000000000
+      internalID: -975568276678796021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 552
+        width: 87
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec65dc7a9e76d7f0800000000000000
+      internalID: -588143499340845848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_9
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 540
+        width: 66
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead0ac09ad9f23440800000000000000
+      internalID: 4914264860541980078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_10
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 531
+        width: 69
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148b2a06e9b62d2c0800000000000000
+      internalID: -4408342757272012735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_11
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 539
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932b102badd118fa0800000000000000
+      internalID: -5800322019949956551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_12
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 552
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1072e7cb410a36a60800000000000000
+      internalID: 7666147001636890369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_13
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 547
+        width: 88
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48af2f0cfd9ed4720800000000000000
+      internalID: 2832176887910038148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_14
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 556
+        width: 97
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1bc90ff787b4480800000000000000
+      internalID: -8913898546556784176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_15
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 549
+        width: 82
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a560f5ed872482e0800000000000000
+      internalID: -2124529633810422363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_16
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 552
+        width: 109
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81615d0342eb79d0800000000000000
+      internalID: -2775375967729655410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_17
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 555
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09013566f75030240800000000000000
+      internalID: 4756651676169080976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_18
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 533
+        width: 85
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0ae3026584bbb00800000000000000
+      internalID: 845348889807462584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 359
+        width: 80
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108d8357c40f14160800000000000000
+      internalID: 7008146706340042753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 374
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796a2922100c93f20800000000000000
+      internalID: 3402962104562656919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_21
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 359
+        width: 68
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c909c9912be7ffc90800000000000000
+      internalID: -7133843981332606820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_22
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 363
+        width: 105
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7c4892846d0e1c0800000000000000
+      internalID: -4476342424183715908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_23
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 349
+        width: 85
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b28e221f63e6a9a0800000000000000
+      internalID: -6222035768979848525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_24
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 353
+        width: 79
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221ab651b94d676a0800000000000000
+      internalID: -6451735653617262302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_25
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 363
+        width: 78
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe0667f8c1837830800000000000000
+      internalID: 4067737588589793021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_26
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 363
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e7d4e729dc16660800000000000000
+      internalID: 7377403693677510235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_27
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 362
+        width: 81
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a381df8728dd4ffe0800000000000000
+      internalID: -1156055651882035142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_28
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 349
+        width: 97
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765a1b3e5f0953b20800000000000000
+      internalID: 3113554103158023527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_29
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 351
+        width: 132
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f501e13558ec92150800000000000000
+      internalID: 5848432663137751135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_30
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 336
+        width: 83
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41425f5cc64ed9020800000000000000
+      internalID: 2350285736386044948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_31
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 343
+        width: 90
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e11f2fd5e94c700800000000000000
+      internalID: 559746380045819507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_32
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 354
+        width: 75
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18933d03f301a3f90800000000000000
+      internalID: -6973243209441658495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_33
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 350
+        width: 124
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b74f5c0e69c91a0800000000000000
+      internalID: -6801395445098317050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_likes_text_34
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 350
+        width: 88
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9971d317cc4d3630800000000000000
+      internalID: 3908364469542156702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hint_likes_text_0: 7772756679466664452
+      hint_likes_text_1: 8156652946950616689
+      hint_likes_text_10: -4408342757272012735
+      hint_likes_text_11: -5800322019949956551
+      hint_likes_text_12: 7666147001636890369
+      hint_likes_text_13: 2832176887910038148
+      hint_likes_text_14: -8913898546556784176
+      hint_likes_text_15: -2124529633810422363
+      hint_likes_text_16: -2775375967729655410
+      hint_likes_text_17: 4756651676169080976
+      hint_likes_text_18: 845348889807462584
+      hint_likes_text_19: 7008146706340042753
+      hint_likes_text_2: -8481944832580901765
+      hint_likes_text_20: 3402962104562656919
+      hint_likes_text_21: -7133843981332606820
+      hint_likes_text_22: -4476342424183715908
+      hint_likes_text_23: -6222035768979848525
+      hint_likes_text_24: -6451735653617262302
+      hint_likes_text_25: 4067737588589793021
+      hint_likes_text_26: 7377403693677510235
+      hint_likes_text_27: -1156055651882035142
+      hint_likes_text_28: 3113554103158023527
+      hint_likes_text_29: 5848432663137751135
+      hint_likes_text_3: 4062173662871164377
+      hint_likes_text_30: 2350285736386044948
+      hint_likes_text_31: 559746380045819507
+      hint_likes_text_32: -6973243209441658495
+      hint_likes_text_33: -6801395445098317050
+      hint_likes_text_34: 3908364469542156702
+      hint_likes_text_4: 4978227051704513039
+      hint_likes_text_5: 1363285331896548507
+      hint_likes_text_6: 6507034267764955661
+      hint_likes_text_7: -975568276678796021
+      hint_likes_text_8: -588143499340845848
+      hint_likes_text_9: 4914264860541980078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
