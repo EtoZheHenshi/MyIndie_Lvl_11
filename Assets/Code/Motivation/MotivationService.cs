@@ -44,6 +44,12 @@ namespace Code.Motivation
             if (IsDepleted || IsTypingCompleted || _pauseService.IsPaused)
                 return;
 
+            if (!_typingWindow.HasBeenOpened)
+            {
+                RefreshVisibility();
+                return;
+            }
+
             float changePerSecond = _typingWindow.IsOpen
                 ? _gainPerSecond
                 : -_lossPerSecond;
