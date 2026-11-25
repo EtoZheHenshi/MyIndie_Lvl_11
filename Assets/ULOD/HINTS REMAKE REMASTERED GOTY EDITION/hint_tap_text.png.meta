@@ -1,0 +1,2340 @@
+fileFormatVersion: 2
+guid: 70d098de3f75b0846be786512dd5183d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7490070510566183803
+    second: hint_tap_text_0
+  - first:
+      213: -5780940304857778847
+    second: hint_tap_text_1
+  - first:
+      213: -7094384241220698828
+    second: hint_tap_text_2
+  - first:
+      213: 3650173986634582728
+    second: hint_tap_text_3
+  - first:
+      213: -3301671548899194044
+    second: hint_tap_text_4
+  - first:
+      213: -6022206528018135153
+    second: hint_tap_text_5
+  - first:
+      213: 4592189746769020579
+    second: hint_tap_text_6
+  - first:
+      213: 2663087192683057447
+    second: hint_tap_text_7
+  - first:
+      213: 523889505580326816
+    second: hint_tap_text_8
+  - first:
+      213: -1799758084136908408
+    second: hint_tap_text_9
+  - first:
+      213: -8277339586277568932
+    second: hint_tap_text_10
+  - first:
+      213: -8761344753305106688
+    second: hint_tap_text_11
+  - first:
+      213: 4692569160359013928
+    second: hint_tap_text_12
+  - first:
+      213: -2482198503540418799
+    second: hint_tap_text_13
+  - first:
+      213: 2893338639899757206
+    second: hint_tap_text_14
+  - first:
+      213: 3124268233528826217
+    second: hint_tap_text_15
+  - first:
+      213: -3943026127644627526
+    second: hint_tap_text_16
+  - first:
+      213: -8203213920616975837
+    second: hint_tap_text_17
+  - first:
+      213: 6166513154855249824
+    second: hint_tap_text_18
+  - first:
+      213: 1723745001710148431
+    second: hint_tap_text_19
+  - first:
+      213: -2469519445748332983
+    second: hint_tap_text_20
+  - first:
+      213: 4474793174573221948
+    second: hint_tap_text_21
+  - first:
+      213: -7214360372263227478
+    second: hint_tap_text_22
+  - first:
+      213: -5725392665762853901
+    second: hint_tap_text_23
+  - first:
+      213: 4383875948293064158
+    second: hint_tap_text_24
+  - first:
+      213: 2382041776465572765
+    second: hint_tap_text_25
+  - first:
+      213: 6730806947705958632
+    second: hint_tap_text_26
+  - first:
+      213: -2366123028769668300
+    second: hint_tap_text_27
+  - first:
+      213: 8351595574059272602
+    second: hint_tap_text_28
+  - first:
+      213: -3179176142374461787
+    second: hint_tap_text_29
+  - first:
+      213: -3501017407777883711
+    second: hint_tap_text_30
+  - first:
+      213: 4058804188336953833
+    second: hint_tap_text_31
+  - first:
+      213: -1976749483645337053
+    second: hint_tap_text_32
+  - first:
+      213: -5109878573501213445
+    second: hint_tap_text_33
+  - first:
+      213: 255523098975042800
+    second: hint_tap_text_34
+  - first:
+      213: -1436158714950310816
+    second: hint_tap_text_35
+  - first:
+      213: -4710233997880663593
+    second: hint_tap_text_36
+  - first:
+      213: -9174646505938074899
+    second: hint_tap_text_37
+  - first:
+      213: 1205300081966146441
+    second: hint_tap_text_38
+  - first:
+      213: 8342570090095420777
+    second: hint_tap_text_39
+  - first:
+      213: 4836305426954750721
+    second: hint_tap_text_40
+  - first:
+      213: 2903339271957364659
+    second: hint_tap_text_41
+  - first:
+      213: -2246723316279451462
+    second: hint_tap_text_42
+  - first:
+      213: 1032105675093650739
+    second: hint_tap_text_43
+  - first:
+      213: 1243008297473227699
+    second: hint_tap_text_44
+  - first:
+      213: 652432283697501776
+    second: hint_tap_text_45
+  - first:
+      213: 3628795280582276426
+    second: hint_tap_text_46
+  - first:
+      213: 6813153495580185448
+    second: hint_tap_text_47
+  - first:
+      213: -1060407350242116076
+    second: hint_tap_text_48
+  - first:
+      213: 5929833956315322243
+    second: hint_tap_text_49
+  - first:
+      213: 4461761354780678540
+    second: hint_tap_text_50
+  - first:
+      213: -4046268225650345853
+    second: hint_tap_text_51
+  - first:
+      213: 1853912233268649141
+    second: hint_tap_text_52
+  - first:
+      213: 43425514494624999
+    second: hint_tap_text_53
+  - first:
+      213: 4856278970797858024
+    second: hint_tap_text_54
+  - first:
+      213: -7768583504486858951
+    second: hint_tap_text_55
+  - first:
+      213: 1944839072154330313
+    second: hint_tap_text_56
+  - first:
+      213: 5228244697079294536
+    second: hint_tap_text_57
+  - first:
+      213: -539106673756406658
+    second: hint_tap_text_58
+  - first:
+      213: 4823006377139316146
+    second: hint_tap_text_59
+  - first:
+      213: -7731837043349876427
+    second: hint_tap_text_60
+  - first:
+      213: 5017230996061988110
+    second: hint_tap_text_61
+  - first:
+      213: 3260324841346794928
+    second: hint_tap_text_62
+  - first:
+      213: 2259831085875534865
+    second: hint_tap_text_63
+  - first:
+      213: -757405145369813886
+    second: hint_tap_text_64
+  - first:
+      213: -2788565517781716771
+    second: hint_tap_text_65
+  - first:
+      213: 3244381111699711520
+    second: hint_tap_text_66
+  - first:
+      213: 3491935783416846337
+    second: hint_tap_text_67
+  - first:
+      213: 4188393601026857678
+    second: hint_tap_text_68
+  - first:
+      213: -6472537870573867948
+    second: hint_tap_text_69
+  - first:
+      213: -2651027556937816626
+    second: hint_tap_text_70
+  - first:
+      213: 124897447673151897
+    second: hint_tap_text_71
+  - first:
+      213: 3630311432189446751
+    second: hint_tap_text_72
+  - first:
+      213: -6177928729287658744
+    second: hint_tap_text_73
+  - first:
+      213: -4534006081226171938
+    second: hint_tap_text_74
+  - first:
+      213: -6352064156934107794
+    second: hint_tap_text_75
+  - first:
+      213: 7506406893096707840
+    second: hint_tap_text_76
+  - first:
+      213: 4924682134999928435
+    second: hint_tap_text_77
+  - first:
+      213: -6382093937277502960
+    second: hint_tap_text_78
+  - first:
+      213: 7700199099385078338
+    second: hint_tap_text_79
+  - first:
+      213: 8993257349607676032
+    second: hint_tap_text_80
+  - first:
+      213: 219791909224672571
+    second: hint_tap_text_81
+  - first:
+      213: -109811041261031698
+    second: hint_tap_text_82
+  - first:
+      213: 7138640641029789965
+    second: hint_tap_text_83
+  - first:
+      213: -6242548140154657775
+    second: hint_tap_text_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hint_tap_text_0
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 730
+        width: 9
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ce2130e8ced0890800000000000000
+      internalID: -7490070510566183803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_1
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 850
+        width: 639
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165b635eb69f5cfa0800000000000000
+      internalID: -5780940304857778847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_2
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 758
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d39e9ce1fab8d90800000000000000
+      internalID: -7094384241220698828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_3
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 756
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cac9b1c6e508a230800000000000000
+      internalID: 3650173986634582728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_4
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 747
+        width: 81
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b89d2283b1e22d0800000000000000
+      internalID: -3301671548899194044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_5
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 791
+        width: 8
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87c07dd113dc6ca0800000000000000
+      internalID: -6022206528018135153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 739
+        width: 59
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6cb558e3cbabf30800000000000000
+      internalID: 4592189746769020579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 751
+        width: 48
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72114cd21bf25f420800000000000000
+      internalID: 2663087192683057447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 741
+        width: 82
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af9ba9caba354700800000000000000
+      internalID: 523889505580326816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_9
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 748
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889c169de89f507e0800000000000000
+      internalID: -1799758084136908408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 743
+        width: 55
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e85a2608bf02d80800000000000000
+      internalID: -8277339586277568932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 738
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0074480dd53796680800000000000000
+      internalID: -8761344753305106688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_12
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 750
+        width: 57
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ee62ff9ca5f1140800000000000000
+      internalID: 4692569160359013928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 751
+        width: 76
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117977ebc957d8dd0800000000000000
+      internalID: -2482198503540418799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_14
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 740
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a0326d924372820800000000000000
+      internalID: 2893338639899757206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_15
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 745
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969d582c761ab5b20800000000000000
+      internalID: 3124268233528826217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_16
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 759
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd68a1c0ae8749c0800000000000000
+      internalID: -3943026127644627526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_17
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 763
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322f515d664582e80800000000000000
+      internalID: -8203213920616975837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_18
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 761
+        width: 103
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7abe1fa0bd39550800000000000000
+      internalID: 6166513154855249824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_19
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 749
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bd94e32f8fbe710800000000000000
+      internalID: 1723745001710148431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_20
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 750
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946404ee5218abdd0800000000000000
+      internalID: -2469519445748332983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_21
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 756
+        width: 58
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3887cd0fa8a91e30800000000000000
+      internalID: 4474793174573221948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_22
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 760
+        width: 66
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf6899f67171eb90800000000000000
+      internalID: -7214360372263227478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_23
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 754
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb049574b15b80b0800000000000000
+      internalID: -5725392665762853901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_24
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 754
+        width: 72
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5036db2f7a6dc30800000000000000
+      internalID: 4383875948293064158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_25
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 722
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93fe560066be0120800000000000000
+      internalID: 2382041776465572765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_26
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 719
+        width: 639
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0beb1f141a86d50800000000000000
+      internalID: 6730806947705958632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_27
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 598
+        width: 110
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433005f34a7d92fd0800000000000000
+      internalID: -2366123028769668300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_28
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 595
+        width: 68
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99078b0de3d6e370800000000000000
+      internalID: 8351595574059272602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_29
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 598
+        width: 89
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae9f5b742c41e3d0800000000000000
+      internalID: -3179176142374461787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_30
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 592
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9b0f08733e96fc0800000000000000
+      internalID: -3501017407777883711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_31
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 589
+        width: 67
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e911b2a7e4c35830800000000000000
+      internalID: 4058804188336953833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_32
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 591
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322026161dc2194e0800000000000000
+      internalID: -1976749483645337053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_33
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 593
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4941db2801619b0800000000000000
+      internalID: -5109878573501213445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_34
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc705a97eccb8300800000000000000
+      internalID: 255523098975042800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_35
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 603
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0642e42024db11ce0800000000000000
+      internalID: -1436158714950310816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_36
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 599
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1ea538223e1aeb0800000000000000
+      internalID: -4710233997880663593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_37
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 600
+        width: 99
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de248c9bc9b1da080800000000000000
+      internalID: -9174646505938074899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_38
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 601
+        width: 66
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9836751e9061ab010800000000000000
+      internalID: 1205300081966146441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_39
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 604
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965afedcb43c6c370800000000000000
+      internalID: 8342570090095420777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_40
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 606
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b8ee679220e1340800000000000000
+      internalID: 4836305426954750721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 429
+        width: 68
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfb57f6fabba4820800000000000000
+      internalID: 2903339271957364659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_42
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 432
+        width: 68
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab063982c0902d0e0800000000000000
+      internalID: -2246723316279451462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_43
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 436
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d2f96a4a6c25e00800000000000000
+      internalID: 1032105675093650739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_44
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 435
+        width: 68
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb31c7f57d004110800000000000000
+      internalID: 1243008297473227699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_45
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 424
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05659cd84b7ed0900800000000000000
+      internalID: 652432283697501776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_46
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 432
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4578bdd4121c5230800000000000000
+      internalID: 3628795280582276426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_47
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 442
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8639440b10f2d8e50800000000000000
+      internalID: 6813153495580185448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_48
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 446
+        width: 125
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41efa9b122da841f0800000000000000
+      internalID: -1060407350242116076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_49
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 448
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387593fc0900b4250800000000000000
+      internalID: 5929833956315322243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_50
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 444
+        width: 70
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c899440105c5bed30800000000000000
+      internalID: 4461761354780678540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_51
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 451
+        width: 69
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3883920ac74c8d7c0800000000000000
+      internalID: -4046268225650345853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_52
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 452
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc9abc8a5b6ab910800000000000000
+      internalID: 1853912233268649141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_53
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 445
+        width: 75
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e404ad76474a9000800000000000000
+      internalID: 43425514494624999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_54
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 450
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec1b988ef7f46340800000000000000
+      internalID: 4856278970797858024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_55
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 444
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ff91f5672703490800000000000000
+      internalID: -7768583504486858951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_56
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 451
+        width: 89
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c42f09f4d47dfa10800000000000000
+      internalID: 1944839072154330313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_57
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 455
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a2b300ad47e8840800000000000000
+      internalID: 5228244697079294536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_58
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 458
+        width: 32
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cf4b62655b488f0800000000000000
+      internalID: -539106673756406658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_59
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 462
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b525d22fb2cee240800000000000000
+      internalID: 4823006377139316146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_60
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 456
+        width: 76
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5319ce19c2ff2b490800000000000000
+      internalID: -7731837043349876427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_61
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 442
+        width: 71
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05aa5c2209c0a540800000000000000
+      internalID: 5017230996061988110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_62
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 445
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b58bd45b200f3d20800000000000000
+      internalID: 3260324841346794928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_63
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 282
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c1ff546688c5f10800000000000000
+      internalID: 2259831085875534865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_64
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 283
+        width: 61
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cdd2f78082d75f0800000000000000
+      internalID: -757405145369813886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_65
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 284
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0b7bf9f660d49d0800000000000000
+      internalID: -2788565517781716771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_66
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 279
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02629de7e6b560d20800000000000000
+      internalID: 3244381111699711520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_67
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 283
+        width: 77
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108590d0819d57030800000000000000
+      internalID: 3491935783416846337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_68
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 288
+        width: 51
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca99b00ac9202a30800000000000000
+      internalID: 4188393601026857678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_69
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 259
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c6e25891dec26a0800000000000000
+      internalID: -6472537870573867948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_70
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 271
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec523f29b78a53bd0800000000000000
+      internalID: -2651027556937816626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_71
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 277
+        width: 71
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99149e12199bbb100800000000000000
+      internalID: 124897447673151897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_72
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 276
+        width: 83
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a01bb6305716230800000000000000
+      internalID: 3630311432189446751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_73
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 272
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803f0238d86934aa0800000000000000
+      internalID: -6177928729287658744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_74
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 276
+        width: 73
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed99d07cd79f311c0800000000000000
+      internalID: -4534006081226171938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_75
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 275
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d837fcd4fe8d7a0800000000000000
+      internalID: -6352064156934107794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_76
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 272
+        width: 92
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007a2927c4d1c2860800000000000000
+      internalID: 7506406893096707840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_77
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 281
+        width: 99
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e02684f4cf75440800000000000000
+      internalID: 4924682134999928435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_78
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 266
+        width: 74
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a7669b06f3e67a0800000000000000
+      internalID: -6382093937277502960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_79
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 251
+        width: 70
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24261a2984a9cda60800000000000000
+      internalID: 7700199099385078338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_80
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 262
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088590149e77ecc70800000000000000
+      internalID: 8993257349607676032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_81
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 256
+        width: 74
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d67d1b39bdc0300800000000000000
+      internalID: 219791909224672571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_82
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 270
+        width: 72
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee6835907fd97ef0800000000000000
+      internalID: -109811041261031698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_83
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 276
+        width: 107
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d095fb347db811360800000000000000
+      internalID: 7138640641029789965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_tap_text_84
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 279
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1146ecc7a830e59a0800000000000000
+      internalID: -6242548140154657775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hint_tap_text_0: -7490070510566183803
+      hint_tap_text_1: -5780940304857778847
+      hint_tap_text_10: -8277339586277568932
+      hint_tap_text_11: -8761344753305106688
+      hint_tap_text_12: 4692569160359013928
+      hint_tap_text_13: -2482198503540418799
+      hint_tap_text_14: 2893338639899757206
+      hint_tap_text_15: 3124268233528826217
+      hint_tap_text_16: -3943026127644627526
+      hint_tap_text_17: -8203213920616975837
+      hint_tap_text_18: 6166513154855249824
+      hint_tap_text_19: 1723745001710148431
+      hint_tap_text_2: -7094384241220698828
+      hint_tap_text_20: -2469519445748332983
+      hint_tap_text_21: 4474793174573221948
+      hint_tap_text_22: -7214360372263227478
+      hint_tap_text_23: -5725392665762853901
+      hint_tap_text_24: 4383875948293064158
+      hint_tap_text_25: 2382041776465572765
+      hint_tap_text_26: 6730806947705958632
+      hint_tap_text_27: -2366123028769668300
+      hint_tap_text_28: 8351595574059272602
+      hint_tap_text_29: -3179176142374461787
+      hint_tap_text_3: 3650173986634582728
+      hint_tap_text_30: -3501017407777883711
+      hint_tap_text_31: 4058804188336953833
+      hint_tap_text_32: -1976749483645337053
+      hint_tap_text_33: -5109878573501213445
+      hint_tap_text_34: 255523098975042800
+      hint_tap_text_35: -1436158714950310816
+      hint_tap_text_36: -4710233997880663593
+      hint_tap_text_37: -9174646505938074899
+      hint_tap_text_38: 1205300081966146441
+      hint_tap_text_39: 8342570090095420777
+      hint_tap_text_4: -3301671548899194044
+      hint_tap_text_40: 4836305426954750721
+      hint_tap_text_41: 2903339271957364659
+      hint_tap_text_42: -2246723316279451462
+      hint_tap_text_43: 1032105675093650739
+      hint_tap_text_44: 1243008297473227699
+      hint_tap_text_45: 652432283697501776
+      hint_tap_text_46: 3628795280582276426
+      hint_tap_text_47: 6813153495580185448
+      hint_tap_text_48: -1060407350242116076
+      hint_tap_text_49: 5929833956315322243
+      hint_tap_text_5: -6022206528018135153
+      hint_tap_text_50: 4461761354780678540
+      hint_tap_text_51: -4046268225650345853
+      hint_tap_text_52: 1853912233268649141
+      hint_tap_text_53: 43425514494624999
+      hint_tap_text_54: 4856278970797858024
+      hint_tap_text_55: -7768583504486858951
+      hint_tap_text_56: 1944839072154330313
+      hint_tap_text_57: 5228244697079294536
+      hint_tap_text_58: -539106673756406658
+      hint_tap_text_59: 4823006377139316146
+      hint_tap_text_6: 4592189746769020579
+      hint_tap_text_60: -7731837043349876427
+      hint_tap_text_61: 5017230996061988110
+      hint_tap_text_62: 3260324841346794928
+      hint_tap_text_63: 2259831085875534865
+      hint_tap_text_64: -757405145369813886
+      hint_tap_text_65: -2788565517781716771
+      hint_tap_text_66: 3244381111699711520
+      hint_tap_text_67: 3491935783416846337
+      hint_tap_text_68: 4188393601026857678
+      hint_tap_text_69: -6472537870573867948
+      hint_tap_text_7: 2663087192683057447
+      hint_tap_text_70: -2651027556937816626
+      hint_tap_text_71: 124897447673151897
+      hint_tap_text_72: 3630311432189446751
+      hint_tap_text_73: -6177928729287658744
+      hint_tap_text_74: -4534006081226171938
+      hint_tap_text_75: -6352064156934107794
+      hint_tap_text_76: 7506406893096707840
+      hint_tap_text_77: 4924682134999928435
+      hint_tap_text_78: -6382093937277502960
+      hint_tap_text_79: 7700199099385078338
+      hint_tap_text_8: 523889505580326816
+      hint_tap_text_80: 8993257349607676032
+      hint_tap_text_81: 219791909224672571
+      hint_tap_text_82: -109811041261031698
+      hint_tap_text_83: 7138640641029789965
+      hint_tap_text_84: -6242548140154657775
+      hint_tap_text_9: -1799758084136908408
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
