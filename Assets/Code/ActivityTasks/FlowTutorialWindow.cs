@@ -8,6 +8,7 @@ namespace Code.ActivityTasks
 {
     public class FlowTutorialWindow : MonoBehaviour
     {
+        private const string SeenKey = "TutorialSeen.Flow";
         [SerializeField] private PauseService _pauseService;
         [SerializeField] private GameObject _panel;
         [SerializeField] private Button _confirmButton;
@@ -46,11 +47,14 @@ namespace Code.ActivityTasks
 
         private void Show()
         {
-            if (_isOpen || _pauseService.IsPaused || _pauseService.IsSessionEnded)
+            if (PlayerPrefs.GetInt(SeenKey, 0) == 1 ||
+                _isOpen || _pauseService.IsPaused || _pauseService.IsSessionEnded)
                 return;
             _isOpen = true;
             _pauseService.Pause(false);
             _panel.SetActive(true);
+            PlayerPrefs.SetInt(SeenKey, 1);
+            PlayerPrefs.Save();
             if (EventSystem.current != null)
                 EventSystem.current.SetSelectedGameObject(null);
         }

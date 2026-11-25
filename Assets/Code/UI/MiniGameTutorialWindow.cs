@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Code.MiniGames;
 using Code.Pause;
 using UnityEngine;
@@ -24,8 +23,12 @@ namespace Code.UI
         [SerializeField] private GameObject _background;
         [SerializeField] private Tutorial[] _tutorials;
 
-        private readonly HashSet<MiniGameWindow> _shown = new HashSet<MiniGameWindow>();
         private Tutorial _current;
+
+        private static string GetSeenKey(MiniGameWindow window)
+        {
+            return "TutorialSeen." + window.GetType().FullName;
+        }
 
         private void Awake()
         {
@@ -43,18 +46,21 @@ namespace Code.UI
 
         private void OnWindowOpened(MiniGameWindow window)
         {
-            if (_shown.Contains(window) || _pauseService.IsPaused || _pauseService.IsSessionEnded)
+            if (PlayerPrefs.GetInt(GetSeenKey(window), 0) == 1 ||
+                _pauseService.IsPaused || _pauseService.IsSessionEnded)
                 return;
             foreach (Tutorial tutorial in _tutorials)
             {
                 if (tutorial.Window != window)
                     continue;
-                _shown.Add(window);
                 _current = tutorial;
                 _background.SetActive(true);
                 tutorial.Panel.SetActive(true);
                 _panel.SetActive(true);
                 _pauseService.Pause(false);
+                // Remember the first display across scene restarts and app launches.
+                PlayerPrefs.SetInt(GetSeenKey(window), 1);
+                PlayerPrefs.Save();
                 if (EventSystem.current != null)
                     EventSystem.current.SetSelectedGameObject(null);
                 break;
