@@ -112,7 +112,12 @@ namespace Code.ActivityTasks
                 NextNotificationRemaining = Mathf.Max(0f, NextNotificationRemaining - deltaTime);
                 if (NextNotificationRemaining <= 0f)
                 {
-                    TryCreateTask();
+                    if (TryCreateTask())
+                    {
+                        CurrentChancePercent *= 0.5f;
+                        RandomNotificationSafeSymbolsRemaining =
+                            Mathf.Max(0, _safeSymbolsAfterRandomNotification);
+                    }
                     ResetNotificationTimer();
                 }
             }
