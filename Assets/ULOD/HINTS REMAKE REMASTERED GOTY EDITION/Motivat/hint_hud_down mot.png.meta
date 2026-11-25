@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 52478522fa62b0244b1a9d73e1de1f69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1423017601881196860
+    second: hint_hud_down mot_0
+  - first:
+      213: -2955129525838887548
+    second: hint_hud_down mot_1
+  - first:
+      213: 3153968456754619264
+    second: hint_hud_down mot_2
+  - first:
+      213: 8360526154180905892
+    second: hint_hud_down mot_3
+  - first:
+      213: -7706703062761029259
+    second: hint_hud_down mot_4
+  - first:
+      213: -4107432086646055179
+    second: hint_hud_down mot_5
+  - first:
+      213: -6216203745843453344
+    second: hint_hud_down mot_6
+  - first:
+      213: 4862491687114218125
+    second: hint_hud_down mot_7
+  - first:
+      213: 502984014501037560
+    second: hint_hud_down mot_8
+  - first:
+      213: -4055112075917838634
+    second: hint_hud_down mot_9
+  - first:
+      213: -8151656814940029504
+    second: hint_hud_down mot_10
+  - first:
+      213: 7145922576759974894
+    second: hint_hud_down mot_11
+  - first:
+      213: -6980908221684708832
+    second: hint_hud_down mot_12
+  - first:
+      213: -1546470982104250292
+    second: hint_hud_down mot_13
+  - first:
+      213: 8176463187962595934
+    second: hint_hud_down mot_14
+  - first:
+      213: -4591587935579456864
+    second: hint_hud_down mot_15
+  - first:
+      213: 3883833097386677781
+    second: hint_hud_down mot_16
+  - first:
+      213: 6755766463365944897
+    second: hint_hud_down mot_17
+  - first:
+      213: -2383337794613833569
+    second: hint_hud_down mot_18
+  - first:
+      213: 4413853449715352746
+    second: hint_hud_down mot_19
+  - first:
+      213: -6822957216575207137
+    second: hint_hud_down mot_20
+  - first:
+      213: 227269385871134777
+    second: hint_hud_down mot_21
+  - first:
+      213: 5845782260867697549
+    second: hint_hud_down mot_22
+  - first:
+      213: 1870210936412563256
+    second: hint_hud_down mot_23
+  - first:
+      213: 2921920892773121661
+    second: hint_hud_down mot_24
+  - first:
+      213: 1564731627742875384
+    second: hint_hud_down mot_25
+  - first:
+      213: 8247881108324479885
+    second: hint_hud_down mot_26
+  - first:
+      213: -7094870764080886639
+    second: hint_hud_down mot_27
+  - first:
+      213: -6505359396833632038
+    second: hint_hud_down mot_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hint_hud_down mot_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 458
+        width: 51
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c63eb2d70d604ce0800000000000000
+      internalID: -1423017601881196860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 465
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485ca1b6a554df6d0800000000000000
+      internalID: -2955129525838887548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 473
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08365a9d99525cb20800000000000000
+      internalID: 3153968456754619264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 469
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abc053cd3e860470800000000000000
+      internalID: 8360526154180905892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 476
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571c6b2756a4c0590800000000000000
+      internalID: -7706703062761029259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 481
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe9b6087487ff6c0800000000000000
+      internalID: -4107432086646055179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_6
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 473
+        width: 64
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0626c85c0ab9bb9a0800000000000000
+      internalID: -6216203745843453344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 467
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a9bb54d6a0b7340800000000000000
+      internalID: 4862491687114218125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_8
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 401
+        width: 120
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5c808db45faf600800000000000000
+      internalID: 502984014501037560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_9
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 442
+        width: 79
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d635864d0959b7c0800000000000000
+      internalID: -4055112075917838634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_10
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 452
+        width: 61
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd7b9ee05f7fde80800000000000000
+      internalID: -8151656814940029504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_11
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 461
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebe83c09ba6b2360800000000000000
+      internalID: 7145922576759974894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_12
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 455
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a01e475f4de1f90800000000000000
+      internalID: -6980908221684708832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_13
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 456
+        width: 57
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c480a38d5d4d98ae0800000000000000
+      internalID: -1546470982104250292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_14
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 446
+        width: 100
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a819dd2f1a87170800000000000000
+      internalID: 8176463187962595934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_15
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 466
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa31d099176740c0800000000000000
+      internalID: -4591587935579456864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_16
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 468
+        width: 49
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51653a8ef9526e530800000000000000
+      internalID: 3883833097386677781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_17
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 466
+        width: 30
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1469c6a0ecd41cd50800000000000000
+      internalID: 6755766463365944897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_18
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 474
+        width: 60
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90974c37eeaceed0800000000000000
+      internalID: -2383337794613833569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_19
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 482
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa48ae0b358214d30800000000000000
+      internalID: 4413853449715352746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_20
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 470
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19c854af8cff41a0800000000000000
+      internalID: -6822957216575207137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_21
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 470
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9309b256d4c672300800000000000000
+      internalID: 227269385871134777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_22
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 467
+        width: 57
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b8c457ef3602150800000000000000
+      internalID: 5845782260867697549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_23
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 472
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837ebe710f254f910800000000000000
+      internalID: 1870210936412563256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_24
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 486
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7eb88b229fbc8820800000000000000
+      internalID: 2921920892773121661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_25
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 470
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fece68002b07b510800000000000000
+      internalID: 1564731627742875384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_26
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 477
+        width: 65
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83f55b3b2c567270800000000000000
+      internalID: 8247881108324479885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_27
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 477
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c87ab51a4f98d90800000000000000
+      internalID: -7094870764080886639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hint_hud_down mot_28
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 409
+        width: 135
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad06b7f681258b5a0800000000000000
+      internalID: -6505359396833632038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hint_hud_down mot_0: -1423017601881196860
+      hint_hud_down mot_1: -2955129525838887548
+      hint_hud_down mot_10: -8151656814940029504
+      hint_hud_down mot_11: 7145922576759974894
+      hint_hud_down mot_12: -6980908221684708832
+      hint_hud_down mot_13: -1546470982104250292
+      hint_hud_down mot_14: 8176463187962595934
+      hint_hud_down mot_15: -4591587935579456864
+      hint_hud_down mot_16: 3883833097386677781
+      hint_hud_down mot_17: 6755766463365944897
+      hint_hud_down mot_18: -2383337794613833569
+      hint_hud_down mot_19: 4413853449715352746
+      hint_hud_down mot_2: 3153968456754619264
+      hint_hud_down mot_20: -6822957216575207137
+      hint_hud_down mot_21: 227269385871134777
+      hint_hud_down mot_22: 5845782260867697549
+      hint_hud_down mot_23: 1870210936412563256
+      hint_hud_down mot_24: 2921920892773121661
+      hint_hud_down mot_25: 1564731627742875384
+      hint_hud_down mot_26: 8247881108324479885
+      hint_hud_down mot_27: -7094870764080886639
+      hint_hud_down mot_28: -6505359396833632038
+      hint_hud_down mot_3: 8360526154180905892
+      hint_hud_down mot_4: -7706703062761029259
+      hint_hud_down mot_5: -4107432086646055179
+      hint_hud_down mot_6: -6216203745843453344
+      hint_hud_down mot_7: 4862491687114218125
+      hint_hud_down mot_8: 502984014501037560
+      hint_hud_down mot_9: -4055112075917838634
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
