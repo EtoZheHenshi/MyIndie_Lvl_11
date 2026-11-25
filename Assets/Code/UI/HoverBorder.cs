@@ -137,7 +137,8 @@ namespace Code.UI
                 _blinkElapsed = 0f;
             _overdue = overdue;
 
-            if (!isActiveAndEnabled || (_coordinator != null && _coordinator.HasOpenWindow) ||
+            if (!isActiveAndEnabled || (_coordinator != null &&
+                (_coordinator.HasOpenWindow || !_coordinator.IsUnlocked(_window))) ||
                 (!_hovered && !hasTask))
             {
                 HideBorder();

@@ -37,6 +37,11 @@ namespace Code.Infrastructure.Installers
         private void BindTypingMiniGame()
         {
             Container
+                .Bind<TypingMiniGameWindow>()
+                .FromComponentInHierarchy()
+                .AsSingle();
+
+            Container
                 .Bind<DisplayText>()
                 .FromInstance(_displayText)
                 .AsSingle();

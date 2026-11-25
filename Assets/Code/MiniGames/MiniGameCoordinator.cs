@@ -1,6 +1,8 @@
 using System;
 using Code.Pause;
+using Code.TypingLogic;
 using UnityEngine;
+using Zenject;
 
 namespace Code.MiniGames
 {
@@ -9,6 +11,7 @@ namespace Code.MiniGames
         [SerializeField] private GameObject _inputBlocker;
         [SerializeField] private GameObject _transitionBlocker;
         [SerializeField] private PauseService _pauseService;
+        private TypingMiniGameWindow _typingWindow;
         private MiniGameWindow _currentWindow;
         private MiniGameWindow _forcedWindow;
         private float _forcedOpenRemaining;
@@ -24,6 +27,17 @@ namespace Code.MiniGames
         public bool CanInteractWithApartment =>
             !HasOpenWindow && !IsOpeningForcedWindow && !_pauseService.IsPaused;
 
+        [Inject]
+        public void Construct(TypingMiniGameWindow typingWindow)
+        {
+            _typingWindow = typingWindow;
+        }
+
+        public bool IsUnlocked(MiniGameWindow window)
+        {
+            return window != null && (window == _typingWindow || _typingWindow.HasBeenOpened);
+        }
+
         private void OnEnable()
         {
             _pauseService.PauseChanged += OnPauseChanged;
@@ -33,7 +47,7 @@ namespace Code.MiniGames
         public void Open(MiniGameWindow window)
         {
             if (_pauseService.IsPaused || window == null ||
-                !window.isActiveAndEnabled || HasOpenWindow || IsOpeningForcedWindow)
+                !IsUnlocked(window) || !window.isActiveAndEnabled || HasOpenWindow || IsOpeningForcedWindow)
                 return;
 
             _currentWindow = window;
@@ -46,7 +60,7 @@ namespace Code.MiniGames
         public bool OpenForced(MiniGameWindow window, float delay)
         {
             if (_pauseService.IsSessionEnded || IsOpeningForcedWindow || window == null ||
-                !window.isActiveAndEnabled || window == _currentWindow)
+                !IsUnlocked(window) || !window.isActiveAndEnabled || window == _currentWindow)
                 return false;
 
             _forcedWindow = window;

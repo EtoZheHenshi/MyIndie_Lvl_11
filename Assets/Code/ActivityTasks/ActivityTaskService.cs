@@ -96,7 +96,7 @@ namespace Code.ActivityTasks
 
         private void Advance(float deltaTime)
         {
-            if (!_initialized || _pauseService.IsPaused ||
+            if (!_initialized || !_typingWindow.HasBeenOpened || _pauseService.IsPaused ||
                 _motivationService.IsTypingCompleted || _motivationService.IsDepleted)
                 return;
 
@@ -164,7 +164,7 @@ namespace Code.ActivityTasks
 
         private bool TryCreateTask()
         {
-            if (_coordinator.IsOpeningForcedWindow)
+            if (!_typingWindow.HasBeenOpened || _coordinator.IsOpeningForcedWindow)
                 return false;
 
             _candidates.Clear();
